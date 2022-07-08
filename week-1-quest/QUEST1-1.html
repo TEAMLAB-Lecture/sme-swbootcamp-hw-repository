@@ -6,56 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVER</title> 
     <style type="text/css"> 
+    .input-group{
+        position:relative;
+        width:200px;
+        margin: auto;
+        line-height:200px;
+    }
+    .input{
+        width:200px;
+        height:30px;
+        border: 1.5px solid rgb(78, 227, 119);
+    }
+    p{color: #04c75a;}
     a{ text-decoration:none }
     section span {color:rgba(16, 19, 13, 0.411);} 
+    header {
+    background: #fffdfd;
+    min-height: 30px;
+    }
         </style> 
 
     
 </head>
 <body>
+
     <header>
         <div class="head-m">
-            <a href="https://nid.naver.com/login/privacyQR">1</a>
-            <a href=https://event2.pay.naver.com/event/paymentBenefit/view>2</a>
-            <a href="https://nid.naver.com/login/privacyQR">3</a>
+            <a href="https://event2.pay.naver.com/event/paymentBenefit/view"><img src="페이.png" style="float: right"; width="40" height="30"></a>
+
+            <a href="https://nid.naver.com/login/privacyQR"><img src="몰라.png" style="float:right"; right width="40" height="30"></a>
+
+            <a href="https://nid.naver.com/login/privacyQR"><img src="qr 체크인.png" style="float:right"; right width="40" height="30"></a>
 
         </div>
         <br>
         <div class="NAVER">
-        <div style="text-align: center; ">
-                <font size = "50px" color="green">
-                <a onClick="window.location.reload()" style="cursor: pointer;"><b>NAVER</b></a>
+        <div style="text-align: center;">
+                <font size = "50px">
+                <p><a onClick="window.location.reload()" style="cursor: pointer;"><b>NAVER</b></a></p>
                 </font>
             
                 </div>
         
     </header>
     <section>
-        <form action="https://search.naver.com/search.naver">
-            <div style="text-align: center;">
-            <div class="search">
-                <input type="text" name="query" placeholder="검색어를 입력해주세요." size="90"  value=""></>
-                <button type="submit">검색</button>
-                <a href="https://google.com">
-                    <img src="mike.png" width= "20" height="20" alt="mike" title="mike">
-                </a>
-                <a href="https://google.com">
-                    <img src="camera.png" width= "20" height="20" alt="camera title="camera">
-                </a>
-                <a href="https://google.com">
-                    <img src="location.png" width= "20" height="20" alt="location" title="location">
-                </a>
+        <form action="https://search.naver.com/search.naver" method="GET">
+            <div class="input-group">
+            <input name="query" type="text" class="input" placeholder="검색어를 입력해주세요." >
             </div>
-        </form>
-    </section>
+        </section>
 
-        <div id="아이콘">
-        <h2 class="바로가기">바로가기</h2>
-        <center>
+        <div style="text-align: center;">
+        <div class="아이콘">
+        </div>
+        
 
-            <p class = "icon"> 
-            <a href="https://news.naver.com/"><img src="뉴스판1.png" width="44" height="44"></a>
-            <a href="https://news.naver.com/">뉴스판</a>
+        <div style="border:1px solid; padding:30px;">
+
+            <div class = "icon"> 
+                <br>
+            <a href="https://news.naver.com/"><img src="뉴스판1.png"  style="position :relative" left="10px" right="10px" width="44" height="44"></a>
+            <a href="https://news.naver.com/">뉴스판</a> 
             <a href="https://m.stock.naver.com/"><img src="경제지표판.png" width="44" height="44"</a>
             <a href="https://m.stock.naver.com/">경제지표판</a></li>
             <a href="https://entertain.naver.com/home"><img src="연예판.png" width="44" height="44"></a>
@@ -70,10 +81,20 @@
             <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"><img src="블로그.png" width="44" height="44"</a>
             <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">블로그</a></li>
             <a href="https://m.naver.com/services.html" role="button" class="button_more" data-clk="더보기"><img src="더보기.png" </a>
-            <a href="https://m.naver.com/services.html" role="button" class="button_more" data-clk="더보기">더보기</a>
-            </p>
         </div>
-        </center>
+        </div>
+        <div class="picture">
+            <a href="#"><img src="날씨12.png" height="80" </a>
+
+
+        </div>
+
+
+        
+        <div style="border:1px solid; padding:30px;">
+        
+
+    
     
                 <table>
                     <div id="아이콘_글" role="navigation">
@@ -82,75 +103,47 @@
                         <input type="button" value="시간대별 미세먼지">
                         <input type="button" value="주간 날씨">
                         <input type="button" value="주간 미세먼지">
+                    </div>
                     
-                        </div>
 
-                <tr>
                 <section>
-                    <td>
                 <span class="19">19°</span>
-                </td>
-                <td>
                 <span class="22">22°</span>
-                </td>
-                <td>
                 <span class="ww">17°</span>
-                </td>
-                <td>
                 <span class="18">18°</span>
-                </td>
-                <td>
-                    <span class="ww">17°</span>
-                </td>
-                <td>
-                    <span class="192">19°</span>
-                    </td>
-                    <td>
-                    <span class="193">19°</span>
-                    </td>
-                    <td>
-                    <span class="194">19°</span>
-                    </td>
-                    <td>
-                    <span class="18">18°</span>
-                </td>
-                </section>
-                </tr>
-                <tr>
-                    <caption>
-                    <td>
+                <span class="ww">17°</span>
+                <span class="192">19°</span>
+                <span class="193">19°</span>
+                <span class="194">19°</span>
+                <span class="18">18°</span>
+                <br>
                     <span class="8">8°</span>
                     <span class="7">7°</span>
                     <span class="11">11°</span>
-                    
-                    
                     <span class="12">12°</span>
-                    
                     <span class="4">4°</span>
-                    
-                    <span class="4">4°</span>
-                                        
+                    <span class="4">4°</span> 
                     <span class="6">6°</span>
-                    
                     <span class="8">8°</span>
                     <span class="6">6°</span>
-                    </td>
-                </tr>
-                <tr>
-                <td>
-                    <img src="icon_weather_01_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_01_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_21_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_21_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_01_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_01_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_01_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_01_L.png" width="50" height="50"></a></li>
-                    <img src="icon_weather_01_L.png" width="50" height="50"></a></li>
+                </section>
+
+                    <div style="display: block; margin: 0 auto; ">
+                        <img src="icon_weather_01_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_01_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_21_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_21_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_01_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_01_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_01_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_01_L.png" width="44" height="44"></a></li>
+                        <img src="icon_weather_01_L.png" width="44" height="44"></a></li>
+                        </div>
+                    </div>
+                
 
 
-                </td>
-                </tr>
+                
                 
                 <tr class="data heading">
                     
@@ -192,6 +185,7 @@
             <img src="naver.png" width= "20" height="20">
             앱으로 <strong>새로운 네이버</strong>를  더 쾌적하게 사용해보세요
             <input type="button" value="앱 사용하기"> 
+            </div>
                     
                     
                     
@@ -202,7 +196,7 @@
 
         <footer>
         <div id="update">
-            <P class="알립니다"> 알립니다. 네이버앱 업데이트 사전 안내</P>
+            <dt class="알립니다"> 알립니다. 네이버앱 업데이트 사전 안내</dt>
 
 
         </div>
@@ -217,7 +211,8 @@
                 <b><a href="#">개인정보처리방침</a></b>
                 <a href="#">고객센터</a>
             </ul>
-        <div style="text-align: center; ">
+            <div class="bottom">
+        <div style="vertical-align: bottom; text-align: center;">
             <p style="color:rgba(16, 19, 13, 0.411)"><b>NAVER</b></p>
         </div>
     </div>
