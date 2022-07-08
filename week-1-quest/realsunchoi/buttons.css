@@ -1,0 +1,27 @@
+#buttons button{
+  background-color: #F4F6FC;
+  color:#72757C;
+  padding: 5px;
+  border: none;
+}
+#buttons button:hover{
+  background-color:#7493CC;
+  color:white;
+}
+
+#useapp button{
+  background-color: white;
+  color:#4E99DF;
+  padding: 5px;
+  border: 1px solid #4E99DF;
+}
+
+#notify button{
+  background-color: white;
+  color:#00D05C;
+  padding: 2px;
+  border: 1.5px solid #00D05C;
+  border-collapse: collapse;
+  border-radius: 10px;
+  outline: none;
+}
