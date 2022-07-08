@@ -4,20 +4,28 @@
 		<title>NAVER</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" width="decice-width">
-    <link rel="stylesheet" href="container.css"
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="list.css">
 	</head>
 
 	<body>
 
 		<header>
 			<div style="text-align:center">
+        <!--네이버 로고-->
         <div>
         <span style="color:rgb(3, 207, 93);"><a href="file:///C:/workspace/sme-swbootcamp-hw-repository/week-1-quest/realsunchoi/index.html"><h1>NAVER</h1></a></span>
         </div>
+        <!--네이버 로고-->
+
+        <!--검색창-->
         <div>
         <input type="search" name="search" placeholder="검색어를 입력해주세요" size="60"><input type="submit">
         </div>
         <br>
+        <!--검색창-->
+
+        <!--메인 위젯-->
         <table width="350" height="200" style="margin-left: auto; margin-right: auto;">
           <tr>
             <td><img src="image/news.png" height="44" alt="news"></td>
@@ -40,10 +48,12 @@
           </table>
           <br>
           <img src="image/empty.png" height="80" alt="empty">
+          <!--메인 위젯-->
         </div>
 		</header>
 
 		<section class="main">
+    <!--오늘 기온, now-->
     <div>
       <table style="margin-left: auto; margin-right: auto;">
       <tr rowspan="2">
@@ -66,6 +76,47 @@
       </table>
       <br>
     </div>
+    <!--오늘 기온, now-->
+
+    <!--날씨-->
+    <div>
+      <table width="590" style="margin-left: auto; margin-right: auto;">
+        <td>
+          <details open> <!--날씨, 지역-->
+            <summary><strong>날씨</strong> 서울시 잠실동 <img src="image/dot.png" alt="dot" width="17"></summary>
+            <p>
+            <!--버튼-->
+            <div>
+              <button formaction="" type="button">시간대별 날씨</button>
+              <button formaction="" type="button">시간대별 미세먼지</button>
+              <button formaction="" type="button">주간 날씨</button>
+              <button formaction="" type="button">주간 미세먼지</button>
+            </div>
+            <!--버튼-->
+            <!--날씨 그래프-->
+            <div>
+                <ul style="text-align:center">
+                  <li>19°<br><span style="color:rgb(180, 180, 180);">|</span><br>8°<br><img src="image/sunny.png" alt="sunny" height="44"><br>어제</li>
+                  <li>22°<br><span style="color:rgb(180, 180, 180);">|</span><br>7°<br><img src="image/sunny.png" alt="sunny" height="44"><br>오늘</li>
+                  <li>17°<br><span style="color:rgb(180, 180, 180);">|</span><br>11°<br><img src="image/rainning.png" alt="sunny" height="44"><br>월</li>
+                  <li>18°<br><span style="color:rgb(180, 180, 180);">|</span><br>12°<br><img src="image/rainning.png" alt="sunny" height="44"><br>화</li>
+                  <li>17°<br><span style="color:rgb(180, 180, 180);">|</span><br>4°<br><img src="image/sunny.png" alt="sunny" height="44"><br>수</li>
+                  <li>19°<br><span style="color:rgb(180, 180, 180);">|</span><br>4°<br><img src="image/sunny.png" alt="sunny" height="44"><br>목</li>
+                  <li>19°<br><span style="color:rgb(180, 180, 180);">|</span><br>6°<br><img src="image/sunny.png" alt="sunny" height="44"><br>금</li>
+                  <li>19°<br><span style="color:rgb(180, 180, 180);">|</span><br>8°<br><img src="image/sunny.png" alt="sunny" height="44"><br>토</li>
+                  <li>18°<br><span style="color:rgb(180, 180, 180);">|</span><br>6°<br><img src="image/sunny.png" alt="sunny" height="44"><br>일</li>
+                </ul>
+            </div>
+            <!--날씨 그래프-->
+            </p>
+          </details>
+        </td>
+      </table>
+    </div>
+    <!--날씨-->
+
+    <!--코로나-->
+    <!--코로나-->
 		</section>
 
 		<footer>
