@@ -1,0 +1,16 @@
+form{
+  margin-left: auto;
+  margin-right: auto;>
+}
+
+input{
+  font-size: 16px;
+  width: 600px;
+  height: 25px;
+  padding: 15px;
+  margin-top: 22px;
+  border: 1.5px solid #0FDF8A;
+  border-collapse: collapse;
+  border-radius: 5px;
+  outline: none;
+}
