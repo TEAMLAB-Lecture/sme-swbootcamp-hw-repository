@@ -3,5 +3,6 @@ ul {
 }
 li {
   float: left;
+  margin-bottom: 20px;
   margin-left: 21px;
 }
