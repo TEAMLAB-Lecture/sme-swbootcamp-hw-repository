@@ -1,0 +1,87 @@
+@font-face { font-family: 'NanumGothic';
+  src: url('/fonts/NanumGothic.eot');
+  src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),url('/fonts/NanumGothic.woff') format('woff');}
+
+body {background: linear-gradient(white,#EBF2F8 ,#F2F5F7 ); font-family: 'NanumGothic';}
+
+h3 {color :rgb(180, 180, 180)}
+
+#sectionbox {
+  width: 590px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 2px;
+  border-style: hidden;
+  box-shadow: 0 0 0 15px white;}
+
+a{
+  text-decoration: none;
+}
+
+form{
+  margin-left: auto;
+  margin-right: auto;>
+}
+
+input{
+  font-size: 16px;
+  width: 600px;
+  height: 25px;
+  padding: 15px;
+  margin-top: 22px;
+  border: 1.5px solid #0FDF8A;
+  border-collapse: collapse;
+  border-radius: 5px;
+  outline: none;
+}
+
+#buttons button{
+  background-color: #F4F6FC;
+  color:#72757C;
+  padding: 5px;
+  border: none;
+}
+#buttons button:hover{
+  background-color:#7493CC;
+  color:white;
+}
+
+#useapp button{
+  background-color: white;
+  color:#4E99DF;
+  padding: 5px;
+  border: 1px solid #4E99DF;
+}
+
+#notify button{
+  background-color: white;
+  color:#00D05C;
+  padding: 2px;
+  border: 1.5px solid #00D05C;
+  border-collapse: collapse;
+  border-radius: 10px;
+  outline: none;
+}
+
+ul {
+  list-style:none;
+}
+li {
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 18px;
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.container img {
+  width: 50px;
+  margin: 2px;
+}
