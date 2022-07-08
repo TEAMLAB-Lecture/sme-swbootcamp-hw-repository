@@ -9,13 +9,14 @@
       body {background: linear-gradient(white,#EBF2F8 ,#F2F5F7 ); font-family: 'NanumGothic';}
       h1 {color :rgb(3, 207, 93)}
       h3 {color :rgb(180, 180, 180)}
-      #sectionbox {width: 590px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px; background-color: white; border-collapse: collapse; border-radius: 2px; border-style: hidden; box-shadow: 0 0 0 10px white;}
+      #sectionbox {width: 590px; margin-left: auto; margin-right: auto; margin-top: 15px; margin-bottom: 15px; background-color: white; border-collapse: collapse; border-radius: 2px; border-style: hidden; box-shadow: 0 0 0 15px white;}
       a{text-decoration: none;}
     </style>
 
     <link rel="stylesheet" href="container.css">
     <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="searchbox.css">
+    <link rel="stylesheet" href="buttons.css">
 	</head>
 
 	<body>
@@ -35,7 +36,7 @@
         <!--검색창-->
 
         <!--메인 위젯-->
-        <table width="350" height="200" style="margin-left: auto; margin-right: auto ;">
+        <table width="350" height="200" style="margin-left: auto; margin-right: auto ;" id="mainpan">
           <tr>
             <td><img src="image/news.png" height="40" alt="news"></td>
             <td><img src="image/economic.png" height="40" alt="economic"></td>
@@ -69,7 +70,7 @@
         <td rowspan="2"><img src="image/moon.png" height="44" alt="moon"></td> 
         <td valign=bottom><strong>10° 맑음</strong></td>
         <td rowspan="2"><img src="image/empty.png" width="150"></td>
-        <td valign=bottom><span style="color:rgb(255, 0, 0);"><strong>NOW.</strong></span></td>
+        <td valign=bottom><img src="image/now.png" height="15" alt="naver now"></td>
         <td rowspan="2">
         <div class="container">
           <img src="image/now1.png" alt="now1">
@@ -80,7 +81,7 @@
       </tr>
       <tr>
         <td valign=top>어제보다 2° 높아요</td>
-        <td valign=top>지금 방송중</td>
+        <td valign=top><strong>지금 방송중</strong></td>
       </tr>
       </table>
       <br>
@@ -95,7 +96,7 @@
             <summary><strong>날씨</strong> 서울시 잠실동 <img src="image/dot.png" alt="dot" width="17"></summary>
             <p>
             <!--버튼-->
-            <div>
+            <div id="buttons">
               <button formaction="" type="button">시간대별 날씨</button>
               <button formaction="" type="button">시간대별 미세먼지</button>
               <button formaction="" type="button">주간 날씨</button>
@@ -145,11 +146,11 @@
     <!--대한민국 임시정부-->
 
     <!--네이버앱-->
-    <div>
+    <div id="useapp">
       <table id="sectionbox">
         <td><img src="image/navermobile.png" alt="naver mobile" height="22"></td>
         <td valign=top><span> 앱으로 <strong>새로운 네이버</strong>를 더 쾌적하게 사용해 보세요.</span></td>
-        <td align=right><button formaction="" type="button">앱 사용하기</button></td>
+        <td align=right><button>앱 사용하기</button></td>
       </table>
       <br>
     </div>
@@ -175,7 +176,7 @@
     <div>
       <table id="sectionbox">
         <tr>
-          <td><strong>인기 주제 판을 확인해 보세요!</strong></td><td align=right><span style="color:gray">판관리</span></td>
+          <td style="padding: 10px;"><strong>인기 주제 판을 확인해 보세요!</strong></td><td align=right><span style="color:gray">판관리</span></td>
         </tr>
         <tr>
           <td width="245" bgcolor="#F5F7F9"><img src="image/movie.png" alt="movie pan" height="17"><span style="color:gray"> 영화판</span></td>
@@ -191,7 +192,7 @@
     <!--판 관리-->
 
     <!--알립니다-->
-    <div>
+    <div id="notify">
       <table id="sectionbox"></tablewidth>
         <td><button>알립니다</button> 네이버앱 업데이트 사전 안내</td>
         <td align=right><span style="color:gray">></span></td>
