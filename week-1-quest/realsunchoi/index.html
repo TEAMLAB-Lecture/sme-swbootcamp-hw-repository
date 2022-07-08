@@ -6,14 +6,16 @@
 		<meta name="viewport" width="decice-width">
 
     <style>
-      body {background-color: white;}
+      body {background: linear-gradient(white,#EBF2F8 ,#F2F5F7 ); font-family: 'NanumGothic';}
       h1 {color :rgb(3, 207, 93)}
       h3 {color :rgb(180, 180, 180)}
+      #sectionbox {width: 590px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px; background-color: white; border-collapse: collapse; border-radius: 2px; border-style: hidden; box-shadow: 0 0 0 10px white;}
       a{text-decoration: none;}
     </style>
 
     <link rel="stylesheet" href="container.css">
     <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="searchbox.css">
 	</head>
 
 	<body>
@@ -22,48 +24,47 @@
         <img src="image/empty.png" height="40" alt="empty">
         <!--네이버 로고-->
         <div>
-        <span style="color:rgb(3, 207, 93);"><a href="file:///C:/workspace/sme-swbootcamp-hw-repository/week-1-quest/realsunchoi/index.html"><h1>NAVER</h1></a></span>
-        </div>
+        <a href="file:///C:/workspace/sme-swbootcamp-hw-repository/week-1-quest/realsunchoi/index.html"><img src="image/naver.png" alt="naver logo" height="38"></a>
         <!--네이버 로고-->
-
+        
         <!--검색창-->
-        <div>
-        <input type="search" name="search" placeholder="검색어를 입력해주세요" size="60"><input type="submit">
-        </div>
+        <form>
+        <input type="text" name="search" placeholder="검색어를 입력해주세요">
+        </form>
         <br>
         <!--검색창-->
 
         <!--메인 위젯-->
-        <table width="350" height="200" style="margin-left: auto; margin-right: auto;">
+        <table width="350" height="200" style="margin-left: auto; margin-right: auto ;">
           <tr>
-            <td><img src="image/news.png" height="44" alt="news"></td>
-            <td><img src="image/economic.png" height="44" alt="economic"></td>
-            <td><img src="image/shopping.png" height="44" alt="shopping"></td>
-            <td><img src="image/sport.png" height="44" alt="sport"></td>
+            <td><img src="image/news.png" height="40" alt="news"></td>
+            <td><img src="image/economic.png" height="40" alt="economic"></td>
+            <td><img src="image/shopping.png" height="40" alt="shopping"></td>
+            <td><img src="image/sport.png" height="40" alt="sport"></td>
           </tr>
           <tr>
             <td>뉴스판</td> <td>경제지표판</td> <td>쇼핑판</td> <td>스포츠판</td>
           </tr>
           <tr>
-            <td><img src="image/mail.png" height="44" alt="mail"></td>
-            <td><img src="image/cafe.png" height="44" alt="cafe"></td>
-            <td><img src="image/blog.png" height="44" alt="blog"></td>
-            <td><img src="image/etc.png" height="44" alt="etc"></td>
+            <td><img src="image/mail.png" height="40" alt="mail"></td>
+            <td><img src="image/cafe.png" height="40" alt="cafe"></td>
+            <td><img src="image/blog.png" height="40" alt="blog"></td>
+            <td><img src="image/etc.png" height="40" alt="etc"></td>
           </tr>
           <tr>
             <td>메일</td> <td>카페</td> <td>블로그</td> <td></td>
           </tr>
           </table>
           <br>
-          <img src="image/empty.png" height="100" alt="empty">
           <!--메인 위젯-->
         </div>
+        <table style="margin: 50px"></table>
 		</header>
 
 		<section class="main">
     <!--오늘 기온, now-->
     <div>
-      <table style="margin-left: auto; margin-right: auto;">
+      <table id="sectionbox">
       <tr rowspan="2">
         <td rowspan="2"><img src="image/moon.png" height="44" alt="moon"></td> 
         <td valign=bottom><strong>10° 맑음</strong></td>
@@ -88,7 +89,7 @@
 
     <!--날씨-->
     <div>
-      <table width="590" style="margin-left: auto; margin-right: auto;">
+      <table id="sectionbox">
         <td>
           <details open> <!--날씨, 지역-->
             <summary><strong>날씨</strong> 서울시 잠실동 <img src="image/dot.png" alt="dot" width="17"></summary>
@@ -126,7 +127,7 @@
 
     <!--코로나-->
     <div>
-      <table width="590" style="margin-left: auto; margin-right: auto;">
+      <table id="sectionbox">
       <tr><td width="245"><img src="image/covid.png" alt="covid" height="17"><strong> 코로나19</strong></td><td width="245"><img src="image/factcheck.png" alt="factcheck" height="17"><strong> 코로나19 팩트체크</strong></td></tr>
       <tr><td><span style="color:gray;">국내외 확진 현황</span></td><td><span style="color:gray;">백신 정보 팩트는?</span></td></tr>
       </table>
@@ -136,7 +137,7 @@
 
     <!--대한민국 임시정부-->
     <div>
-      <table width="590" height="70" style="margin-left: auto; margin-right: auto;">
+      <table id="sectionbox">
         <td style="text-align:center"><span style="color:rgb(57, 57, 57);"><img src="image/korea.png" alt="korea" height="25">제 102주년<strong> 대한민국 임시정부 수립일</strong></span></td>
       </table>
       <br>
@@ -145,7 +146,7 @@
 
     <!--네이버앱-->
     <div>
-      <table width="590" height="28" style="margin-left: auto; margin-right: auto;">
+      <table id="sectionbox">
         <td><img src="image/navermobile.png" alt="naver mobile" height="22"></td>
         <td valign=top><span> 앱으로 <strong>새로운 네이버</strong>를 더 쾌적하게 사용해 보세요.</span></td>
         <td align=right><button formaction="" type="button">앱 사용하기</button></td>
@@ -156,7 +157,7 @@
 
     <!--웹툰-->
     <div>
-      <table width="590" height="40" style="margin-left: auto; margin-right: auto;">
+      <table id="sectionbox">
         <td>
           <details>
             <summary><strong>웹툰</strong></summary>
@@ -172,17 +173,17 @@
 
     <!--판 관리-->
     <div>
-      <table width="590" style="margin-left: auto; margin-right: auto;">
+      <table id="sectionbox">
         <tr>
           <td><strong>인기 주제 판을 확인해 보세요!</strong></td><td align=right><span style="color:gray">판관리</span></td>
         </tr>
         <tr>
-          <td width="245"><img src="image/movie.png" alt="movie pan" height="17"><span style="color:gray"> 영화판</span></td>
-          <td width="245"><img src="image/bboom.png" alt="bboom pan" height="20"><span style="color:gray"> 뿜판</span></td>
+          <td width="245" bgcolor="#F5F7F9"><img src="image/movie.png" alt="movie pan" height="17"><span style="color:gray"> 영화판</span></td>
+          <td width="245" bgcolor="#F5F7F9"><img src="image/bboom.png" alt="bboom pan" height="20"><span style="color:gray"> 뿜판</span></td>
         </tr>
         <tr>
-          <td width="245"><img src="image/webtoon.png" alt="webtoon pan" height="20"><span style="color:gray"> 웹툰판</span></td>
-          <td width="245"><img src="image/economical.png" alt="economical pan" height="20"><span style="color:gray"> 경제M판</span></td>
+          <td width="245" bgcolor="#F5F7F9"><img src="image/webtoon.png" alt="webtoon pan" height="20"><span style="color:gray"> 웹툰판</span></td>
+          <td width="245" bgcolor="#F5F7F9"><img src="image/economical.png" alt="economical pan" height="20"><span style="color:gray"> 경제M판</span></td>
         </tr>
       </table>
       <br>
@@ -191,14 +192,13 @@
 
     <!--알립니다-->
     <div>
-      <table width="590" height="50" style="margin-left: auto; margin-right: auto;"></tablewidth>
+      <table id="sectionbox"></tablewidth>
         <td><button>알립니다</button> 네이버앱 업데이트 사전 안내</td>
         <td align=right><span style="color:gray">></span></td>
       </table>
     </div>
     <!--알립니다-->
-
-    <img src="image/empty.png" height="50" alt="empty">
+    <table style="margin: 50px"></table>
 		</section>
 
 		<footer>
@@ -207,8 +207,7 @@
         <p><a> 이용약관 </a> | <a><strong>  개인정보처리방침 </strong></a> | <a> 고객센터 </a></p></div>
 
       <div style="text-align:center"><span style="color:gray;"><a href="file:///C:/workspace/sme-swbootcamp-hw-repository/week-1-quest/realsunchoi/index.html"><h3>NAVER</h3></a></span></div>
-
-      <img src="image/empty.png" height="50" alt="empty">
+      <table style="margin: 30px"></table>
 		</footer>
 	</body>
 </html>
