@@ -5,19 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVER</title> 
-    <style type="text/css"> 
+    <style type="text/css">
+    body {background: linear-gradient(white,#f2f5f3 ); }
+
+    p{color :rgb(180, 180, 180)}
+    #whitebox {
+    width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 2px;
+    border-style: hidden;
+    box-shadow: 0 0 0 15px white;}
+
+
+    form{
+    margin-left: auto;
+    margin-right: relative;
+    }
     .input-group{
         position:relative;
-        width:200px;
+        width:50px;
+        bottom:30px ;
+        right: 270px;
         margin: auto;
-        line-height:200px;
+        line-height:50px;}
+    .whitebox {
+        width: 590px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: white;
+        border-collapse: collapse;
+        border-radius: 2px;
+        border-style: hidden;
+        box-shadow: 0 0 0 15px white;
     }
-    .input{
-        width:200px;
-        height:30px;
-        border: 1.5px solid rgb(78, 227, 119);
+
+    input{
+    font-size: 16px;
+    width: 600px;
+    height: 25px;
+    padding: 15px;
+    margin-top: 22px;
+    border: 1.5px solid #0FDF8A;
+    border-collapse: collapse;
+    border-radius: 5px;
+    outline: none;
     }
-    p{color: #04c75a;}
+
+    p{position: relative;
+        left: 20px;
+        top: 10px;
+        color: #04c75a;}
     a{ text-decoration:none }
     section span {color:rgba(16, 19, 13, 0.411);} 
     header {
@@ -32,6 +76,12 @@
 <body>
 
     <header>
+        <div class="head left">
+            <select class="2select">
+                <option>더보기1</option>
+                <option>더보기2</option>
+            </select>
+        </div>
         <div class="head-m">
             <a href="https://nid.naver.com/login/privacyQR"><img src="몰라.png" style="float:right"; right width="40" height="25"></a>
             <a href="https://event2.pay.naver.com/event/paymentBenefit/view"><img src="페이.png" style="float: right"; width="40" height="25"></a>
@@ -54,47 +104,42 @@
             <div class="input-group">
             <input name="query" type="text" class="input" placeholder="검색어를 입력해주세요." >
             </div>
-        </section>
-
-        <div style="text-align: center;">
-        <div class="아이콘">
-        </div>
-        
-
-
-            <div class = "icon"> 
-                <div style="width:1000px; margin: 0 auto; border:1px solid; padding:5px;">
-                <br>
-            <a href="https://news.naver.com/"><img src="뉴스판1.png"  style="position :relative" left="10px" right="10px" width="44" height="44"></a>
-            <a href="https://news.naver.com/">뉴스판</a> 
-            <a href="https://m.stock.naver.com/"><img src="경제지표판.png" width="44" height="44"</a>
-            <a href="https://m.stock.naver.com/">경제지표판</a></li>
-            <a href="https://entertain.naver.com/home"><img src="연예판.png" width="44" height="44"></a>
-            <a href="https://entertain.naver.com/home">연예판</a></li>
-            <a href="https://shopping.naver.com/home/p/index.naver"><img src="쇼핑판.png" width="44" height="44"></a>
-            <a href="https://shopping.naver.com/home/p/index.naver">쇼핑판</a></li>
-            <br>
-            <a href="https://mail.naver.com/"><img src="메일.png" width="44" height="44"></a></li>
-            <a href="https://mail.naver.com/">메일</a></li>
-            <a href="https://section.cafe.naver.com/ca-fe/"><img src="https://s.pstatic.net/static/www/mobile/edit/2020/0319/mobile_191015178706.png" width="44" height="44"</a>
-            <a href="https://section.cafe.naver.com/ca-fe/">카페</a></li>
-            <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"><img src="블로그.png" width="44" height="44"</a>
-            <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">블로그</a></li>
-            <a href="https://m.naver.com/services.html" role="button" class="button_more" data-clk="더보기"><img src="더보기.png" </a>
-        </div>
-        </div>
+            <table width="400" height="150" style="margin-left: auto; margin-right: auto ;" id="page">
+        <tr>
+            <td><a href="https://news.naver.com/">&nbsp&nbsp<img src="뉴스판1.png"  style="position :relative" width="44" height="44"></a>
+            </td>
+            <td><a href="https://m.stock.naver.com/">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="경제지표판.png" style="position :relative" width="44" height="44"></a>
+            </td>
+            <td><a href="https://entertain.naver.com/home"><img src="연예판.png" style="position :relative" width="44" height="44"></a>
+            </td>
+            <td><img src="쇼핑판.png"height="44" alt="sport"></td>
+        </tr>
+        <tr>
+            <td>&nbsp뉴스판</td> <td>&nbsp&nbsp&nbsp&nbsp경제지표판</td> <td>연예판</td> <td>쇼핑판</td>
+        </tr> 
+        <tr>
+            <td><a href="https://mail.naver.com/">&nbsp&nbsp<img src="메일.png" width="44" height="44"></td> </a>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://section.cafe.naver.com/ca-fe/"></a><img src="https://s.pstatic.net/static/www/mobile/edit/2020/0319/mobile_191015178706.png" height="44" alt="cafe"></td>
+            <td><a href="https://section.blog.naver.com/BlogHome"><img src="블로그.png" width="44" height="44"></a>
+            </td>
+            <td><img src= "더보기.png" width="44" height="44"><div class="sel-lang-wrap"><select class="lang-select"><option>더보기</option></div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbsp메일</td> <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp카페</td> <td>블로그</td> <td></td>
+        </tr>
+        </table>
+        <br>
         <div class="picture">
-            <a href="#"><img src="날씨12.png" height="80" </a>
-
-
+        <div style=>
+        <img src="날씨12.png" height="80">
+        </div>
         </div>
 
 
         
         <div style="width:1000px; margin: 0 auto; border:1px solid; padding:5px;">
-        
-
-    
     
                 <table>
                     <div id="아이콘_글" role="navigation">
@@ -145,7 +190,6 @@
 
                 
                     <div style="text-align: center;">
-                    
                     <span class="yesterday">어제</span>
                     <span class="today">오늘</span>
                     <span class="monday">월</span>
@@ -166,37 +210,51 @@
 
                     <img src="naver.png" width= "20" height="20">
             앱으로 <strong>새로운 네이버</strong>를  더 쾌적하게 사용해보세요   
-            <input type="button" value="앱 사용하기"> 
+            <type="button" value="앱 사용하기"> 
                 </div>
-                <div>
+
+                    <div>
                     <table id="sectionbox">
+                    <td>
+                        <details>
+                    <summary><strong>웹툰</strong></summary>
+                    <option>마음의소리</option>
+                    <option>신의 탑</option>
+
+                        </details>
+                    </td>
+                    <br>
+                    </table>
+
+                </div>
                         <table style=" margin: 0 auto;">
+                            <table id="whitebox">
+
                     <tr>
-                        <td style="padding: 10px;"><strong>인기 주제 판을 확인해 보세요!</strong></td><td align=right><span style="color:gray">판관리</span></td>
+                        <td style="padding: 10px;"><b>인기 주제 판을 확인해 보세요!</b></td><td align=right><span style="color:gray">판관리</span></td>
                     </tr>
                     <tr>
-                        <td style="padding: 10px;" width="245" bgcolor=""><img src="#" alt="movie pan" height="17"><span style="color:gray"> 영화판</span>
+                        <td style="padding: 10px;" width="245" bgcolor=""><img src="#"  height="17"><span style="color:gray"> 영화판</span>
                         </td>
-                        <td style="padding: 10px;" width="245" bgcolor="#F5F7F9"><img src="#" alt="bboom pan" height="20"><span style="color:gray"> 뿜판</span>
+                        <td style="padding: 10px;" width="245" bgcolor="#F5F7F9"><img src="#"  height="20"><span style="color:gray"> 뿜판</span>
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 10px;" width="245" bgcolor="#F5F7F9"><img src="#" alt="webtoon pan" height="20"><span style="color:gray"> 웹툰판</span>
+                        <td style="padding: 10px;" width="245" bgcolor="#F5F7F9"><img src="#"  height="20"><span style="color:gray"> 웹툰판</span>
                         </td>
-                        <td style="padding: 10px;" width="245" bgcolor="#F5F7F9"><img src="#" alt="economical pan" height="20"><span style="color:gray"> 경제M판</span>
+                        <td style="padding: 10px;" width="245" bgcolor="#F5F7F9"><img src="#" height="20"><span style="color:gray"> 경제M판</span>
                         </td>
                     </tr>
                     </table>
                     <br>
-                </div>
-            <div style="width:700px; margin: 0 auto; border:1px solid; padding:5px;">
-        <div id="update">
+                
             <dt class="알립니다"> 알립니다. 네이버앱 업데이트 사전 안내</dt>
             </div>
             <footer>
 
         </div>
         <div style="text-align: center;">
+            <div style="font-size: 15pt;">
         <div id="bottom" role="navigation">
             <ul class="group">
                 <a href="#">로그인</a> | 
