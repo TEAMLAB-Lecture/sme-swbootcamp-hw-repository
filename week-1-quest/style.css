@@ -1,0 +1,110 @@
+
+@charset "UTF-8";
+
+body {
+    background: linear-gradient(white,aliceblue);
+}
+
+.header_items {
+    margin-left: auto;
+}
+
+.header {
+    align-items :baseline;
+}
+
+.header_item {
+    margin-left: 10px;
+}
+
+.search {
+    display:flex;
+    border: 1px solid #01C75B;
+    border-radius: 6px;
+    justify-content:space-between; align-items: center;
+    color: lightgray; margin: 0px 320px 0px 320px;
+}
+
+#menu_table {
+    display: table;
+    width: 40%;
+    border-collapse: separate;
+}
+
+.row {
+    display: table-row;
+    color:lightgray;
+}
+
+.row_image {
+    display: table-row;
+}
+
+#row_image {
+    width:30px; height:30px;
+    border: 1px solid #F4F8FB;
+    border-radius: 20px;
+    border-width: 15px;
+}
+
+.cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle; 
+    font-size: small;
+}
+
+.cell_image {
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.item {
+    padding: 5px 5px 5px 5px;
+}
+
+.description {
+    display:flex;
+    background-color: white; border: 1px solid white;
+    justify-content:space-between;
+    align-items:center;
+    margin:0px 320px 10px 320px;
+    display: flex;
+    border-radius: 5%;
+    margin-top:200px;
+}
+
+.square_box_wind {
+    display: flex;
+    background-color: aliceblue; border: 1px solid white;
+    margin-left: 10px; height: 30px;
+    align-items:center;
+}
+
+.square_dark_box_wind {
+    display: flex;
+    background-color:cornflowerblue;
+    border: 1px solid white;
+    margin-left: 10px; width:10px; height: 30px;
+    align-items:center;
+    padding: 20px 10px 0px 10px;
+}
+
+.korea {
+    display: flex; background-color: white;
+    border: 1px solid white;
+    margin:0px 320px 10px 320px;
+    display: flex; justify-content: center;
+    align-items: center;
+}
+
+.webtoon {
+    display: flex; justify-content: space-between; align-items: center;
+    background-color: white; border: 1px solid white; margin:0px 320px 10px 320px;
+}
+
+.naver_app {
+    background-color: white; border: 1px solid white; margin:0px 320px 10px 320px;
+    display: flex; justify-content: space-between; align-items: center;
+    te
+}
