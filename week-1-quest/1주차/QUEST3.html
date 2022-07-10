@@ -9,33 +9,31 @@
     
     body{background: linear-gradient( to bottom, white,#e6e8e9 ,#d6dadd  ); 
     }
+    p{position: relative;
+        left: 20px;
+        top: 10px;
+        color: #04c75a;}
 
-
-
-    form{
-    margin-left: auto;
-    margin-right: relative;
+    ul{
+    list-style:none;}
+    
+    li{
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 15px;
     }
-
-    p{color :rgb(180, 180, 180)}
+    
     #whitebox {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: white;
-    border-collapse: collapse;
-    border-radius: 2px;
-    border-style: hidden;
+    border-radius: 3px;
     box-shadow: 0 0 0 15px white;}
-    ul {
-        list-style:none;}
-        li {
-    float: left;
-    margin-bottom: 0;
-    margin-left: 0;
-    }
+    
+    
     .input-group{
         position:relative;
         width:50px;
@@ -44,43 +42,11 @@
         margin: auto;
         line-height:50px;}
 
-    
-
-    .whitebox {
-        width: 590px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-color: white;
-        border-collapse: collapse;
-        border-radius: 2px;
-        border-style: hidden;
-        box-shadow: 0 0 0 15px white;
-    }
-
-    input{
-    font-size: 16px;
-    width: 600px;
-    height: 25px;
-    padding: 15px;
-    margin-top: 22px;
-    border: 1.5px solid #0FDF8A;
-    border-collapse: collapse;
-    border-radius: 5px;
-    outline: none;
-    }
-
-    p{position: relative;
-        left: 20px;
-        top: 10px;
-        color: #04c75a;}
     a{ text-decoration:none }
-    section span {color:rgba(16, 19, 13, 0.411);} 
     
     
     input{
-    font-size: 16px;
+    font-size: 14px;
     width: 600px;
     height: 25px;
     padding: 15px;
@@ -88,30 +54,6 @@
     border: 1.5px solid #0FDF8A;
     border-radius: 5px;
     outline: none;
-}
-
-#buttons button{
-background-color: #F4F6FC;
-color:#72757C;
-padding: 5px;
-border: none;
-}
-
-#buttons button:hover{
-background-color:#7493CC;
-color:white;
-}
-
-
-li {
-float: left;
-margin-bottom: 15px;
-margin-left: 15px;
-}
-
-.container {
-display: flex;
-overflow-x: auto;
 }
 </style> 
 
@@ -148,7 +90,7 @@ overflow-x: auto;
             <div class="input-group">
             <input name="query" type="text" class="input" placeholder="검색어를 입력해주세요." >
             </div>
-            <table width="400" height="150" style="margin-left: auto; margin-right: auto ;" id="page">
+            <table width="400" height="150" style="margin-left: auto; margin-right: auto ;">
         <tr>
             <td><a href="https://news.naver.com/">&nbsp&nbsp<img src="image/뉴스판1.png"  style="position :relative" width="44" height="44"></a>
             </td>
@@ -168,25 +110,35 @@ overflow-x: auto;
             </td>
             <td><a href="https://section.blog.naver.com/BlogHome"><img src="image/블로그.png" width="44" height="44"></a>
             </td>
-            <td>&nbsp&nbsp<img src= "image/더보기.png" style=" position: relative; top: 2px; left: 2px; width: 44px; height:44px;"
+            <td>&nbsp&nbsp<img src= "image/더보기.png" style=" position: relative; top: 2px; left: 2px; width: 44px; height:44px;">
             </td>
             
         </tr>
         <tr>
-            <td>&nbsp&nbsp&nbsp메일</td> <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp카페</td> <td>블로그</td> <td>&nbsp</td> 
+            <td>&nbsp&nbsp&nbsp메일</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp카페</td> 
+            <td>블로그</td> 
+            <td></td> 
 
         </tr>
         </table>
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
         </div>
-        <section class="main">
+        <section>
             <div>
             <table id="whitebox">
                 <td rowspan="3"><img src="image/달2.png" height="30" width="30"></td> 
-                <td valign=bottom style="float:left";><b>10°맑음</b></td>
+                <td valign=bottom style="float:left";><b>10°맑음</b>
+                </td>
                 <td rowspan="3">
-                <div class="container">
-                <img src= "image/방송중.png" align="right" width="200px" height="60px";>
+                <div>
+                <img src= "image/방송중.png" align="right" width="200px" height="70px";>
                 </div>
                 </td>
             </tr>
@@ -199,11 +151,10 @@ overflow-x: auto;
         
             <div>
             <table id="whitebox">
-                <td valigin="top">
-                    <strong>날씨</strong> 부산시 동구 <img src="image/lock.png" width="20" height="20">
+                <td>
+                    <strong>날씨</strong> 부산광역시 동구 <img src="image/lock.png" width="20" height="20">
                 <p></p>
                     <div id="buttons">
-
                 <button ="#">시간대별 날씨</button>
                 <button ="#">시간대별 미세먼지</button>
                 <button ="#">주간 날씨</button>
@@ -213,38 +164,53 @@ overflow-x: auto;
                     <ul style="text-align:center">
                         <span style="color: black;">
                         <br style="color : black">
-                    <li>19°<br><span style="color:rgb(180, 180, 180);">|</span>
-                    <br>8°<br><img src="image/icon_weather_01_L.png" height="42"><br>어제</li>
-                    <li>22°<br><span style="color:rgb(180, 180, 180);">|</span>
+                    <li>19°<br>
+                    <span style="color:rgb(197, 193, 193);">|</span>
+                    <br>8°<br>
+                    <img src="image/icon_weather_01_L.png" height="42"><br>어제
+                    </li>
+                    <li>22°<br><span style="color:rgb(197, 193, 193);">|</span>
                     <br>7°<br>
-                    <img src="image/icon_weather_01_L.png" height="42"><br>오늘</li>
+                    <img src="image/icon_weather_01_L.png" height="42"><br>오늘
+                    </li>
                     <li>17°<br>
+                    <span style="color:rgb(197, 193, 193);">|</span>
+                    <br>11°<br>
+                    <img src="image/icon_weather_21_L.png"  height="42"><br>월</li>
+                    <li>18°<br>
                     <span style="color:rgb(180, 180, 180);">|</span>
-                    <br>11°<br><img src="image/icon_weather_21_L.png"  height="42"><br>월</li>
-                    <li>18°<br><span style="color:rgb(180, 180, 180);">|</span>
-                    <br>12°<br><img src="image/icon_weather_21_L.png"  height="42"><br>화</li>
-                    <li>17°<br><span style="color:rgb(180, 180, 180);">|</span>
-                    <br>4°<br><img src="image/icon_weather_01_L.png"  height="42"><br>수</li>
-                    <li>19°<br><span style="color:rgb(180, 180, 180);">|</span>
-                    <br>4°<br><img src="image/icon_weather_01_L.png"  height="42"><br>목</li>
-                    <li>19°<br><span style="color:rgb(180, 180, 180);">|</span>
-                    <br>6°<br><img src="image/icon_weather_01_L.png" height="42"><br>금</li>
-                    <li>19°<br><span style="color:rgb(180, 180, 180);">|</span>
-                        <br>8°<br><img src="image/icon_weather_01_L.png"  height="42"><br>토</li>
-                    <li>18°<br><span style="color:rgb(180, 180, 180);">|</span><br>6°<br><img src="image/icon_weather_01_L.png"  height="42"><br>일</li>
+                    <br>12°<br>
+                    <img src="image/icon_weather_21_L.png"  height="42"><br>화</li>
+                    <li>17°<br>
+                    <span style="color:rgb(197, 193, 193);">|</span>
+                    <br>4°<br>
+                    <img src="image/icon_weather_01_L.png"  height="42"><br>수</li>
+                    <li>19°<br>
+                    <span style="color:rgb(197, 193, 193);">|</span>
+                    <br>4°<br>
+                    <img src="image/icon_weather_01_L.png"  height="42"><br>목</li>
+                    <li>19°<br>
+                    <span style="color:rgb(197, 193, 193);">|</span>
+                    <br>6°<br>
+                    <img src="image/icon_weather_01_L.png" height="42"><br>금</li>
+                    <li>19°<br>
+                    <span style="color:rgb(197, 193, 193);">|</span>
+                    <br>8°<br><img src="image/icon_weather_01_L.png"  height="42"><br>토</li>
+                    <li>18°<br><span style="color:rgb(197, 193, 193);">|</span><br>6°<br><img src="image/icon_weather_01_L.png"  height="42"><br>일</li>
                     </span>
                         </ul>
                     </div>
-                    </p></details></td></table><br></div><div>
+                    </td>
+                    </table>
                         <table style=" margin: 0 auto;">
                         <table id="whitebox">
                             
-                        <tr><td width="245"><img src="image/코로나 19.png" alt="covid" height="17"><b> 코로나19</b></td><td width="300"><img src="image/팩트.png" height="17">
+                        <tr><td width="245"><img src="image/코로나 19.png" height="17"><b> 코로나19</b></td><td width="300"><img src="image/팩트.png" height="17">
                         <b> 코로나19 팩트체크</b></td></tr>
-                        <tr><td></span>국내외 확진 현황</span>
+                        <tr><td></span>&nbsp국내외 확진 현황</span>
                         </td>
                         <td>
-                        <span>백신 정보 팩트는?</span>
+                        <span>&nbsp백신 정보 팩트는?</span>
                         </td>
                         </tr>
                         </table>
@@ -258,10 +224,9 @@ overflow-x: auto;
                     </div>
                         <table id="whitebox">
                     <td><img src="image/naver.png" width= "20" height="20">
-            앱으로 <b>새로운 네이버</b>를  더 쾌적하게 사용해보세요   
-            <type="button" value="앱 사용하기"> </td>
-                    </table>
-                </table>
+                앱으로 <b>새로운 네이버</b>를  더 쾌적하게 사용해보세요   
+                </td>
+            </table>
                 <br>
 
                     <div>
@@ -281,25 +246,29 @@ overflow-x: auto;
                         <td align=right><span style="color:gray">판관리</span></td>
                     </tr>
                     <tr>
-                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK")><img src="image/영화판.png"  height="20"><span> 영화판</span>
+                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK")><img src="image/영화판.png"  width="20" height="20">
+                            영화판
                         </td>
-                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK"><img src="image/뿜판.png"  height="20"><span> 뿜판</span>
+                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK"><img src="image/뿜판.png"  width="20" height="20">
+                            뿜판
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK"><img src="image/웹툰판.png"  height="20"><span> 웹툰판</span>
+                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK"><img src="image/웹툰판.png"  width="20" height="20">
+                            웹툰판
                         </td>
-                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK"><img src="image/경제M판.png" height="20"><span style="color:gray"> 경제M판</span>
+                        <td style="padding: 5px;" width="200" bgcolor="#FDFDFK"><img src="image/경제M판.png" width="20" height="20">
+                            경제M판
                         </td>
                     </tr>
                     </table>
                     <br>
                 
-                    <div id="notify">
+                    <div>
                     <table id="whitebox">
                     <td><button style="background-color: white; color:#00D05C; padding: 2px; border: 1.5px solid #00D05C;
-                        border-radius: 10px;">알립니다</button> 네이버앱 업데이트 사전 안내</td>
-                    <td align=right> -- </td>
+                        border-radius: 5px;">알립니다</button> 네이버앱 업데이트 사전 안내</td>
+                    <td align=right> -> </td>
                     </table>
                     </div> 
                     <br>                   
@@ -307,7 +276,7 @@ overflow-x: auto;
         </div>
         <div style="text-align: center;">
             <div style="font-size: 15pt;">
-            <div style="color:rgba(16, 19, 13, 0.411)")
+            <div style="color:rgba(16, 19, 13, 0.411)")>
         <div id="bottom" role="navigation">
             <ul class="group">
                 <span>로그인</span> | 
