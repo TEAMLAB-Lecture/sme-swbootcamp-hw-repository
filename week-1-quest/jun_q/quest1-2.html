@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <style>
+            header{
+				text-align: center;
+				width: 800px;
+			}
+            body{
+				background-color: #f0f4f8;
+			}
+            .container{
+				width: 800px;
+				margin: 0 auto;
+			}
+            #title{
+				font-size: 75px;
+				font-weight: bold;
+				color: green;
+			}
+            .search_box {
+                  width: 600px;
+                  height: 50px;
+                  border: 2px solid #03cf5d;
+                  display: flex;
+                  align-items: center;
+                  margin-left :100px;
+            }
+            .search_box input {
+                  flex: 9; 
+                  height: 46px;
+                  padding-left: 12px;
+                  padding-right: 12px;
+                  border: none;
+                  outline: none;
+                  font-size: 18px;
+            }
+            .search_box button {
+                  flex: 1; 
+                  height: 46px;
+                  margin: 0;
+                  padding: 0;
+                  border: none;
+                  outline: none;
+                  background: #03cf5d;
+                  color: #ffffff;
+            }
+            fieldset {
+                  border: none; 
+            }
+            nav{
+				width: 400px;
+				margin-top: 30px;
+				margin-bottom: 300px;
+				margin-left :225px;
+			}
+            .nav_b{
+				width : 50px;
+				height: 100px;
+				float: left;
+				text-align: center;
+				font-size: 10px;
+				padding: 20px;
+			}
+            #today,#weather,#corona,#pan,#using,#webtoon,#pan,#inform{
+                border: 1px solid white;
+				margin-bottom: 20px;
+				height: auto;
+                width: 800px;
+				overflow: hidden;
+				background-color: white;
+				border-radius: 10px;
+			}
+            #today p{
+				text-align: left;
+				margin-left: 15px;
+			}
+            .weather_b{				
+				width: 150px; height: 30px;
+				margin: 5px;
+				float:left;
+                text-align: center;
+				background-color: #f0f4f8;
+			}
+            #government{
+                border: 1px solid white;
+				margin-bottom: 20px;
+				height: auto;
+				overflow: hidden;
+				text-align: center;
+				background-color: white;
+				border-radius: 5px;   
+            }
+            .pan_b{
+                width: 365px;
+				height: 50px;
+				margin: 3px;
+				float: left;
+				background-color: #f0f4f8;
+            }
+            #last{
+                margin-left :250px;
+                text-align: center;
+            }
+        </style>
+	</head>
+	<body>
+        <div><img src="image/level.jpg" alt="" width="50px" height="50px">
+        <img style="float: right;" src="image/mail.PNG" width="50px" height="50px"alt="mail이겠쥐?">
+        <img style="float: right;" src="image/npay.PNG" width="50px" height="50px"alt="npay이겠쥐?">
+        <img style="float: right;" src="image/qrch.PNG" width="50px" height="50px"alt="qr이겠쥐?"></div>
+        
+        
+        
+        
+        
+        <div class="container">
+		<header>
+            <h1 id="title">Naver</h1>
+            <form>
+                <fieldset>
+                  <div class="search_box">
+                    <input type="text" style="height: 50px; width: 600px;   border:0 solid black;" value="검색어를 입력해주세요"/>
+                  </div>
+                </fieldset>
+            </form>
+		</header>
+<nav>
+            <div class="nav_b"><img src="image/news.png" width="60px" height="60px">뉴스판</div>
+            <div class="nav_b"><img src="image/enter.png" width="60px" height="60px">경제지표판</div>
+            <div class="nav_b"><img src="image/economy.png" width="60px" height="60px">연예판</div>
+            <div class="nav_b"><img src="image/trend.png" width="60px" height="60px">트렌드판</div>
+            <div class="nav_b"><img src="image/maail.png" width="60px" height="60px">메일</div>
+            <div class="nav_b"><img src="image/cafe.png" width="60px" height="60px">카페</div>
+            <div class="nav_b"><img src="image/blog.png" width="60px" height="60px">블로그</div>
+            <div class="nav_b"><img src="image/etc.png" width="60px" height="60px">...</div>
+</nav>      
+		<section>
+			<div id="today">
+				<p class="coronab"><img src="image/moon.PNG"
+                    width="50px" height="50px" alt="날씨 아이콘"> 10ºC 맑음</p>
+				<p>어제보다 2º 높아요.</p>
+			</div>
+			<div id="weather">
+				<p style="margin-left: 30px;"> <strong>날씨</strong>  런던의 날씨</p>
+				<div class="weather_b">시간대별 날씨</div>
+				<div class="weather_b">시간대별 미세먼지</div>
+				<div class="weather_b">주간날씨</div>
+                <div class="weather_b">주간미세먼지</div><br><br>
+				 <div ><img src="image/weather.PNG"
+                     alt="날씨 예보사진"  width="800px" height="250px"/></div>
+			</div>
+            <div id="corona">
+			    <table style="margin: auto; " >
+                    <tr>
+                        <th><img src="image/covid.jpg"
+                            width="50px" height="50px" alt="코로나 19 아이콘">코로나19 </th> 
+                        <th > <img src="https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/1jLN/image/AHk_EcDFnbDt8FM7lbemcM1vxa4.png"
+                            width="50px" height="50px" alt="ox 아이콘">국내외 확진 현황</th> 
+                    </tr>
+                    <tr>
+                        <td >코로나19 팩트체크</td> <td style="text-align: right;">백신 정보 팩트는?</td>
+                    </tr>
+			    </table>
+            </div>
+			<div id="government">
+				<p><img src="image/gov.PNG"
+                    width="50px" height="50px" alt="102주년 아이콘">
+                    제102주년 <strong>대한민국 임시정부 수립일</strong>
+                </p>
+			</div>
+			<div id="using">
+				<p style="margin-left: 20px;"> <img src="image/app.PNG"
+                    width="50px" height="50px" alt="네이버 아이콘">
+                    앱으로 새로운 네이버를 더 쾌적하게 사용해보세요.
+                </p>
+			</div>
+			<div id="webtoon">
+				<p style="font-weight: bold; margin-left: 30px;">웹툰</p>
+			</div>
+			<div id="pan">
+				<p style="margin-left: 25px;" >인기 주제 판을 확인해 보세요!</p>
+                <table>
+                    <tr>
+                        <td class="pan_b" style="margin-left: 25px; "> <img src="image/movie.PNG" 
+                            alt="필름 아이콘" width="50px" height="50px"> 영화관</td>
+                        <td class="pan_b" style="margin-right: 25px; float: right;"><img src="image/bboom.PNG" 
+                            alt="뿜판 아이콘" width="50px" height="50px">뿜판</td>
+                    </tr>
+                    <tr>
+                        <td class="pan_b" style="margin-left: 25px;"><img src="image/webtoon.PNG" 
+                            alt="웹툰판 아이콘" width="50px" height="50px">웹툰판</td>
+                        <td class="pan_b" style="margin-right: 25px;"><img src="image/economy.png" 
+                            alt="경제판 아이콘" width="50px" height="50px">경제판</td>
+                    </tr>
+                </table>
+
+			</div>
+			<div id="inform" style="text-align: left; ">
+                <img style="margin-left: 20px;" src="https://cdn-icons-png.flaticon.com/512/1301/1301416.png"
+                width="50px" height="50px" alt="알리미 아이콘">
+                네이버앱 업데이트 사전안내</div>
+		</section>
+
+		<footer >
+            <table id ="last">
+                <tr>
+                    <td >로그인</td>
+                    <td >전체서비스</td>
+                    <td >pc버전</td>
+                </tr>
+                <tr>
+                    <td>이용약관</td>
+                    <td style="font-weight: bold;">개인정보처리방침</td>
+                    <td>고객센터</td>
+                </tr>
+            </table>
+            <div style="margin-left: 360px; font-weight: bold;"><b>NAVER</b></div>
+		</footer>
+        </div>
+	</body>
+</html>
