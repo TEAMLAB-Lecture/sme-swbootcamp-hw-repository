@@ -1,0 +1,59 @@
+html{
+    background-color: whitesmoke;
+}
+
+
+div{
+    border: solid white;
+    background-color: white;  
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#newspan,#trendpan,#lovepan,#economicpan,#blog,#cafe,#mail,#others{
+    background-color: white;
+    border: 0;
+    outline: 0;
+    
+}
+#mainpage {
+    color: green;
+    font-size: 60px;
+}
+
+#searchpanel{
+    border-color: green;
+    width: 400px;
+    
+}
+
+#searchbutton{
+    border-color: green;
+}
+
+#weather{
+ 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#corona, #coronafact, #gfdb  {
+      background-color: whitesmoke;
+      border: 0;
+      outline: 0;
+
+}
+
+#weathersection  button{
+    background-color: whitesmoke;
+      border: 0;
+      outline: 0;
+}
