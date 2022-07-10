@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <style>
+            #logotype{
+                margin-left: 4rem;
+            }
+            html{
+                text-align: center;
+                background: linear-gradient(white, rgba(203, 202, 202, 0.266));
+
+            }
+            
+            #list{
+                float: left
+            }
+            
+            .righttop table{
+                float: right
+            }
+
+            .desk_text  a{
+                text-decoration: none;
+                text-decoration-line: none;
+                color: gray;
+            }
+
+            #desk{
+                width: 35%;
+                margin: auto;
+                padding-top: 1%;
+                size: 30%;
+                padding-bottom: 150px;
+                
+            
+                
+            }
+            #tailtag {
+                
+                width: 40rem;
+                margin: auto;
+
+                background-color: white;
+                padding: 0.8%;
+                margin-bottom: 1rem;
+
+            }
+            #tailtag_p, #tailtag_h1 {
+                text-align: left;
+                font-size: 15px;
+                
+                
+            }
+            #tailtag_img{
+                float: left;
+                width: 50px;
+                padding-top: 10px;
+            }
+
+            #weatherlist{
+                
+                border-collapse: separate;
+                border-spacing: 9px;
+                
+            }
+            
+            .wtd{
+                background-color: rgba(207, 207, 224, 0.64);
+                padding: 10px;
+                
+            }
+
+            .wtd  a{
+                text-decoration: none;
+                text-decoration-line: none;
+                color: rgba(44, 44, 44, 0.822);
+                font-weight: 550;
+            }
+            
+            #날씨{
+                width: 40rem;
+                margin: auto;
+                padding: 0%;
+                background-color: white;
+                padding-left: 0.8%;
+                padding-right: 0.8%;
+                
+                
+            }
+            #날씨text{
+                text-align: left;
+                width: 1%;
+            
+            }
+            #weathertable{
+                width: 40rem;
+                padding-bottom: 1.5rem;
+            }
+            #wt_days, #wt_tem2{
+                color: rgb(65, 64, 64);
+                font-size: 15px;
+            }
+            #line{
+                color: rgba(126, 126, 126, 0.514);
+                font-size: 28px;
+            }
+
+            .covid19{
+                width: 19rem;
+                text-align: left;
+                display: inline-block;
+                background-color: white;
+                padding-left: 0.8%;
+                padding-right: 0.8%;
+
+
+                margin-top: 1rem;
+                
+            }
+
+            .covid19 p {
+                font-size: 15px;
+                color: rgb(65, 64, 64);
+            }
+            .covid19 h1{
+                font-size: 18px;
+            }
+            #korea{
+                width: 40rem;
+                margin: auto;
+                background-color: white;
+                padding-left: 0.8%;
+                padding-right: 0.8%;
+                padding-top: 1px;
+                padding-bottom: 1px;   
+                margin-bottom: 1rem;             
+                
+            }
+            
+            #korea table{
+                margin: auto;
+                font-size: 17px;
+            }
+
+            #주년{
+                color: gray;
+            }
+            #수립{
+                font-weight: 800;
+            }
+            #appuse{
+                width: 40rem;
+                margin: auto;
+                background-color: white;
+                padding-left: 0.8%;
+                padding-right: 0.8%;
+                
+                padding: 0.7rem;
+                margin-bottom: 1rem;
+                color: gray;
+                border-collapse: separate;
+                display: inline-block;
+                
+                }
+
+            #appuse table{
+                padding-right: 3rem;
+            }
+            .app{
+                float: left;
+            }
+            
+            #newnaver{
+                font-weight: bold;
+                color: black;
+            }
+
+
+            #appuse button{
+                appearance: none;
+                background-color: white;
+                border: 2px solid rgb(53, 129, 201);
+                border-radius: 8%;
+                float: right;
+                color: rgb(53, 129, 201);
+                align-self: center;
+                font-size: 1rem;
+                font-weight: 900;
+                line-height: 1;
+                margin: 0.5rem;
+                padding: 0.7em 0.9em;
+                text-decoration: none;
+                text-align: center;
+                margin-top: 0.9rem;
+                
+                
+                
+
+                
+
+                
+            }
+
+            #웹툰{
+                width: 40rem;
+                margin: auto;
+                background-color: rgb(255, 255, 255);
+                text-align: left;
+                padding-left: 0.8%;
+                padding-right: 0.8%;
+                padding-top: 0.1rem;
+                padding-bottom: 0.1rem;
+                margin-bottom: 1rem;
+            }
+
+            #인기table{
+                width: 40rem;
+                padding: 1rem
+            }
+            #hh{
+                text-align: left;
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+
+            #인기table a{
+                text-decoration: none;
+                text-decoration-line: none;
+                color: gray;
+                text-align: right;
+
+            }
+
+            #인기{
+                width: 40rem;
+                margin: auto;
+                background-color: white;
+                padding-left: 0.8%;
+                padding-right: 0.8%;
+                padding-top: 0.1rem;
+                padding-bottom: 0.1rem;
+                margin-bottom: 1rem;
+                
+            }
+            #four{
+                margin: auto;
+                border-collapse: separate;
+                border-spacing: 10px;
+                width: 40rem;
+                text-align: left;
+                
+                
+                
+            }
+            .fou {
+                background-color: rgba(230, 234, 238, 0.482);
+                font-size: 1rem;
+                color: gray;
+                padding: 0.5rem;
+                
+            }
+
+            #notice{
+                width: 40rem;
+                margin: auto;
+                background-color: white;
+                padding-left: 0.8%;
+                padding-right: 0.8%;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 3rem;
+            }
+
+            #notice a{
+                text-decoration: none;
+                text-decoration-line: none;
+                color: black;
+            }
+            .oneline a, .twoline a{
+                text-decoration: none;
+                text-decoration-line: none;
+                color: gray;
+            }
+
+            #stick{
+                color: gray;
+                font-size: 17   px;
+                
+            }
+            #end{
+                font-weight: bold;
+                font-size: large;
+                color: rgba(66, 66, 66, 0.64);
+            }
+
+
+
+
+            
+                #search_window{
+                font-size: 20px;
+                color: gray;
+                border-color: hsl(120, 76%, 50%);
+                width: 40rem;
+                line-height: 3;  
+                background-image: url(Q1.img/Q1.searchright.png);
+                background-repeat: no-repeat;
+                background-position: 31rem;
+                background-size: 9rem;
+                
+                
+                
+
+            }
+
+            
+            
+            
+            
+
+
+        </style>
+		
+        <title>NAVER</title>
+	</head>
+	<body>
+		<header>
+            <a id="list" href=""><img src="Q1.img/Q1.list.png" width="60px"></a>
+            <section class="righttop">
+            <table>
+                <tr>
+                    <td><img src="Q1.img/Q1.qr.png" width="60px"></td>
+                    <td><img src="Q1.img/Q1.npay.png" width="60px"></td>
+                    <td><img src="Q1.img/Q1.,mail.png" width="40px"></td>
+                </tr>
+            </table>
+        </section>
+            <br>
+            <br>
+            <a href="" id="logotype"><img src="Q1.img/Naver_Logotype.svg.png" width="190"></a>
+            <br>
+            <br>
+            <input type="text" value="검색어를 입력해주세요." id="search_window">
+            
+            <table id="desk">
+            <tr>
+                <td>
+                <div class="desk_img"><a href=""> <img  src="Q1.img/Q1.뉴스판.png" width="60"  ></div>
+                <div class="desk_text"><a href="">뉴스판</a></div>
+                </td>
+                <td>
+                <div class="desk_img"><a href=""> <img src="Q1.img/Q1.2.png" width="60"></div>
+                <div class="desk_text"><a href="">경제지표판</a></div>    
+                </td>    
+                <td>
+                <div class="desk_img"><a href=""> <img src="Q1.img/Q1.3.png" width="60"></div>
+                <div class="desk_text"><a href="">연예판</a></div>    
+                </td>
+                <td>
+                <div class="desk_img"><a href=""> <img  src="Q1.img/Q1.4.png" width="60"></div>
+                <div class="desk_text"><a href="">트렌드판</a></div>    
+                </td>
+            
+            <tr>
+            <td>
+                <div class="desk_img"><a href=""> <img  src="Q1.img/Q1.5.png" width="60"></div>
+                <div class="desk_text"><a href="">메일</a></div>    
+            </td>>
+            <td>
+                <div class="desk_img"><a href=""> <img  src="Q1.img/Q1.6.png" width="60"></div>
+                <div class="desk_text"><a href="">카페</a></div>    
+            </td>>        
+            <td>
+                <div class="desk_img"><a href=""> <img  src="Q1.img/Q1.7.png" width="60"></div>
+                <div class="desk_text"><a href="">블로그</a></div>    
+            </td>
+            <td>
+                <div class="desk_img"><a href=""> <img  src="Q1.img/Q1.8.png" width="60"></div>
+                <div class="desk_text"><a href="">&nbsp</a></div>    
+            </td>
+            </tr>    
+
+            </table>
+            
+		</header>
+
+        
+
+        
+        <section id="tailtag">
+            <img id="tailtag_img" ara src="Q1.img/Q1.moon.png" >
+            <h1 id="tailtag_h1">10º맑음</h1>
+            <p id="tailtag_p">어제보다2º높아요</p>
+
+        </section>    
+        
+        
+		
+        <section id="날씨">
+			<table name="날씨text">
+                <tr>
+                    <td><h1>날씨</h1></td>
+                    <td><p>부산 남구</p></td>
+                    <td><img src="Q1.img/Q1.place.png" width="20px"></td>
+                </tr>
+            </table>
+            
+        
+            <table id="weatherlist">
+                <td>
+                    <td class="wtd"><div><a href="">시간대별 날씨</a></div></td>
+                    <td class="wtd"><div><a href="">시간대별 미세먼지</a></div></td>
+                    <td class="wtd"><div><a href="">주간 날씨</a></div></td>
+                    <td class="wtd"><div><a href="">주간 미세먼지</a></div></td>
+                    </tr>
+                
+
+            
+            <table id="weathertable">
+                <tr>
+                    <td>19º</td><td>22º</td><td>17º</td><td>18º</td><td>17º</td><td>19º</td><td>19º</td><td>19º</td><td>18º</td>
+                </tr>
+
+                <tr id="line">
+                    <td>|</td><td>|</td><td>|</td><td>|</td><td>|</td><td>|</td><td>|</td><td>|</td><td>|</td>
+                </tr>
+
+                <tr id="wt_tem2">
+                    <td>8º</td><td>7º</td><td>11º</td><td>12º</td><td>4º</td><td>4º</td><td>6º</td><td>8º</td><td>6º</td>
+                </tr>
+
+                <tr>
+                    <td><img src="Q1.img/Q1.sunny .png" height="50"></td>
+                    <td><img src="Q1.img/Q1.sunny .png" height="50"></td>
+                    <td><img src="Q1.img/Q1.rain.png" height="50"></td>
+                    <td><img src="Q1.img/Q1.rain.png" height="50"></td>
+                    <td><img src="Q1.img/Q1.sunny .png" height="50"></td>
+                    <td><img src="Q1.img/Q1.sunny .png" height="50"></td>
+                    <td><img src="Q1.img/Q1.sunny .png" height="50"></td>
+                    <td><img src="Q1.img/Q1.sunny .png" height="50"></td>
+                    <td><img src="Q1.img/Q1.sunny .png" height="50"></td>
+                </tr>
+
+                <tr id="wt_days">
+                    <td>어제</td><td>오늘</td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td><td>일</td>
+                </tr>
+
+                
+                </table>
+
+            </section>
+        
+        <div class="covid">
+        
+            <div class="covid19">
+                <h1><img src="Q1.img/Q1.covid19.png" height="35" >코로나19</h1>
+                <p>국내외 확진 현황</p>
+                
+            </div>        
+        
+            <div class="covid19">
+                <h1><img src="Q1.img/Q1.fact.png" height="35">코로나19 팩트체크</h1>
+                <p>백신 정보 팩트는?</p>
+            </div>
+        </div>
+
+        <br>
+        <section id="korea">
+            <table>
+                <tr>
+                    <td><img src="Q1.img/Q1.korea.png" width="50"></td>
+                    <td><p id="주년">제 102주년</p></td>
+                    <td><p id="수립">대한민국 임시정부 수립일</p></td>
+                </tr>
+            </table>
+
+        </section>    
+        
+        <section id="appuse">
+            <div class=app><table>
+                <tr>
+                    <td><img src="Q1.img/Q1.naverlogo.png"width="60"></td>
+                    <td>앱으로</td>
+                    <td id="newnaver">새로운 네이버</td>
+                    <td>를 더 쾌적하게 사용해 보세요.</td>
+                    
+                </tr>
+            </table>
+            </div>
+            <div class="app"><button>앱사용하기</button>
+            </div>
+
+        </section>
+        
+        <section id="웹툰">
+            <h1>웹툰</h1>
+        </section>
+        
+        <section id="인기">
+            <table id="인기table">
+            <td id="hh">인기 주제 판을 확인해 보세요!</td>
+            <td id="판관리" ><a href="">판관리</a></td>
+        </table>
+            <table id="four">
+                <tr>
+                    <td class="fou"><img src="Q1.img/Q1.movie.png" height="25rem"> 영화관</td>
+                    <td class="fou"><img src="Q1.img/Q1.boom.png" height="25rem">뿜판</td>
+                </tr>
+                <tr>
+                    <td class="fou"><img src="Q1.img/Q1.webtoon.png" height="25rem">웹툰판</td>
+                    <td class="fou"><img src="Q1.img/Q1.econo.png" height="25rem">경제M판</td>
+                </tr>
+            </table>
+
+
+        </section>
+
+        <section id="notice">
+            <table>
+                <tr>
+                    <td><img src="Q1.img/Q1.notice.png" width="70rem"></td>
+                    <td><a href= "">네이버앱 업데이트 사전 안내</a></td>
+                </tr>
+            </table>
+            
+
+        </section>
+
+		<footer>
+			<div class="oneline">
+            <span><a href="">로그인</a></span>
+            <span id="stick">|</span>
+            <span><a href="">전체서비스</a></span>
+            <span id="stick">|</span>
+            <span><a href="">PC버전</a></span>
+            
+            </div>
+            
+            <div class="twoline">
+            <span><a href="">이용약관</a></span>
+            <span id="stick">|</span>
+            <span><a href="">개인정보처리방침</a></span>
+            <span id="stick">|</span>
+            <span><a href="">고객센터</a></span>
+            <br><br>
+            
+            <span id="end">NAVER</span>
+            </div>    
+
+        
+            
+            
+
+		</footer>
+	</body>
+</html>
