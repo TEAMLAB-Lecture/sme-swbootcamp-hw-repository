@@ -7,7 +7,7 @@
     <title>NAVER</title> 
     <style type="text/css">
     
-    body{background: linear-gradient( to bottom, yellow, red ); 
+    body{background: linear-gradient( to bottom, white,#e6e8e9 ,#d6dadd  ); 
     }
 
 
@@ -102,41 +102,18 @@ background-color:#7493CC;
 color:white;
 }
 
-#useapp button{
-background-color: white;
-color:#4E99DF;
-padding: 5px;
-border: 1px solid #4E99DF;
-}
-
-#notify button{
-background-color: white;
-color:#00D05C;
-padding: 2px;
-border: 1.5px solid #00D05C;
-border-collapse: collapse;
-border-radius: 10px;
-outline: none;
-}
-
 
 li {
 float: left;
-margin-bottom: 20px;
-margin-left: 18px;
+margin-bottom: 15px;
+margin-left: 15px;
 }
 
 .container {
 display: flex;
 overflow-x: auto;
 }
-
-.container img {
-width: 50px;
-margin: 2px;
-}
-
-        </style> 
+</style> 
 
     
 </head>
@@ -150,12 +127,14 @@ margin: 2px;
             </select>
         </div>
         <div class="head-m">
+            <div style=" position: relative; bottom:20px; left: 5px; ">
             <a href="https://nid.naver.com/login/privacyQR"><img src="image/몰라.png" style="float:right"; right width="40" height="25"></a>
             <a href="https://event2.pay.naver.com/event/paymentBenefit/view"><img src="image/페이.png" style="float: right"; width="40" height="25"></a>
             <a href="https://nid.naver.com/login/privacyQR"><img src="image/qr 체크인.png" style="float:right"; width="40" height="25"></a>
+            </div>
 
 
-        </div>
+        </sty>
         <br>
         <div class="NAVER">
         <div style="text-align: center;">
@@ -189,14 +168,12 @@ margin: 2px;
             </td>
             <td><a href="https://section.blog.naver.com/BlogHome"><img src="image/블로그.png" width="44" height="44"></a>
             </td>
-            <td>&nbsp&nbsp<img src= "image/더보기.png" width="44" height="44"><div class="sel-lang-wrap"><select class="lang-select"><option>더보기
-
-            </option></div>
+            <td>&nbsp&nbsp<img src= "image/더보기.png" style=" position: relative; top: 2px; left: 2px; width: 44px; height:44px;"
             </td>
             
         </tr>
         <tr>
-            <td>&nbsp&nbsp&nbsp메일</td> <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp카페</td> <td>블로그</td> <td>&nbsp</td> 
+            <td>&nbsp&nbsp&nbsp메일</td> <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp카페</td> <td>블로그</td> <td>&nbsp</td> 
 
         </tr>
         </table>
@@ -205,17 +182,16 @@ margin: 2px;
         <section class="main">
             <div>
             <table id="whitebox">
-            <tr rowspan="2">
-                <td rowspan="2"><img src="image/달2.png" height="44" width="44"></td> 
-                <td valign=bottom><b>10°맑음</b></td>
+                <td rowspan="3"><img src="image/달2.png" height="30" width="30"></td> 
+                <td valign=bottom style="float:left";><b>10°맑음</b></td>
                 <td rowspan="3">
                 <div class="container">
-                <img src= "image/방송중.png" width="200" height="50">
+                <img src= "image/방송중.png" align="right" width="200px" height="60px";>
                 </div>
                 </td>
             </tr>
             <tr>
-                <td valign=top>어제보다 2° 높아요 </td>
+                <td style="float:left";>어제보다 2° 높아요 </td>
             </tr>
             </table>
             <br>
@@ -223,10 +199,9 @@ margin: 2px;
         
             <div>
             <table id="whitebox">
-                <td>
-            <details open> 
-                    <strong>날씨</strong> 서울시 잠실동 <img src="image/lock.png" width="20">
-                    <p>
+                <td valigin="top">
+                    <strong>날씨</strong> 부산시 동구 <img src="image/lock.png" width="20" height="20">
+                <p></p>
                     <div id="buttons">
 
                 <button ="#">시간대별 날씨</button>
@@ -275,10 +250,17 @@ margin: 2px;
                         </table>
                         <br>
                     </div>
-                <table id="whitebox">
+                    <div>
+                        <table id="whitebox">
+                    <td style="text-align:center"><span style="color:black;"><img src="image/독립.png" style="position :absolute" height="20px">제 102주년<b> 대한민국 임시정부 수립일</b></span></td>
+                        </table>
+                        <br>
+                    </div>
+                        <table id="whitebox">
                     <td><img src="image/naver.png" width= "20" height="20">
             앱으로 <b>새로운 네이버</b>를  더 쾌적하게 사용해보세요   
             <type="button" value="앱 사용하기"> </td>
+                    </table>
                 </table>
                 <br>
 
@@ -315,12 +297,13 @@ margin: 2px;
                 
                     <div id="notify">
                     <table id="whitebox">
-                    <td><button>알립니다</button> 네이버앱 업데이트 사전 안내</td>
+                    <td><button style="background-color: white; color:#00D05C; padding: 2px; border: 1.5px solid #00D05C;
+                        border-radius: 10px;">알립니다</button> 네이버앱 업데이트 사전 안내</td>
                     <td align=right> -- </td>
                     </table>
-                    </div>
-                    <table style="margin: 50px"></table>
-                    </section>
+                    </div> 
+                    <br>                   
+                </section>
         </div>
         <div style="text-align: center;">
             <div style="font-size: 15pt;">
