@@ -2,7 +2,7 @@
 @charset "UTF-8";
 
 body {
-    background: linear-gradient(white,aliceblue);
+    background: linear-gradient(white 25%,#E9F1F7);
 }
 
 .search {
@@ -165,4 +165,20 @@ body {
 .sub_menu_box_align {
     display: flex; justify-content: baseline; align-items: center;
     padding-bottom: 5px;
+}
+
+#font-style {
+    font-size: medium;
+    color: gray;
+}
+
+#text-border-style {
+    border: 1px solid gray; border-radius: 30%;
+    background-color: gray; color: white;
+    font-size: small; width: 35px; height: 16px;
+    text-align: center; padding-top: 3px; margin-left: 15px;
+}
+
+td {
+    text-align: center;
 }
