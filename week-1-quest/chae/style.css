@@ -1,0 +1,184 @@
+
+@charset "UTF-8";
+
+body {
+    background: linear-gradient(white 25%,#E9F1F7);
+}
+
+.search {
+    display:flex;
+    border: 1px solid #01C75B;
+    border-radius: 6px;
+    justify-content:space-between; align-items: center;
+    color: lightgray; margin: 0px 320px 0px 320px;
+}
+
+#menu_table {
+    display: table;
+    width: 40%;
+    border-collapse: separate;
+}
+
+.row {
+    display: table-row;
+    color:lightgray;
+}
+
+.row_image {
+    display: table-row;
+}
+
+#row_image {
+    width:30px; height:30px;
+    border: 1px solid #F4F8FB;
+    border-radius: 20px;
+    border-width: 15px;
+}
+
+.cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle; 
+    font-size: small;
+}
+
+.cell_image {
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.item {
+    padding: 5px 5px 5px 5px;
+}
+
+.description {
+    display:flex;
+    background-color: white;
+    justify-content:space-between;
+    align-items:center;
+    margin:0px 320px 10px 320px;
+    display: flex;
+    border-radius: 5%;
+    margin-top:200px;
+}
+
+.wind_box {
+    background-color: white; margin:0px 320px 10px 320px;
+    padding-bottom: 20px;
+}
+
+.square_box_wind {
+    display: flex;
+    background-color: #F4F6FC; border: 1px solid white;
+    margin-left: 5px; height: 30px;
+    align-items:center;
+    padding: 5px 15px 5px 15px;
+}
+
+.square_dark_box_wind {
+    display: flex;
+    background-color:#7896CA;
+    margin-left: 5px; height: 30px;
+    align-items:center;
+    padding: 5px 15px 5px 15px;
+}
+
+.korea {
+    display: flex; background-color: white;
+    margin:0px 320px 10px 320px;
+    display: flex; justify-content: center;
+    align-items: center;
+}
+
+.webtoon {
+    display: flex; justify-content: space-between; align-items: center;
+    background-color: white; margin:0px 320px 10px 320px;
+}
+
+.corona {
+    display: flex;
+    background-color: white;
+    margin: 0px 320px 10px 320px;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.corona_line_image {
+    align-self: right;
+    width: 20px;
+}
+
+.corona_image {
+    width: 288px;
+    padding-left: 10px;
+}
+
+.use_app {
+    border: 1px solid #529ADD;
+    width:80px;
+    height:20px;
+    text-align: center;
+    font-size: medium;
+    color:#529ADD
+}
+
+.naver_app {
+    background-color: white; margin:0px 320px 10px 320px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-direction: row; padding: 20px 20px 20px 20px;
+}
+
+.sub_box {
+    background-color: white; margin:0px 320px 10px 320px;
+    padding: 20px 20px 20px 20px;
+}
+
+#sub_image {
+    width:30px; height:30px;
+    padding-left: 10px;
+}
+
+#sub_text {
+    color: gray;
+    padding-left: 10px;
+}
+
+.upadte_box {
+    background-color: white; margin:0px 320px 10px 320px;
+    display: flex; justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+}
+
+#notice_box {
+    color: #13CD5E; border: 1px solid #13CD5E;
+    padding:2px 5px 2px 5px; border-radius: 30%;
+    font-size: small;
+}
+
+.sub_menu_box {
+    display: flex; justify-content: space-between; align-content: center;
+    background-color: #F5F7F9; width: 50%; margin-right: 5px;
+    padding :5px 5px 5px 5px;
+}
+
+.sub_menu_box_align {
+    display: flex; justify-content: baseline; align-items: center;
+    padding-bottom: 5px;
+}
+
+#font-style {
+    font-size: medium;
+    color: gray;
+}
+
+#text-border-style {
+    border: 1px solid gray; border-radius: 30%;
+    background-color: gray; color: white;
+    font-size: small; width: 35px; height: 16px;
+    text-align: center; padding-top: 3px; margin-left: 15px;
+}
+
+td {
+    text-align: center;
+}
