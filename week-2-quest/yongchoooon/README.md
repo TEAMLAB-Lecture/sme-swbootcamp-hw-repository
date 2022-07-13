@@ -6,6 +6,6 @@
 - Database modeling
 ### Assignment 1 - To Do List
 - My Assignment : 
-### Quest 2 - Database modeling with Workbench
+### Assignment 2 - Database modeling with Workbench
 - My Assignment
   - 
