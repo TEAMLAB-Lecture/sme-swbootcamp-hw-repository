@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- TODO: 또 무엇이 필요할까요? -->
+		<title>Naver clone coding</title>
+		<div>
+		<img src="img/네이버 메뉴.PNG" width="30" height="30" alt="네이버 메뉴">
+		
+		<div style = "float: right";>
+			<img src="img/qr체크인.PNG"  alt="qr체크인" width="100" height="50">
+			<img src="img/네이버페이.PNG" width="100" height="50">
+			<img src="img/문서함.PNG" width="50" height="50">
+		</div>
+		</div>
+		
+			<br><br><br><br><br>
+		
+	</head>
+	<body>
+		<header>
+			<!-- TODO: 어디까지를 header로 보는 것이 좋을까요? -->
+			<!-- 네이버 로고 -->
+			<div align="center";>
+				
+				<img src="img/네이버 로고.PNG">
+			</div>
+			<div class="search bar" align="center";>
+			<!-- 네이버 검색창 -->
+			<form action="search_bar">
+			
+					<input type="search" name="searchv" placeholder="검색어를 입력해주세요." size="100" >
+					<img src="img/마이크.PNG">
+				<img src="img/카메라.PNG">
+				<img src="img/위치.PNG">
+				</form>
+			</div>
+			<div>
+			<!-- 여러가지 판들과 메일 같은 작은 버튼들 -->
+			<table align="center">
+				<thead>
+					<tr>
+						<th><img src="img/뉴스판.PNG"></th> <th><img src="img/경제지표판.PNG"></th> <th><img src="img/연예판.PNG"></th> <th><img src="img/트렌드판.PNG"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr align="center";>
+						<td >뉴스판</td> <td>경제지표판</td> <td>연예판</td> <td>트렌드판</td>
+					</tr>
+				</tbody>
+				<thead align="center";>
+					<tr>
+						<th><img src="img/메일.PNG"></th> <th><img src="img/카페.PNG"></th> <th><img src="img/블로그.PNG"></th> <th><img src="img/더보기 ....PNG"></th> 
+					</tr>
+					<tbody align="center";>
+						<tr>
+							<td>메일</td> <td>카페</td> <td>블로그</td> <td> </td>
+						</tr>
+					</tbody>
+				</thead>
+			</table>
+			</div>
+			
+		</header>
+
+		
+		<br><br><br><br><br><br>
+		
+		<section align="center" class="main" >
+			<!-- TODO: main은 어떤 식으로 나눌 수 있을까요? -->
+			<!-- 일단 전체 날씨와 now 방송 하나<br> -->
+			<table align="center">
+				<td><img src="img/전체 날씨 1.PNG" width="200" height="100"></td> <td>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td> <td><img src="img/나우 방송.PNG"  width="200" height="100"></td>
+			</table>
+			<!-- 세부 날씨 사항 표로 만듬 가로 9 세로 7<br> -->
+			<table border="0" align="center">
+				<thead align="center">
+					<th> 날씨</th> <th>서울시 잠실동</th> <th> <img src="img/지피에스 표시.PNG"> </th> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> ^</td> 
+				</thead>
+				<tbody align="center">
+	
+				<tr >
+					<td colspan="2"> 시간대별 날씨</td>  <td colspan="2"> 시간대별 미세먼지</td>  <td>주간 날씨 </td> <td colspan="2"> 주간 미세먼지</td>  <td> </td> <td> </td> 
+				</tr>
+				<tr>
+					<td>19º </td> <td> 22º</td> <td> 17º</td> <td> 18º</td> <td> 17º</td> <td> 19º</td> <td> 19º</td> <td> 19º</td> <td>18º </td> 
+				</tr>
+				<tr>
+					<td>|</td> <td>|</td> <td>|</td> <td>|</td> <td>|</td> <td>|</td> <td>|</td> <td>|</td> <td>|</td> 
+				</tr>
+				<tr>
+					<td> 8º</td> <td> 7º</td> <td> 11º</td> <td> 12º</td> <td> 4º</td> <td> 4º</td> <td> 6º</td> <td>8º </td> <td>6º </td> 
+				</tr>
+				<tr>
+					<td> <img src="img/해.PNG"> </td> <td> <img src="img/해.PNG"> </td> <td><img src="img/비.PNG"> </td> <td> <img src="img/비.PNG"></td> <td><img src="img/해.PNG"> </td> <td><img src="img/해.PNG"></td> <td><img src="img/해.PNG"> </td> <td> <img src="img/해.PNG"></td> <td> <img src="img/해.PNG"></td> 
+				</tr>
+				</tbody>
+				<tfoot align="center">
+				<tr>
+					<td> 어제 </td> <td> 오늘 </td> <td> 월 </td> <td> 화 </td> <td> 수 </td> <td> 목 </td> <td> 금 </td> <td> 토 </td> <td> 일 </td> 
+				</tr>
+				</tfoot>
+
+			</table>
+			<!-- 코로나 사항 표 2 2<br> -->
+			<br><br><br>
+			<table border="0" align="center">
+				<thead>
+				<tr>
+					<td><img src="img/코로나 그림.PNG" width="50" height="50"> </td>
+					<!-- <td colspan="1"></td> -->
+					<td> 코로나19.&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td>
+					<td><img src="img/코로나 ox.PNG" width="50" height="50"> </td><td>코로나19 팩트체크</td>
+				</tr>
+				</thead>
+				<tr>
+					<td colspan="2">국내외 확진 현황</td>
+					<!-- <td colspan="3"></td><td></td> -->
+					
+					<td colspan="2">백신 정보 팩트는?</td>
+				</tr>
+			</table>
+			<br><br><br><br>
+			<img src="img/임시정부.PNG" height="100" width="100"> 제 102주년 대한민국 임시정부 수립일
+			<!-- 임시정부 <br> -->
+			<!-- 네이버 광고 -->
+			<br><br><br><br>
+			<img src="img/네이버 로고.PNG" height="50" width="200"> 앱으로 <strong>새로운 네이버</strong>를 더 쾌적하게 사용해 보세요.
+			<br><br><br>
+			웹툰 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∨<br>
+			<br><br><br><br>
+			<!-- 표 3*2<br> -->
+			<table align="center">
+				<thead>
+					<tr>
+						<td>인기 주제 판을 확인해 보세요!</td>
+						<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+						<td>판관리</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="img/영화판.PNG" width="50" height="50">영화판</td>
+						<td> </td><td> </td><td> </td><td> </td><td> > </td>
+						<td><img src="img/뿜판.PNG" width="50" height="50">뿜판</td>
+						<td> </td><td> </td><td> </td><td> </td><td> > </td>
+					</tr>
+					<tr>
+						<td><img src="img/웹툰판.PNG" width="50" height="50">웹툰판 </td>
+						<td> </td><td> </td><td> </td><td> </td><td> ></td>
+						<td><img src="img/경제 판.PNG" width="50" height="50">경제M판</td>
+						<td> </td><td> </td><td> </td><td> </td><td> ></td>
+					</tr>
+				</tbody>
+				<br><br>
+			</table>
+			<img src="img/알립니다.PNG" width="100" height="50">네이버앱 업데이트 사전 안내
+		</section>
+		<br><br><br><br>
+		<footer>
+			<!-- TODO: 하단의 여러 가지 링크들은 어떻게 처리하면 좋을까요? -->
+			<!-- 표 3*3으로 한 뒤에 제일 밑에 병합해서 하나로 <br> -->
+			<table align="center">
+				<thead>
+					<tr>
+						<td>로그인</td>	<td>전체서비스</td>	<td>pc버전</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>이용약관</td><td><strong>개인정보방침</strong></td>	<td>고객센터</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"><img src="img/네이버 흑백 로고.PNG" width="40" height="20"></td>
+					</tr>
+				</tfoot>
+			</table>
+			
+		</footer>
+	</body>
+</html>

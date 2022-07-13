@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>NAVER</title>
+    <style>
+    html{
+        background: linear-gradient(white,rgb(243,243,243));
+            
+        }
+    footer{
+        text-align: center;
+        color: rgb(189,189,189);
+        }   
+    #sectionbox {
+        width: 700px; 
+        margin: auto; margin-top: 10px; margin-bottom: 10px; 
+        background-color: white; 
+        border-collapse: collapse; border-radius: 2px; border-style: hidden; 
+        box-shadow: 0 0 0 10px white;}
+      a{text-decoration: none;}
+
+   
+    .center-align {
+        text-align: center;    
+    }  
+    .topmenu{
+        text-align: right;        
+        }
+    
+    #logo {
+        font-size: 80px;
+        font-weight: bold;
+        color: rgb(29,219,22);
+        line-height: 50%;
+    }
+    input {
+        border-color: rgb(29,219,22);
+        width: 500px;
+        height: 50px 
+        }
+    .search {
+
+            
+        }    
+    .menufont {
+        color: #888
+        font-size: 10px       
+    }        
+    .img_weather{
+        display:block;
+        margin: 0 auto;
+    }
+        
+    .aftertemp{
+        color: darkgrey;      
+        }
+        
+    #finallogo{
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+<!--상단부분-->
+
+        <div class="topmenu">
+               <div id="header menu">
+                <span><a href="/" style=text-align: right><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/QR%EC%B2%B4%ED%81%AC%EC%9D%B8.png" id="img_QR"/></a></span>
+                <span align=right><a href="/" style=text-align: right><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/NPay.png" id="img_NPay"/></a></span>  
+                <span align=right><a href="/" style=text-align: right><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A9%94%EC%9D%BC.png" id="img_paper"/></a></span> 
+            </div>
+      
+<!--센터로고-->
+        <div class="center-align">
+            <h1>
+                <p id="logo"><strong>NAVER</strong></p>
+            </h1>
+            <form action="https://search.naver.com/search.naver">
+            <div class="search">
+                <input type="text" name="query" value="검색어를 입력해주세요.">    
+            </div>   
+            </form>
+        </div>
+        </div>
+    </header>
+<!--중간부분메뉴-->
+    <nav>        
+        <table width="350" height="200" style="margin-left: auto; margin-right: auto ;">
+          <tr>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%89%B4%EC%8A%A4%ED%8C%90.png" height="60" alt="news"></td>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B2%BD%EC%A0%9C%EC%A7%80%ED%91%9C.png" height="60" alt="economic"></td>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%97%B0%EC%98%88%ED%8C%90.png" height="60" alt="entertain"></td>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%ED%8A%B8%EB%A0%8C%EB%93%9C%ED%8C%90.png" height="60" alt="trend"></td>
+          </tr>
+          <tr class='menufont'>
+            <td >뉴스판</td> <td id='eco'>경제지표판</td> <td id='enter'>연예판</td> <td id='trend'>트렌드판</td>
+          </tr>
+          <tr>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%B4%88%EB%A1%9D%EB%A9%94%EC%9D%BC.png" height="60" alt="mail"></td>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%B9%B4%ED%8E%98.png" height="60" alt="cafe"></td>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%B8%94%EB%A1%9C%EA%B7%B8.png" height="60" alt="blog"></td>
+            <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/....png" height="60" alt="etc"></td>
+          </tr>
+          <tr class="menufont">>
+            <td id="mail">메일</td> <td id="cafe">카페</td> <td id="blog">블로그</td> <td></td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </nav>
+        
+    <main>
+    <!--날씨-->
+         <a><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/10%EB%8F%84%20%EB%A7%91%EC%9D%8C.png" class="img_weather"/></a>        
+     
+     <div>
+     <section id="sectionbox">
+      <table name="sectionbox">
+        <td>
+            <summary><strong>날씨</strong> 제주시 노형동 <img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/dot.png" alt="dot" width="17"></summary>
+              <table id="weatherbutton">
+                <td>시간대별 날씨</td>
+                <td>시간대별 미세먼지</td>
+                <td>주간 날씨</td>
+                <td>주간 미세먼지</td>
+              </table>    
+              <table id="Weather">
+                   <tr>
+                       <td><span>19°</span></td>
+                       <td><span>22°</span></td>
+                       <td><span>17°</span></td>
+                       <td><span>18°</span></td>
+                       <td><span>17°</span></td>
+                       <td><span>19°</span></td>
+                       <td><span>19°</span></td>
+                       <td><span>19°</span></td>
+                       <td><span>18°</span></td>
+                    </tr>
+                    <tr class="aftertemp">
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                        <td><span>|</span></td>
+                    </tr>
+                    <tr class="aftertemp">
+                       <td><span>8°</span></td>
+                       <td><span>7°</span></td>
+                       <td><span>11°</span></td>
+                       <td><span>12°</span></td>
+                       <td><span>4°</span></td>
+                       <td><span>4°</span></td>
+                       <td><span>6°</span></td>
+                       <td><span>8°</span></td>
+                       <td><span>6°</span></td>
+                    </tr>
+                    <tr>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%96%B4%EC%A0%9C.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%96%B4%EC%A0%9C.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B5%AC%EB%A6%84%EB%B9%84.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B5%AC%EB%A6%84%EB%B9%84.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%96%B4%EC%A0%9C.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%96%B4%EC%A0%9C.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%96%B4%EC%A0%9C.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%96%B4%EC%A0%9C.png"></image></span></td>
+                        <td><span><image src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%96%B4%EC%A0%9C.png"></image></span></td>
+                    </tr>
+                    <tr>
+                        <td>어제</td>
+                        <td>오늘</td> 
+                        <td><span>월</span></td>
+                        <td><span>화</span></td>
+                        <td><span>수</span></td>
+                        <td><span>목</span></td>
+                        <td><span>금</span></td>
+                        <td><span>토</span></td>
+                        <td><span>일</span></td>
+                   </tr>
+                </table>
+          </td>
+         </table>
+         </section>
+         
+    
+<!--코로나박스-->        
+    <div>
+     <secton id="corona">
+      <table id="sectionbox">
+      <tr><td width="245"><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%BD%94%EB%A1%9C%EB%82%9819.1.png" alt="covid" height="17"><strong> 코로나19</strong></td><td width="245"><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%BD%94%EB%A1%9C%EB%82%9819.2.png" alt="factcheck" height="17"><strong> 코로나19 팩트체크</strong></td></tr>
+      <tr><td><span style="color:gray;">국내외 확진 현황</span></td>
+          <td><span style="color:gray;">백신 정보 팩트는?</span></td></tr>
+      </table>
+      <br>
+     </secton>
+    </div>
+<!--대한민국 임시정부-->
+    <div>
+      <table id="sectionbox">
+        <td style="text-align:center"><span style="color:rgb(57, 57, 57);"><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9E%84%EC%8B%9C%EC%A0%95%EB%B6%80.png" alt="korea" height="25">제 102주년<strong> 대한민국 임시정부 수립일</strong></span></td>
+      </table>
+      <br>
+    </div>
+<!--새로운 네이버-->
+    <div>
+      <table id="sectionbox">
+        <td><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%84%A4%EC%9D%B4%EB%B2%84%EB%A1%9C%EA%B3%A0.png" alt="naver mobile" height="22"></td>
+        <td valign=top><span> 앱으로 <strong>새로운 네이버</strong>를 더 쾌적하게 사용해 보세요.</span></td>
+        <td align=right><button formaction="" type="button">앱 사용하기</button></td>
+      </table>
+      <br>
+    </div>
+<!--웹툰박스-->
+    <div>
+      <table id="sectionbox">
+        <td>
+            <strong>웹툰</strong>
+        </td>
+      </table>
+      <br>
+    </div>
+<!--인기주제판-->
+    <div>
+      <table id="sectionbox">
+        <tr>
+          <td><strong>인기 주제 판을 확인해 보세요!</strong></td><td align=right><span style="color:gray">판관리</span></td>
+        </tr>
+        <tr>
+          <td width="245" bgcolor="#F5F7F9"><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%98%81%ED%99%94%ED%8C%90.png" alt="movie pan" height="17"><span style="color:gray"> 영화판</span></td>
+          <td width="245" bgcolor="#F5F7F9"><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%BF%9C.png" alt="bboom pan" height="20"><span style="color:gray"> 뿜판</span></td>
+        </tr>
+        <tr>
+          <td width="245" bgcolor="#F5F7F9"><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9B%B9%ED%88%B0%ED%8C%90.png" alt="webtoon pan" height="20"><span style="color:gray"> 웹툰판</span></td>
+          <td width="245" bgcolor="#F5F7F9"><img src="%EA%B3%BC%EC%A0%9C1.%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B2%BD%EC%A0%9C%ED%8C%90.png" height="20"><span style="color:gray"> 경제M판</span></td>
+        </tr>
+      </table>
+      <br>
+    </div>
+    <!--네이버앱업데이트-->
+    <div>
+      <table id="sectionbox">
+        <td><button>알립니다</button> 네이버앱 업데이트 사전 안내</td>
+        <td style= "align: right"><span style="color:gray">></span></td>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+              </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <span><a>로그인</a></span>
+            <span>|</span>
+            <span><a>전체서비스</a></span>
+            <span>|</span>
+            <span><a>PC버전</a></span>
+        </div>
+        <br>
+        <div>    
+            <span><a>이용약관</a></span>
+            <span>|</span>
+            <span><a> <bolder>개인정보처리방침</bolder></a></span>
+            <span>|</span>
+            <span><a>고객센터</a></span>
+        </div>
+        <p id="finallogo">NAVER</p>
+    </footer>
+    </body>
+</html>
