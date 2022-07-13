@@ -1,0 +1,85 @@
+@font-face { 
+  font-family: 'NanumGothic';
+  src: url('/fonts/NanumGothic.eot');
+  src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),url('/fonts/NanumGothic.woff') format('woff');}
+
+body {
+  background: linear-gradient(#f8f2f3, #fff3f4); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'NanumGothic', Monospace;}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 150px;
+  color: #3c3032;
+  ;
+}
+
+.inputbox {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#inputwindow {
+  width: 600px;
+  height: 30px;
+  border : 1px solid #514a4b;
+  border-collapse: collapse;
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+}
+
+#enter{
+  width: 65px;
+  height: 34px;
+  border-style: hidden;
+  background-color: white;
+  border : 1px solid #514a4b;
+  border-collapse: collapse;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #eacbcf;
+  outline: none;
+}
+
+#mainbox {
+  padding : 7px;
+  width: 658px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 5px;
+  border-style: hidden;
+  box-shadow: 0 0 0 0.8px #514a4b;}
+
+.buttons {
+  width: 70px;
+  height: 34px;
+  color : white;
+  border-style: hidden;
+  background-color: white;
+  border : 1px solid #514a4b;
+  border-collapse: collapse;
+  border-radius: 5px;
+  background-color: #ad858c;
+  outline: none;
+}
+
+#buttonbox {
+  text-align: right;
+  width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
