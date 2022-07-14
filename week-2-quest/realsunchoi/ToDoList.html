@@ -14,15 +14,19 @@
       <h1>To Do List</h1>
 
       <div class="inputbox">
-        <input type="text" name="input" id="input" placeholder="할 일을 입력하세요">
-        <button type="button" id="enter">Enter</button>
+        <input type="text" id="input" placeholder="할 일을 입력하세요">
+        <button type="button" id="enter" onclick="getInputByEnter()">Enter</button>
       </div>
     </header>
 
     <section>
-      <div id="mainbox">
-        <ul id="list">
-        </ul>
+      <div id="mainbox" style="text-align:justify;">
+        <table width="670px" id="list">
+        <td width="17px"><ul id="checkbox"></ul></td>
+        <td><ul id="toDoList"></ul></td>
+        <td width="50px"><ul id="modifyButton"></ul></td>
+        <td width="50px"><ul id="delateButton"></ul></td>
+        </table>
       </div>
 
       <div id="buttonbox">

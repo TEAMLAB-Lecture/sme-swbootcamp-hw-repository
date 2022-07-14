@@ -1,14 +1,8 @@
-@font-face { 
-  font-family: 'NanumGothic';
-  src: url('/fonts/NanumGothic.eot');
-  src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),url('/fonts/NanumGothic.woff') format('woff');}
-
 body {
-  background: linear-gradient(#f8f2f3, #fff3f4); 
+  background: linear-gradient(#ebe5e6, #dbc9ce); 
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  font-family: 'NanumGothic', Monospace;}
+  height: 100vh;}
 
 h1 {
   text-align: center;
@@ -49,19 +43,6 @@ h1 {
   outline: none;
 }
 
-#mainbox {
-  padding : 7px;
-  width: 658px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: white;
-  border-collapse: collapse;
-  border-radius: 5px;
-  border-style: hidden;
-  box-shadow: 0 0 0 0.8px #514a4b;}
-
 .buttons {
   width: 70px;
   height: 34px;
@@ -82,4 +63,30 @@ h1 {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+#mainbox {
+  width: 670px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 5px;
+  border-style: hidden;
+  box-shadow: 0 0 0 0.8px #514a4b;
+}
+
+ul {
+  list-style: none;
+  float: left;
+  padding: 3px;
+}
+
+.listButton {
+  height: 18px;
+  width: 45px;
+  font-size: 10px;
 }
