@@ -1,5 +1,7 @@
+
 function getInputByButton(){ //enter 버튼 클릭시 할 일 추가
   let addPlan = document.createElement('li');
+  addPlan.className = "lists";
   let plan =  document.getElementById('input').value;
   addPlan.innerText = plan;
   let addButton = document.createElement('input');
@@ -47,6 +49,16 @@ function delateAll(){
   }
 }
 
-function checkall(){
-
+function removeChecked(){
+  let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  let listButtons = document.querySelectorAll('.listButton');
+  let toDoLists = document.querySelectorAll('.lists')
+  for(i=0; i<checkboxes.length; i++){
+    if(checkboxes[i].checked){
+      checkboxes[i].remove();
+      listButtons[i].remove();
+      listButtons[checkboxes.length+i].remove();
+      toDoLists[i].remove();
+    }
+  }
 }
