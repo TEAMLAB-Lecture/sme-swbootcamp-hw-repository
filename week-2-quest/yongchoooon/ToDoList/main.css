@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500&display=swap');
 
-body {
-  font-family: 'IBM Plex Sans KR';
-}
 
 .main_title {
   text-align: center;
@@ -41,13 +38,17 @@ button {
   width: 70px;
   margin-left: 5px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   color: #8F7EFF;
   background-color: white;
   border-color: #8F7EFF;
   border-radius: 5px;
   transition-duration: 0.3s;
   font-family: 'IBM Plex Sans KR';
+}
+
+.todo_enterbtn {
+  font-weight: 700;
 }
 
 button:hover {
@@ -57,7 +58,7 @@ button:hover {
   cursor: pointer;
 }
 
-.todo_list {
+.todo_list_box {
   background-color: #F5EBFF;
   width: 857px;
   margin: 20px auto;
@@ -65,10 +66,9 @@ button:hover {
   border-radius: 5px;
 }
 
-ul {
-  font-size: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
+.todo_list {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .check {
@@ -76,9 +76,22 @@ ul {
 }
 
 li {
+  list-style: none;
+  vertical-align: middle;
+}
+
+.todo_text {
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 660px;
   list-style: none;
+  font-size: 20px;
+  background-color: #F5EBFF;
+  outline:none;
+  border: none;
+  border-bottom: #F5EBFF 2px solid;
+  font-family: 'IBM Plex Sans KR';
+  transition-duration: 0.3s;
 }
 
 .select_button {
@@ -89,7 +102,6 @@ li {
   margin-right: 5px;
   width: 80px;
   height: 35px;
-  font-weight: 500;
 }
 
 .composer, .composer a {
@@ -100,4 +112,23 @@ li {
 
 a:hover {
   color: #aaa;
+}
+
+.modify_togglebtn, .save_togglebtn{
+  height: 30px;
+  vertical-align: center;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.save_togglebtn {
+  color: white;
+  background-color: #8F7EFF;
+}
+
+.can_write_mode {
+  border-radius: 5px;
+  border-bottom: #8F7EFF 2px solid;
+  transition-duration: 0.3s;
 }
