@@ -6,7 +6,7 @@
 - Database modeling
 ### Assignment 1 - To Do List
 
-<img src="./ToDoList/ToDoList_Page.PNG" alt="ToDoList" title="ToDoList" width="400px">
+<img src="./ToDoList/ToDoList_Page.PNG" alt="ToDoList" title="ToDoList" width="600px">
 
 - My Assignment
   - [index.html](./ToDoList/index.html)
