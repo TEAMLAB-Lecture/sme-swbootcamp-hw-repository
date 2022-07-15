@@ -14,8 +14,8 @@
       <h1>To Do List</h1>
 
       <div class="inputbox">
-        <input type="text" id="input" placeholder="할 일을 입력하세요">
-        <button type="button" id="enter" onclick="getInputByEnter()">Enter</button>
+        <input type="text" id="input" placeholder="할 일을 입력하세요" onkeydown="getInputByEnter(event)">
+        <button type="button" id="enter" onclick="getInputByButton()">Enter</button>
       </div>
     </header>
 
@@ -30,9 +30,10 @@
       </div>
 
       <div id="buttonbox">
-        <input class="buttons" type="button" name="checkAll" value="전체 선택">
-        <input class="buttons" type="button" name="uncheckAll" value="전체 해제">
-        <input class="buttons" type="button" name="delateSome" value="선택 삭제">
+        <input class="buttons" type="button" value="전체 선택" onclick="checkAll()">
+        <input class="buttons" type="button" value="전체 해제" onclick="uncheckAll()">
+        <input class="buttons" type="button" value="선택 삭제">
+        <input class="buttons" type="button" value="전체 삭제" onclick="delateAll()">
       </div>
     </section>
   </body>
