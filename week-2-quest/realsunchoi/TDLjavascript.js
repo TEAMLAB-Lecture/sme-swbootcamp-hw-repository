@@ -23,6 +23,7 @@ function getInputByButton(){ //enter 버튼 클릭시 할 일 추가
     toDoList.appendChild(addPlan);
     modifyButton.appendChild(addModifyButton);
     delateButton.appendChild(addDelateButton);
+    document.getElementById('input').value = '';
   }
 }
 
