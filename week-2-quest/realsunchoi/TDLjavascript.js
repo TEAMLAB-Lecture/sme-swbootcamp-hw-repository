@@ -33,17 +33,17 @@ function getInputByEnter(e){ // enter 키 입력시 할 일 추가
   }
 }
 
-function checkAll(){
+function checkAll(){ // 전체 선택
   let checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(checkbox => {checkbox.checked = true;})
 }
 
-function uncheckAll(){
+function uncheckAll(){ // 전체 해제
   let checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(checkbox => {checkbox.checked = false;})
 }
 
-function delateAll(){
+function delateAll(){ // 전체 삭제
   while(checkbox.hasChildNodes()){
     checkbox.removeChild(checkbox.firstChild);
     toDoList.removeChild(toDoList.firstChild);
@@ -52,7 +52,7 @@ function delateAll(){
   }
 }
 
-function removeChecked(){
+function removeChecked(){ // 선택 삭제
   let checkboxes = document.querySelectorAll('input[type="checkbox"]');
   let listButtons = document.querySelectorAll('.listButton');
   let toDoLists = document.querySelectorAll('.lists')
@@ -66,7 +66,7 @@ function removeChecked(){
   }
 }
 
-function removeByDelateButton(event){
+function removeByDelateButton(event){ // 삭제 버튼 클릭시 해당 일정 삭제
   let checkboxes = document.querySelectorAll('input[type="checkbox"]');
   let listButtons = document.querySelectorAll('.listButton');
   let toDoLists = document.querySelectorAll('.lists')
@@ -80,9 +80,9 @@ function removeByDelateButton(event){
   }
 }
 
-function modifyByModifyButton(event){
+function modifyByModifyButton(event){ // 수정 버튼 클릭시 해당 일정 수정
   let checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  let listButtons = document.querySelectorAll('.listButton');
+  let listButtons = document.querySelectorAll('.listButton'); 
   let toDoLists = document.querySelectorAll('.lists')
   for(i=0; i<checkboxes.length; i++){
     if(event.target == listButtons[i]){
