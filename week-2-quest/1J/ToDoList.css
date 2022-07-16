@@ -1,0 +1,16 @@
+body {
+  
+}
+h1 {
+text-align: center;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding-top:3ch;
+padding-bottom: 3ch; 
+}
+div.todolist{
+background-color: rgb(225, 252, 246);
+}
+span input[type='button'] {
+  margin-left: 1ch;
+  margin-right: 1ch;
+}
