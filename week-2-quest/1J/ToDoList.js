@@ -1,3 +1,4 @@
+<!-- 변수설정 -->
 const inputbox = document.getElementById('inputbox');
 const enterbtn = document.getElementById('button-enter');
 const ToDoList = document.getElementById('list');
@@ -5,12 +6,13 @@ const checkAll = document.getElementById('check-all');
 const uncheckAll = document.getElementById('uncheck-all');
 const removeCheck = document.getElementById('remove-check');
 
+<!-- 함수설정 -->
 enterbtn.addEventListener('click', addToDoList);
 removeCheck.addEventListener('click', removeChecklist);
 checkAll.addEventListener('click', allCheck);
 uncheckAll.addEventListener('click', allUncheck);
 
-
+<!-- '입력'키로 리스트추가 -->
 function addToDoList() {
     const newToDoList = document.createElement('li');
     newToDoList.className = 'd-flex justify-content-between';
@@ -25,7 +27,7 @@ function addToDoList() {
         }  
 }
 
-
+<!-- Enter키로 리스트추가 -->
 function addToDoListByEnterBtn() {
     const newToDoList = document.createElement('li');
     newToDoList.className = 'd-flex justify-content-between';
@@ -42,6 +44,8 @@ function addToDoListByEnterBtn() {
 
     }
 }
+
+<!-- 전체선택버튼 작동함수 -->
 function allCheck() {
     const checkboxes = document.getElementsByName('checkbox');
     if(checkboxes.checked == false){
@@ -56,6 +60,7 @@ function allCheck() {
         
 }
 
+<!-- 전체해제버튼 작동 함수 -->
 function allUncheck() {
     const checkboxes = document.getElementsByName('checkbox');
     if(checkboxes.checked == true){
@@ -70,7 +75,7 @@ function allUncheck() {
 }
 
 
-
+<!-- 선택삭제버튼 작동 함수 -->
 function removeChecklist() {
     const checkbox = document.querySelectorAll('input[type=checkbox]'); // input
     for (i =0; i<checkbox.length; i++) {
