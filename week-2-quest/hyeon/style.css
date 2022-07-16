@@ -1,0 +1,57 @@
+.main{
+    width: 1000px;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+input[type="text"]{
+    width: 700px;
+    font-size: 1.5em;
+    float:none;
+    background: white;
+    margin-right: -5px;
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+#btn0{
+    background-color: aliceblue;
+    color: #808080;
+    width: 80px;
+    height: 50px;
+    border-width: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+#btn1{
+    float: right;
+    font-size: 0.8em;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.todolist{
+    background-color:azure;
+    margin-top: 20px;
+    padding: 0px 40px 0px 0px;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+a{
+    background-color: blue;
+    float: right;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
