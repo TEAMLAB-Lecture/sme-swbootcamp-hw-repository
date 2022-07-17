@@ -10,10 +10,10 @@ function getInputByButton(){ //enter 버튼 클릭시 할 일 추가
   addModifyButton.innerText = "수정";
   addModifyButton.className = "listButton";
   addModifyButton.addEventListener("click", modifyByModifyButton);
-  let addDelateButton = document.createElement('button');
-  addDelateButton.innerText = "삭제";
-  addDelateButton.className = "listButton";
-  addDelateButton.addEventListener("click", removeByDelateButton);
+  let addDeleteButton = document.createElement('button');
+  addDeleteButton.innerText = "삭제";
+  addDeleteButton.className = "listButton";
+  addDeleteButton.addEventListener("click", removeByDeleteButton);
 
   if(plan == ""){
     alert("내용을 입력해 주세요.");
@@ -22,7 +22,7 @@ function getInputByButton(){ //enter 버튼 클릭시 할 일 추가
     checkbox.appendChild(addButton);
     toDoList.appendChild(addPlan);
     modifyButton.appendChild(addModifyButton);
-    delateButton.appendChild(addDelateButton);
+    deleteButton.appendChild(addDeleteButton);
     document.getElementById('input').value = '';
   }
 }
@@ -43,12 +43,12 @@ function uncheckAll(){ // 전체 해제
   checkboxes.forEach(checkbox => {checkbox.checked = false;})
 }
 
-function delateAll(){ // 전체 삭제
+function deleteAll(){ // 전체 삭제
   while(checkbox.hasChildNodes()){
     checkbox.removeChild(checkbox.firstChild);
     toDoList.removeChild(toDoList.firstChild);
     modifyButton.removeChild(modifyButton.firstChild);
-    delateButton.removeChild(delateButton.firstChild);
+    deleteButton.removeChild(deleteButton.firstChild);
   }
 }
 
@@ -66,7 +66,7 @@ function removeChecked(){ // 선택 삭제
   }
 }
 
-function removeByDelateButton(event){ // 삭제 버튼 클릭시 해당 일정 삭제
+function removeByDeleteButton(event){ // 삭제 버튼 클릭시 해당 일정 삭제
   let checkboxes = document.querySelectorAll('input[type="checkbox"]');
   let listButtons = document.querySelectorAll('.listButton');
   let toDoLists = document.querySelectorAll('.lists')
