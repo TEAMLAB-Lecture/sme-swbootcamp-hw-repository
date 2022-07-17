@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#ebe5e6, #dbc9ce); 
+  background: linear-gradient(#fff5f7, #f1cdd4); 
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;}
@@ -39,20 +39,19 @@ h1 {
   border : 1px solid #514a4b;
   border-collapse: collapse;
   border-radius: 0px 5px 5px 0px;
-  background-color: #eacbcf;
+  background-color: #f9dee3;
   outline: none;
 }
 
 .buttons {
   width: 70px;
   height: 34px;
-  color : white;
   border-style: hidden;
   background-color: white;
   border : 1px solid #514a4b;
   border-collapse: collapse;
   border-radius: 5px;
-  background-color: #ad858c;
+  background-color: #ecb4be;
   outline: none;
 }
 
