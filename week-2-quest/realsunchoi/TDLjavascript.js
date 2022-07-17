@@ -86,7 +86,7 @@ function modifyByModifyButton(event){ // 수정 버튼 클릭시 해당 일정 �
   let toDoLists = document.querySelectorAll('.lists')
   for(i=0; i<checkboxes.length; i++){
     if(event.target == listButtons[i]){
-      let modifyPlan = prompt("수정할 내용을 입력해 주세요.");
+      let modifyPlan = prompt("수정할 내용을 입력해 주세요.", toDoLists[i].innerText);
       toDoLists[i].innerText = modifyPlan;
     }
   }
