@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- TODO: 또 무엇이 필요할까요? -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<!-- 가장 상단줄 -->
+            <div class="header" style="display:flex; justify-content: space-between; align-items: center;">
+                    <img src="image/lines.png" style="width:30px; height:30px;">
+                <div class="header_items" style="display:flex;">
+                        <p style="font-size:small; margin-right: 10px;"><b><u>QR 체크인</u></b></p>
+                        <img src="image/N_pay.png" style="width:60px; height:35px; margin-right: 10px;">
+                        <img src="image/mail.png" style="width:40px; height:35px; margin-right: 10px;">
+                </div>
+            </div>
+
+            <!-- NAVER 제목 글자 -->
+            <div style="text-align: center; margin: 100px 0px -30px 0px; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:xx-large">
+                <h1 style="color:#01C75B">NAVER</h1>
+            </div>
+            
+            <!-- 검색어 입력 줄 -->
+            <div class="search">
+                <p style="margin-left: 10px;">검색어를 입력해주세요</p>
+                <img src="image/searchbar.png" style="width:100px; height:35px;"></div>
+            </div>
+            
+            <!-- 아이콘 나열 8가지  -->
+            <div style="display: flex; flex-direction:column; align-items:center;">
+                <div id="menu_table">
+                    <div class="row_image">
+                        <span class="cell cell_image"><img src="image/menu1.png" id = "row_image"></span>
+                        <span class="cell cell_image"><img src="image/menu2.png" id = "row_image"></span>
+                        <span class="cell cell_image"><img src="image/menu3.png" id = "row_image"></span>
+                        <span class="cell cell_image"><img src="image/menu4.png" id = "row_image"></span>
+                    </div>
+                    <div class="row">
+                        <span class="cell"><b>뉴스판</b></span>
+                        <span class="cell"><b>경제지표판</b></span>
+                        <span class="cell"><b>연예판</b></span>
+                        <span class="cell"><b>트렌드판</b></span>
+                    </div>
+                    <div class="row_image">
+                        <span class="cell cell_image"><img src="image/menu5.png" id = "row_image"></span>
+                        <span class="cell cell_image"><img src="image/menu6.png" id = "row_image"></span>
+                        <span class="cell cell_image"><img src="image/menu7.png" id = "row_image"></span>
+                        <span class="cell cell_image"><img src="image/menu8.png" id ="row_image"></span>
+                    </div style="display: table-row;">
+                    <div class="row">
+                        <span class="cell"><div class="item menu_name"><b>메일</b></div></span>
+                        <span class="cell"><div class="item menu_name"><b>카페</b></div></span>
+                        <span class="cell"><div class="item menu_name"><b>블로그</b></div></span>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TODO: 어디까지를 header로 보는 것이 좋을까요? -->
+		</header>
+        
+		<section class="main">
+			<!-- TODO: main은 어떤 식으로 나눌 수 있을까요? -->
+
+            <!-- 맑음 -->
+            <div class="description">
+                <div class="item" style="width: 300px;"><img src="image/moon.png" style="float: left; width:70px; height:70px;">
+                    <p style="font-size:medium; margin-bottom: -10px;"><b>10° 맑음</b></p>
+                    <p style="font-size: small;">어제보다 2° 높아요</p>
+                </div>
+                <div class="item">
+                    <img src="image/Streaming.png" style="width:200px; height:70px;">
+                </div>
+            </div>
+
+            <!-- 날씨 -->
+            <div class="wind_box">
+                <div style="display: flex; justify-content:space-between; padding-top: 10px;">
+                    <div style="display: flex; justify-content: flex-start; align-items: center;">
+                        <span class="item wind" style = "margin-left: 20px; font-size: large;"><b>날씨</b></span>
+                        <span style="color:gray; margin-left: 10px;">서울시 잠실동</></span>
+                        <span><img src="image/direction.png" style="width:30px; height:30px;"></span>
+                    </div>
+                    <div class="item wind">
+                        <img src="image/top_arrow.png" style="width:40px; height:30px;">
+                    </div> 
+                </div>
+
+                <div style="display: flex; justify-content: baseline; align-items: center;">
+                    <div class="item square_box_wind" style="margin-left: 20px;">
+                        <p style="color:gray;"><b>시간대별 날씨</b></p>
+                    </div>
+                    <div class="item square_box_wind">
+                        <p style="color:gray"><b>시간대별 미세먼지</b></p>
+                    </div>
+                    <div class="item square_dark_box_wind">
+                        <p style="color:white"><b>주간 날씨</b></p>
+                    </div>
+                    <div class="item square_box_wind">
+                        <p style="color:gray"><b>주간 미세먼지</b></p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; flex-direction: row; justify-content: center; padding-top: 20px;">
+                <table style="width: 100%; table-layout: fixed;">
+                    <tr>
+                        <td>19°</td><td>22°</td><td>17°</td><td>18°</td><td>17°</td><td>19°</td><td>19°</td><td>19°</td><td>18°</td>
+                    </tr>
+                    <tr>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                        <td><div id = "font-style">|</div></td>
+                    </tr>
+                    <tr>
+                        <td>8°</td><td>7°</td><td>11°</td><td>12°</td><td>4°</td><td>4°</td><td>6°</td><td>8°</td><td>6°</td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/sun.png" style="width:35px; height:40px;"></td>
+                        <td><img src="image/sun.png" style="width:35px; height:40px;"></td>
+                        <td><img src="image/rain.png" style="width:45px; height:45px;"></td>
+                        <td><img src="image/rain.png" style="width:45px; height:45px;"></td>
+                        <td><img src="image/sun.png" style="width:35px; height:40px;"></td>
+                        <td><img src="image/sun.png" style="width:35px; height:40px;"></td>
+                        <td><img src="image/sun.png" style="width:35px; height:40px;"></td>
+                        <td><img src="image/sun.png" style="width:35px; height:40px;"></td>
+                        <td><img src="image/sun.png" style="width:35px; height:40px;"></td>
+                    </tr>
+                    <tr>
+                        <td><div id = "font-style">어제</div></td>
+                        <td><div id = "text-border-style">오늘</div></td>
+                        <td><div id = "font-style">월</div></td>
+                        <td><div id = "font-style">화</div></td>
+                        <td><div id = "font-style">수</div></td>
+                        <td><div id = "font-style">목</div></td>
+                        <td><div id = "font-style">금</div></td>
+                        <td><div id = "font-style">토</div></td>
+                        <td><div id = "font-style">일</div></td>
+                    </tr>
+                </table>
+                </div> 
+            </div>
+
+            <!-- 코로나 -->
+            <div class="corona">
+                <div class= "item corona_image">
+                    <img src="image/no_virus.png" style="width:30px; height:30px; float: left;">
+                    <p style="margin-top:7px;"><b>코로나19</b></p>
+                    <p style="color: gray; margin: -10px 0px 0px 0px;">국내외 확진 현황</p>
+                </div>
+                <div class="item corona_line_image">
+                    <img src="image/vertical_line.png" style="width:30px; height:70px;">
+                </div>
+                <div class="item corona_image">
+                    <img src="image/ox.png" style="width:30px; height:30px; float: left;">
+                    <p style="margin-top:7px;"><b>코로나19 팩트체크</b></p>
+                    <p style="color: gray; margin: -10px 0px 0px 0px;">백신 정보 팩트는?</p>
+                </div>
+            </div>
+
+            <!-- 오늘의 날짜 -->
+            <div class="korea">
+                <div style="margin-right: 10px;"><img src="image/korea.png" style="width:40px; height:40px;"></div>
+                <div><p style="color:gray">제102주년 <b>대한민국 임시정부 수립일</b></p></div>
+            </div>
+
+            <!-- 네이버 앱 -->
+            <div class="naver_app">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div><img src="image/naver.jpeg" style="width:40px; height:40px; border-radius: 20%;"></div>
+                    <div style="color: gray; margin-left: 10px; font-size: medium;">앱으로 <span style="color:black"><b>새로운 네이버</b></span>를 더 쾌적하게 사용해 보세요.</div>
+                </div>
+                <div class="item use_app">
+                    앱 사용하기
+                </div>
+            </div>
+
+            <!-- 웹툰 -->
+                <div class="webtoon">
+                    <div style="margin-left: 20px; font-size:large;"><b>웹툰</b></div>
+                    <div class="item"><img src="image/bottom_arrow.png" style="width:30px; height:30px;"></div>
+                </div>
+
+            <!-- 인기 주제 판 -->
+            <div class="sub_box">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <div style="font-size:large;"><b>인기 주제 판을 확인해 보세요!</b></div>
+                    <div style="color: gray;">판관리</div>
+                </div>
+                <div class="sub_menu_box_align">
+                    <div class="sub_menu_box">
+                        <div style="display: flex; align-items: center;">
+                            <img src="image/movie.png" id="sub_image">
+                            <span id ="sub_text">영화판</span>
+                        </div>
+                        <div>
+                            <img src="image/right_arrow_with_backcolor.png" id="sub_image">
+                        </div>
+                    </div>
+                    <div class="sub_menu_box">
+                        <div style="display: flex; align-items: center;">
+                            <img src="image/bboom.png" id="sub_image">
+                            <span id ="sub_text">뿜판</span>
+                        </div>
+                        <div>
+                            <img src="image/right_arrow_with_backcolor.png" id="sub_image">
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_menu_box_align">
+                    <div class="sub_menu_box">
+                        <div style="display: flex; align-items: center;">
+                            <img src="image/webtoon.png" id="sub_image">
+                            <span id ="sub_text">웹툰판</span>
+                        </div>
+                        <div>
+                            <img src="image/right_arrow_with_backcolor.png" id="sub_image">
+                        </div>
+                    </div>
+                    <div class="sub_menu_box">
+                        <div style="display: flex; align-items: center;">
+                            <img src="image/economy.png" id="sub_image">
+                            <span id ="sub_text">경제M판</span>
+                        </div>
+                        <div>
+                            <img src="image/right_arrow_with_backcolor.png" id="sub_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 업데이트 안내 -->
+            <div class="upadte_box">
+                <div>
+                    <span id="notice_box"><b>알립니다</b></span>
+                    <span style="color: gray; padding-left: 10px;"><b>네이버앱 업데이트 사전 안내</b></span>
+                </div>
+                <div> 
+                    <img src="image/right_arrow.png" style="width:30px; height:30px;">
+                </div>
+            </div>
+		</section>
+
+		<footer>
+            <!-- TODO: 하단의 여러 가지 링크들은 어떻게 처리하면 좋을까요? -->
+            <!-- 3개의 글자 -->
+            <div style="display:flex; justify-content: center; color:#B7BCC6; margin-top: 50px;">
+                <div class="item"><a href="https://nid.naver.com/nidlogin.login">로그인</a></div>
+                <div class="item">|</div>
+                <div class="item"><a href="https://www.naver.com/more.html">전체서비스</a></div>
+                <div class="item">|</div>
+                <div class="item"><a href="https://www.naver.com/">PC버전</a></div>
+            </div>
+            <!-- 3개의 글자 -->
+            <div style="display:flex; justify-content: center; color:#B7BCC6">
+                <div class="item"><a href="https://policy.naver.com/rules/service.html">이용약관</a></div>
+                <div class="item">|</div>
+                <div class="item"><a href="https://www.navercorp.com/policy/person"><b>개인정보처리방침</b></a></div>
+                <div class="item">|</div>
+                <div class="item"><a href="https://help.naver.com/">고객센터</a></div>
+            <!-- 네이버 글자 -->
+            </div>
+            <div style="text-align:center; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:x-small; border: 50px; margin-bottom: 100px;">
+                <h1 style="color:#B7BCC6;"><b>NAVER</b></h1>
+            </div>
+		</footer>
+	</body>
+</html>
