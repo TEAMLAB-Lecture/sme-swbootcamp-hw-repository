@@ -23,9 +23,6 @@ header h1{
 	margin-bottom: 1rem;
 }
 
-#new-task-form {
-	display: flex;;
-}
 
 input, button {
 	border: none;
@@ -67,9 +64,6 @@ checkbox {
 	margin:0 auto
 }
 
-.task-list {
-	padding: 1rem;
-}
 
 .task-list h2 {
 	font-size: 1.5rem;
@@ -110,8 +104,7 @@ checkbox {
 
 
 .task .actions .edit {
-	background-color: #dd5f24;
-	
+    color: red;	
 }
 
 .task .actions .delete {
