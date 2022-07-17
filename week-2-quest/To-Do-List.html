@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="To Do List" content="Made By SMG-1028">
-    <title>TO DO List</title>
-    <style>
-        .search { position: absolute; top: 5cm; left: 10cm;
-
-        }
-    
-    h1 { text-align: center; position: relative; top:20px; font-size: 30pt;
-    }
-    .ENTER { border: 1.5px solid black;
-        border-top-right-radius : 5px 5px;
-        border-bottom-right-radius : 5px 5px;
-        margin:auto center;  position: absolute; left: 39cm; bottom: 736px;
-        height: 37px;
-        font-size: 13pt;
-    }
-    .text { font-size: large;
-    }
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
 
     
-
-    </style>
 </head>
-<body bgcolor="#d6dadd">
-    
+<body>
+    <header>
+        <h1>To Do List</h1>
+        <form id="new-task">
+        <input type="text" id="new-task-input" placeholder="할 일을 적어주세요" >
+            <input
+            type="submit"
+            id="new-task-submit"
+            value="Enter"/>
+    </form>
+    </header>    
+    <main>
+        <section class="task-list">
+            <h2>할 일</h2>
+            <div id="tasks">
 
-    <h1> TO Do List</h1>
-    <div class="search">
-        <input name="query" type="text" class="text" placeholder="할 일을 입력하세요." style="width:1100px; height:30px">
-    </div>
-        <input type="button" value="Enter" class="ENTER" size= "15";
+                <div class="task">
+                    <div class="content">
+                        <input type="checkbox">
+                        <input class="text" />
+                    </div>
+                    <div class="actions">
+                        <button class="edit">수정</button>
+                        <button class="delete">삭제</button>
 
-    
+                    </div>
+                    </d iv>
+                </div>
+
+            </div>
+            <a class="all"> 
+                <button class="btn1" type="button" id="allcheck">전체 선택</button>
+                <button class="btn2" type="button" id="uncheck">전체 해제</button>
+                <button class="btn3" type="button" id="removebtn">선택 삭제</button>
+            </a>
+
+
+
+        </section>
+        
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
