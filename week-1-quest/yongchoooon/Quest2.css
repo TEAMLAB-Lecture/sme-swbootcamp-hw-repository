@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+html {
+  background-image: linear-gradient(white 30%, #e8f1f7 40%, #f2f5f7 60%);
+}
+
+body {
+  font-family: 'Nanum Gothic';
+}
+
+.top_bar {
+  padding-bottom: 100px;
+}
+.home_aside {
+  float: left;
+}
+
+.qr_npay_box {
+  float: right;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.main, .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_bar {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  border: 2px solid #0fdf8a;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.mic_cam_loc {
+  position: relative;
+  top: 2px;
+}
+
+.input_text {
+  position: relative;
+  box-sizing: content-box;
+  font-size: 16px;
+  width: 350px;
+  border: 0;
+  outline: transparent;
+  font-weight: 700;
+}
+
+input::placeholder {color: #dfe6ea;}
+input::-webkit-input-placeholder {color:#dfe6ea;}
+input::-ms-input-placeholder {color:#dfe6ea;}
+
+.shc_item {
+  text-align: center;
+}
+
+.shc_item_icon {
+  background-color: #f5f8fc;
+  border-radius: 22px;
+  margin: 13px 20px 3px 20px;
+  padding: 10px 13px 8px;
+  text-align: center;
+}
+
+.shc_text {
+  font-size: 12px;
+}
+
+#blank {
+  visibility: hidden;
+}
+
+.shortcuts {
+  margin-bottom: 150px;
+}
+
+.box {
+  width: 430px;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.box_1 { 
+  border-radius: 10px 10px 0px 0px;
+}
+
+.moon {
+  float: left;
+}
+
+.simple_weather {
+  width: 200px;
+  padding: 10px;
+  float: left;
+}
+
+.text1 { font-size: 10pt;}
+.text2 { font-size: 8pt;}
+.text3 { font-size: 7pt;}
+
+.NOW_logo {
+  position: relative;
+  top: 4px;
+  left: 20px;
+  float: left;
+  vertical-align: middle;
+}
+
+.NOW_pics {
+  float: right;
+}
+
+.NOW {
+  width: 170px;
+  padding: 10px;
+  float: right;
+}
+
+.box_weather {
+  border-radius: 10px;
+}
+
+.weather_top_bar {
+  display: flex;
+}
+
+.weather_text {
+  flex: 1;
+}
+
+.location {
+  flex: 11;
+}
+
+.folding {
+  flex: 1;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+  margin: 7px 0px 7px 0px;
+  padding: 0;
+}
+
+li {
+  float: left;
+  text-align: center;
+  border-radius: 2px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding: 9px;
+  background-color: #f5f7fd;
+}
+
+li#daytime_weather {
+  color: white;
+  background-color: #7a96cc;
+}
+
+.weather_day {
+  width: 100%;
+}
+
+.box_covid {
+  display: flex;
+}
+
+.covid_info, .covid_factcheck {
+  flex: 1;
+}
+
+.covid_boldtext {
+  margin-top: 0px;
+}
+
+.covid_desc {
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+.covid_pic{
+  display: block;
+  float: left;
+  margin-right: 2px;
+}
+
+.box_prvs_gvrm {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.table_prvs_gvrm {
+  margin: auto;
+}
+
+.box_naver_app {
+  display: flex;
+  align-items: center;
+}
+
+.naver_app_pic {
+  position: relative;
+  top: 2px;
+  flex: 1;
+  margin-right: 8px;
+}
+
+.naver_app_text {
+  flex: 10;
+}
+
+.using_app {
+  flex: 3;
+  text-align: right;
+}
+
+.using_app_button {
+  color: #4e99df;
+  padding: 6px;
+  border: #4e99df 1.5px solid;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.webtoon_text {
+  float: left;
+}
+
+.opening {
+  float: right;
+}
+
+.popular_pan_bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popular_pan_text {
+  flex: 1;
+}
+
+.pan_manage {
+  flex: 1;
+  text-align: right;
+}
+
+.pan {
+  width: 100%;
+}
+
+.pan_item1, .pan_item2 {
+  width: 50%;
+  background-color: #f2f5f7;
+  padding: 6px;
+}
+
+.film_pan, .bbum_pan, .webtoon_pan, .economicsM_pan {
+  float: left;
+  vertical-align: center;
+}
+
+.right_arrow_gray {
+  float: right;
+}
+
+.pan_name {
+  float: left;
+  margin: 4px 0px 0px 2px;
+}
+
+.box_notice {
+  display: flex;
+  align-items: center;
+}
+
+.notice_mark {
+  flex: 2;
+  color: #00d05c;
+  border: 1px solid #00d05c;
+  text-align: center;
+  border-radius: 10px; 
+  margin-right: 4px;
+  padding: 2px;
+}
+.notice_text {
+  flex: 15;
+}
+
+.right_arrow_white {
+  flex: 1;
+  text-align: right;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer_row {
+  margin: 5px;
+}
+
+.footer_logo {
+  margin: 10px 0px 30px 0px;
+}
+
+.footer_link {
+  text-decoration: none;
+}
