@@ -1,0 +1,78 @@
+.main_title{
+    font-size: 30px;
+    font-weight:600;
+    text-align: center;
+    padding-top : 60px;
+    padding-bottom : 30px;
+}
+
+.container{
+    background-color: rgb(222, 243, 249);
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+}
+
+input{
+    width: 83%;
+    overflow: hidden;
+    border: none;
+    margin-left: 25px;
+}
+
+button{
+    background: rgb(241, 249, 252);
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    border-color: rgb(207, 206, 207);
+    border-radius: 3px;
+    margin-right: 30px;
+}
+
+/* 리스트 칸 */
+.todolist{
+    background-color: rgb(241, 249, 252);
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-bottom: 10px;
+}
+
+
+ul{
+    list-style: none;
+}
+
+/* todo 내용 */
+li{
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+/* 하단 세개 버튼 */
+.all_reset, .all_select, .select_delete{
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 8px;
+    width: 80px;
+    overflow: hidden;
+    background-color: rgb(43, 107, 245);
+    border: none;
+    color: white;
+}
+
+/* 선택삭제 오른쪽 여백 */
+.select_delete{
+    margin-right: 130px;
+}
