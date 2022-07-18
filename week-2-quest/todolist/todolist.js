@@ -40,10 +40,25 @@ function addtodolist(){
 // 	}
 
 // 전부 선택하게 하는거(x)
-function allselect(allselect){
-    const checkboxes = document.getElementsByName('add');
-    checkboxes.forEach(function (checkbox) {
-        checkbox.checked = selectAll.checked;
+// function allselect(allselect){
+//     const checkboxes = document.getElementsByName('checkbox');
+//     checkboxes.forEach(function (checkbox) {
+//         checkbox.checked = selectAll.checked;
+//     })
+// }
+
+function allselect(allselect)  {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
     })
 }
 
+// function toggle(source) {
+//     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+//     for (var i = 0; i < checkboxes.length; i++) {
+//         if (checkboxes[i] != source)
+//             checkboxes[i].checked = source.checked;
+//     }
+// }
