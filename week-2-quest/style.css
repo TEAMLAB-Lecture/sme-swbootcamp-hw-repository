@@ -15,6 +15,7 @@ header {
 
 .btn1, .btn2, .btn3{color: #FFF;
 	font-size: 1rem;
+	cursor: pointer;
 }
 
 header h1{ 
@@ -31,7 +32,7 @@ input, button {
 }
 
 #new-task-input {
-	width: 500px;
+	width: 700px;
 	background-color: #1F2937;
 	padding: 1rem;
 	border-radius: 1rem;
@@ -45,11 +46,13 @@ input, button {
 }
 
 #new-task-submit {
-	color: #EC4899;
+	display: flex;
+	color: #1a020e;
 	font-size: 1.25rem;
 	font-weight: 1000;
 	background-image: #EC4899;
-}
+	margin-right: auto;
+	}
 
 
 
@@ -59,16 +62,26 @@ main {
 	margin: 0 auto;
 }
 
-checkbox { 
-	color: #FFF;
-	margin:0 auto
+.checkbox {
+	float: left;
+    min-width: none;
+    min-height: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem 0.5rem;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    text-align: center;
+	opacity: 0.9;
+	background-color: #FFF;
 }
 
 
+
 .task-list h2 {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: 300;
-	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 
 #tasks .task {
@@ -77,6 +90,8 @@ checkbox {
 	background-color: #111827;
 	padding: 1rem;
 	margin-bottom: 1rem; 
+	
+	
 }
 
 
@@ -85,7 +100,7 @@ checkbox {
 	font-size: 1.125rem;
 	width: 100%;
 	display: block;
-	transition: 0.4s;
+	text-align: center;
 }
 
 

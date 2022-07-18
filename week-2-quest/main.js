@@ -2,6 +2,12 @@ window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task");
 	const input = document.querySelector("#new-task-input");
 	const list_el = document.querySelector("#tasks");
+	const selectAll = document.getElementById("#allcheck");
+
+
+
+
+	
 
 	
 
@@ -26,9 +32,12 @@ window.addEventListener('load', () => {
 
 		task_content_el.appendChild(task_input_el);
 
+		
+
 		const task_actions_el = document.createElement('div');
 		task_actions_el.classList.add('actions');
-		
+
+
 		const task_edit_el = document.createElement('button');
 		task_edit_el.classList.add('edit');
 		task_edit_el.innerText = '수정';
@@ -37,12 +46,15 @@ window.addEventListener('load', () => {
 		task_delete_el.classList.add('delete');
 		task_delete_el.innerText = '삭제';
 
+		const checkboxElem = document.createElement('button');
+		checkboxElem.classList.add("checkbox");
+
 		task_actions_el.appendChild(task_edit_el);
 		task_actions_el.appendChild(task_delete_el);
-
 		task_el.appendChild(task_actions_el);
-
 		list_el.appendChild(task_el);
+		task_actions_el.appendChild(checkboxElem)
+
 
 		input.value = '';
 
@@ -51,12 +63,16 @@ window.addEventListener('load', () => {
 				task_edit_el.innerText = "저장";
 				task_input_el.focus();
 			} else {
-				task_edit_el.innerText = "수정";
+				task_edit_el.innerText = "수정";		
 			}
+
 		});
 
 		task_delete_el.addEventListener('click', (e) => {
 			list_el.removeChild(task_el);
+
+
+	
 		});
 	});
 });
