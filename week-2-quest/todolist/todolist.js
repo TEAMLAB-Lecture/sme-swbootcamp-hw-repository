@@ -12,8 +12,9 @@ function addtodolist(){
     // document.getElementById('jbBtn').appendChild(li);
 
     // 버튼에 체크박스 다는법?
-    const button = document.createElement('button');
+    const button = document.createElement('input');
     // button.setAttribute('id', button);
+    button.setAttribute("type", "checkbox");
     document.getElementById('result').appendChild(button);
     
 
