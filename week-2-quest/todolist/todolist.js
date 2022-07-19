@@ -39,19 +39,20 @@ function addtodolist(){
 // 		checkToDo(e); // 체크박스를 클릭한 경우 글씨 색을 연하게 바꿔준다.
 // 	}
 
-// 전부 선택하게 하는거(x)
+
 // function allselect(allselect){
-//     const checkboxes = document.getElementsByName('checkbox');
-//     checkboxes.forEach(function (checkbox) {
-//         checkbox.checked = selectAll.checked;
+//     const checkboxes = document.getElementsByName('button');
+//     checkboxes.forEach((checkbox) => {
+//         checkbox.checked = allselect.checked;
 //     })
 // }
 
+// checkbox를 사용하면 성공하는 법
 function allselect(allselect)  {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     
-    checkboxes.forEach((checkbox) => {
-    checkbox.checked = selectAll.checked;
+    checkboxes.forEach(function (checkbox) {
+        checkbox.checked = allselect.checked;
     })
 }
 
@@ -60,5 +61,17 @@ function allselect(allselect)  {
 //     for (var i = 0; i < checkboxes.length; i++) {
 //         if (checkboxes[i] != source)
 //             checkboxes[i].checked = source.checked;
+//     }
+// }
+
+// 버튼을 새로 만들어서 해보기 실패 
+// const $agreeBtn = document.querySelector('.agree-btn');
+// $agreeBtn.onclick = () => {
+//     if ($inputs.filter(input => input.checked).length === $inputs.length) {
+//     $inputs.forEach(input => { input.checked = false; });
+//     } else {
+//     $inputs.forEach(input => {
+//         input.checked = true;
+//     });
 //     }
 // }

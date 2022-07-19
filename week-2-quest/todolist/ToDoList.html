@@ -54,10 +54,10 @@
                 <!-- 이것 또한 함수를 사용해서 버튼이 각각의 기능을 하게 3개 만들어 놓아야 함 -->
                 <!-- 함수 이름은 all_select, all_clear, select_delete -->
                 <p align="rignt">
-                    <input type="button" id="all_select" name="all_select" value="전체 선택" onclick="allselect('button')">
+                    <input type="checkbox" id="all_select" name="all_select" value="전체 선택" onclick="allselect(this)">
                     <input type="button" id="all_clear" name="all_clear" value="전체 해제" onclick="">
                     <input type="button" id="select_delete" name="select_delete" value="선택 삭제" onclick=""></p>
-
+                    <!-- <button class="agree-btn">전체동의</button> -->
             </footer>
         </div>
     </body>
