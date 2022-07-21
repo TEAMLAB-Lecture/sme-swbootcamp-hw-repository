@@ -5,13 +5,6 @@ window.addEventListener('load', () => {
 	const selectAll = document.getElementById("#allcheck");
 
 
-
-
-	
-
-	
-
-
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
@@ -46,8 +39,11 @@ window.addEventListener('load', () => {
 		task_delete_el.classList.add('delete');
 		task_delete_el.innerText = '삭제';
 
-		const checkboxElem = document.createElement('button');
+		const checkboxElem = document.createElement('input');
+		// checkboxElem.classList.add("checkbox");
 		checkboxElem.classList.add("checkbox");
+
+
 
 		task_actions_el.appendChild(task_edit_el);
 		task_actions_el.appendChild(task_delete_el);
