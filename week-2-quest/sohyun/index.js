@@ -26,6 +26,21 @@ function todolist(){
     }
 }
 
+//선택 삭제
+function selectdelete(){
+    const checkboxes = document.getElementsByName('checkbox');  
+    for(var i=0;i<checkboxes.length;i++){
+        if(checkboxes[i].checked == true){
+            //checkboxes[i].remove();
+            checkboxes[i].parentElement.parentElement.remove();
+            //EventTarget.parentNode.remove();
+            //$('checkboxes:checked').remove();
+        }
+    }
+}
+
+
+
 function readOnlyFalse(e){
     e.parentNode.previousSibling.lastChild.readOnly=false;
 }
@@ -64,18 +79,6 @@ function clearall(){
 }
 //*/
 
-//선택 삭제
-function selectdelete(){
-    const checkboxes = document.getElementsByName('checkbox');  
-    for(var i=0;i<checkboxes.length;i++){
-        if(checkboxes[i].checked == true){
-            //checkboxes[i].remove();
-            //checkboxes[i].parentElement.remove();
-            //EventTarget.parentNode.remove();
-            $('checkboxes:checked').remove();
-        }
-    }
-}
 
 
 
