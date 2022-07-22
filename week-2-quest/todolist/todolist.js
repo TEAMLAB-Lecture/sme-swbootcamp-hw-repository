@@ -1,5 +1,5 @@
 const do_list = document.getElementById('list');
-
+// text안에 내용을 const 해야 될듯 if문을 사용 할려면
 
 // input 입력값 나타내기
 // createElement 라는 요소를 사용하여 리스트 생성
@@ -12,21 +12,22 @@ function addtodolist(){
     // document.getElementById('jbBtn').appendChild(li);
 
     // 버튼에 체크박스 다는법?
+    if("text !==''"){
     const button = document.createElement('input');
     // button.setAttribute('id', button);
     button.setAttribute("type", "checkbox");
     document.getElementById('result').appendChild(button);
-    
 
-    
-    
     const add= document.getElementById('add').value;
     const li = document.createElement('li');
     li.setAttribute('id', add);
     const textNode=document.createTextNode(add);
     li.appendChild(textNode);
     document.getElementById('result').appendChild(li); 
-
+    }
+    else{
+        alert("입력하세요");
+    }
     
     
 }
@@ -48,6 +49,7 @@ function addtodolist(){
 // }
 
 // checkbox를 사용하면 성공하는 법
+// 왜 버튼으로 변경이 안되지?
 function allselect(allselect)  {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     
@@ -75,3 +77,20 @@ function allselect(allselect)  {
 //     });
 //     }
 // }
+
+            // function deletecheck(){
+
+            //     for(var i=0;i<500;i++){
+            //         if(document.getElementsByName("checkBox")[i].checked == true){
+            //             document.getElementsByName("deletediv")[i].remove();
+            //         }
+
+
+            //      }
+
+
+            // }
+
+function enterkey(){
+    if (window.event.keyCode ==13 ){addtodolist()}
+}

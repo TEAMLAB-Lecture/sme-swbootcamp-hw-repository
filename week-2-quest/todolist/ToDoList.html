@@ -23,7 +23,7 @@
                     <!-- 할일 입력하기 -->
                     <div id="textbox">
 
-                        <input type="text" id="add"  placeholder="할 일을 입력하세요." onchange="addtodolist()">
+                        <input type="text" id="add"  placeholder="할 일을 입력하세요." onkeyup="enterkey()">
                         <input type="button" value="Enter" onclick= "addtodolist()">
 
                     </div>
@@ -33,6 +33,7 @@
                         <ul id="list">
                             
                         </ul>
+                        
                         <!-- list클래스는 이 박스의 색깔과 크기, 간격 등을 설정
                         리스트에 함수 넣어서 위에서 입력한 값들 자동적으로 들고 오게 만들어야 할듯
                         함수를 꾸미는건 css요소에 class=list_box로 만들기
@@ -56,8 +57,9 @@
                 <p align="rignt">
                     <input type="checkbox" id="all_select" name="all_select" value="전체 선택" onclick="allselect(this)">
                     <input type="button" id="all_clear" name="all_clear" value="전체 해제" onclick="">
-                    <input type="button" id="select_delete" name="select_delete" value="선택 삭제" onclick=""></p>
-                    <!-- <button class="agree-btn">전체동의</button> -->
+                    <input type="button" id="select_delete" name="select_delete" value="선택 삭제" onclick="deletecheck()"></p>
+                    <!-- <button class="agree-btn">전체동의</button> 실험용 -->
+                    
             </footer>
         </div>
     </body>

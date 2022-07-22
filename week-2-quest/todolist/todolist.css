@@ -33,3 +33,8 @@ footer{
     background-color: azure;
     margin-right: 22%;
 }
+
+*{
+    list-style: none;
+
+}
