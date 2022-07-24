@@ -6,5 +6,7 @@ function myfile_click() {
 function recent_click()  {
     window.location.href = 'onedrive_recent.html'
 }
-
+function trash_click()  {
+    window.location.href = 'onedrive_trash.html'
+}
 
