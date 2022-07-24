@@ -440,22 +440,22 @@ i.asidemenuicon {
     display: none;
   }
 }
-@media screen and (max-width: 674px) {
+@media screen and (max-width: 689px) {
   .topbar-sync {
     display: none;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 599px) {
   .topbar-upload {
     display: none;
   }
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 492px) {
   .topbar-make-new-thing {
     display: none;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 320px) {
   .hidden-topbar-item {
     display: none;
   }
