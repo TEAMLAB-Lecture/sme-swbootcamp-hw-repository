@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Onedrive</title>
+        <link rel="stylesheet" href="onedrive.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/3507c9d612.js" crossorigin="anonymous"></script>
+        <header>
+
+
+        <div class="top-bar">
+            <!-- 왼쪽 상단 메뉴버튼(3줄짜리) -->
+            <button class="btn btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <p style="color: white;"><i class="fa-solid fa-bars" style="color: white;"></i>   OneDrive</p>
+            </button>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                    <div><img src="image/menu_compact.jpg" style="width:100%;"></div>
+                </div>
+
+
+                <!-- 검색창 -->
+            <span class="search-bar">
+                <input type="text" class="search-input" placeholder=" 모두 검색">
+            </span>
+
+
+            <!-- 오른쪽 상단 버튼 -->
+            <span class="top-bar-right">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-gem" style="color:white;"></i>
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <img src="image/menu_dia.jpg" style="width: 100%;">
+                    </div>
+                </div>
+
+
+                <!-- 설정 -->
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa-solid fa-gear" style="color:white;"></i>
+                </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5>설정</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    <div class="offcanvas-body">
+                        OneDrive 설정<br>
+                        옵션<br>
+                        업그레이드<br>
+                        한국어<br>
+                    </div>
+                    </div>
+
+
+                    <!-- 도움말 -->
+                    <button class="btn btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-question" style="color:white;"></i>
+                    </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5>도움말</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        </div>
+
+
+                    <!-- 마이페이지 -->
+                    <button class="btn btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-user-gear" style="color:white;"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <img src="image/menu_mypage.jpg" style="width: 100%;">
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </header>
+    </head> 
+<!-- ------상단 파란색 바------ -->
+
+
+<!-- 메인 시작 -->
+    <body>
+        <div class="main">
+            <!-- 왼쪽 메뉴바 -->
+            <div class="left-menu">
+                <li class="list-group-item list-group-item-action">
+                    <span><b>김 주희</b></span>
+                </li>
+
+                <li class="list-group-item list-group-item-action">
+                    <span>
+                        <i class="fa-regular fa-folder-closed"></i>
+                    </span>
+                    <span>내 파일</span>
+                </li>
+
+                <li class="list-group-item list-group-item-action">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <span>최근 항목</span>
+                </li>
+
+                <li class="list-group-item list-group-item-action">
+                    <span>
+                        <i class="fa-regular fa-image"></i>
+                    </span>
+                    <span>사진</span>
+                </li>
+
+                <li class="list-group-item list-group-item-action">
+                    <span>
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    <span>공유됨</span>
+                </li>
+
+                <li class="list-group-item list-group-item-action">
+                    <span>
+                        <i class="fa-regular fa-trash-can"></i>
+                    </span>
+                    <span>휴지통</span>
+                    </li>
+
+                <footer class="left-bottom">
+                    <p>1TB(10000GB)의 저장소와 최신 PC 또는<br>
+                    Mac용 Office 앱을 받을 수 있습니다.</p>
+                    <img src="image/upgrade.jpg" class="upgrade">
+                </footer>
+            </div>
+<!-- -------------------------------------------------------- -->
+
+
+<!-- main 페이지(오른쪽 부분) -->
+            <div class="main-page">
+                <div class="main-header">
+                    <!-- 새로 만들기 -->
+                    <span class="main-header-left">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                        <i class="fa-solid fa-plus" style="color:rgb(36, 128, 249)"></i>
+                            새로 만들기
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li style="border-bottom:1px solid gainsboro;"><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-folder-closed" style="color:gold;"></i>  폴더</a></li>
+
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-file-word" style="color:rgb(36, 128, 249) ;"></i>  Word 문서</a></li>
+
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-file-excel" style="color: rgb(6, 177, 32)"></i>  Excel 통합 문서</a></li>
+
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-file-powerpoint" style="color:rgb(230, 130, 15) ;"></i>  PowerPoint 프레젠테이션</a></li>
+
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-file" style="color:rgb(166, 9, 210);"></i>  OneNote 전자 필기장</a></li>
+
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-file" style="color:rgb(4, 192, 225);"></i>  양식 설문 조사</a></li>
+
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-regular fa-file-lines"></i>  일반 텍스트 문서</a></li>
+                        </ul>
+                    </span>
+
+                    <!-- 업로드 -->
+                    <span class="main-header-left">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                        <i class="fa-solid fa-upload" style="color:rgb(36, 128, 249)"></i>
+                            업로드
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">파일</a></li>
+                            <li><a class="dropdown-item" href="#">폴더</a></li>
+                        </ul>
+                    </span>
+
+                    <!-- 삭제 -->
+                    <span class="main-header-left">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                        <i class="fa-regular fa-trash-can" style="color:rgb(36, 128, 249)"></i>
+                            삭제
+                        </button>
+                    </span>
+                    
+                    <!-- 정렬 -->
+                    <span class="main-header-right">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                        <i class="fa-solid fa-arrow-down-wide-short" style="color:rgb(36, 128, 249)"></i>
+                            정렬
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">이름</a></li>
+                            <li><a class="dropdown-item" href="#">수정한 날짜</a></li>
+                            <li style="border-bottom:1px solid gainsboro;"><a class="dropdown-item" href="#">파일 크기</a></li>
+                            <li><a class="dropdown-item" href="#">오름차순</a></li>
+                            <li><a class="dropdown-item" href="#">내림차순</a></li>
+                        </ul>
+                    </span>
+
+
+                    <!-- 보기 옵션 전환 -->
+                    <span class="main-header-right">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                        <i class="fa-solid fa-align-left" style="color:rgb(36, 128, 249)"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">목록</a></li>
+                            <li><a class="dropdown-item" href="#">간단한 목록</a></li>
+                            <li><a class="dropdown-item" href="#">타일</a></li>
+                        </ul>
+                    </span>
+
+                    
+                    <!-- info 버튼 -->
+                    <span class="main-header-right-info-button">
+                        <i class="fa-solid fa-circle-info" style="color:rgb(36, 128, 249); border"></i>
+                    </span>
+                </div>
+    <!-- 오른쪽 상단 바 -->
+
+                <div class="main-content-title">
+                    <h5 style="margin-bottom: 30px;">내 파일</h5>
+                </div>
+    <!-- 메인 내용 제목 -->
+
+
+    <!-- 메인 리스트 -->
+            <table>
+                <thead>
+                    <tr class="table-row">
+                        <td>
+                            <input type="checkbox" name="ckAll" onclick="selectAll(this)">
+                        </td>
+
+                        <td><button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                            <i class="fa-regular fa-file"></i>   이름  <i class="fa-solid fa-arrow-up"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">텍스트 오름차순</a></li>
+                                <li><a class="dropdown-item" href="#">텍스트 내림차순</a></li>
+                            </ul>
+                        </td>
+
+
+                        <td><button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                            수정한 날짜</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">오래된 순</a></li>
+                                <li><a class="dropdown-item" href="#">최신순</a></li>
+                            </ul>
+                        </td>
+
+                        <td><button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:black; background-color:white; border:none; ">
+                            크기</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">작은 숫자순</a></li>
+                                <li><a class="dropdown-item" href="#">큰 숫자순</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr class="table-row">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td><i class="fa-regular fa-rectangle-list"></i>   개인 중요 보관소</td>
+                        <td></td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td><i class="fa-solid fa-folder-closed" style="color:gold;"></i>   문서</td>
+                        <td>2022년 01월 23일</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td><i class="fa-solid fa-folder-closed" style="color:gold;"></i>   사진</td>
+                        <td>2022년 01월 24일</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="text-align: center; font-size: 13px; margin-top: 30px;">파일을 업로드하려면 여기로 끌어오세요.</p>
+        </div>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
