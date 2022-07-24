@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="quest3.css" />
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
+        <title>One drive</title>
+
+    </head>
+    <header>
+		<div class="top">
+            <span style="margin-top: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+            </svg>
+            </span>
+            <span style="margin-left: 10px; color: white;">OneDrive</span>
+            <span></span>
+            <span class="text-middle" ><input  style="margin-top: 10px;" id="textbox" type="text" placeholder="모두 검색"> 
+            </span>
+            <div style="float: right;">
+                <button class="top-right-btn"><i class="ms-Icon ms-font-l ms-Icon--DiamondSolid" style="line-height: 48px; color: white;"></i></button>
+                <button class="top-right-btn"><i class="ms-Icon ms-font-l ms-Icon--Settings" style="line-height: 48px; color: white;"></i></button>
+                <button class="top-right-btn"><i class="ms-Icon ms-font-xxl ms-Icon--StatusCircleQuestionMark" style="line-height: 45px; color: white;"></i></button>
+                <button class="top-right-btn"><i class="ms-Icon ms-font-l ms-Icon--ProfileSearch" style="line-height: 48px; color: white;"></i></button>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="left-web">
+            <div class="list-group">
+                <div style="margin-left: 20px;"><strong>이 준 성</strong></div>
+                <button type="button" class="list-group-item list-group-item-action"><i class="ms-Icon ms-font-l ms-Icon--FolderHorizontal" style="margin-top: 8px;"></i>
+                    내 파일</button>
+                <button type="button" class="list-group-item list-group-item-action"><i class="ms-Icon ms-font-l ms-Icon--Recent" style="margin-top: 8px;"></i>
+                    최근 항목</button>
+                <button type="button" class="list-group-item list-group-item-action" ><i class="ms-Icon ms-font-l ms-Icon--Photo2" style="margin-top: 8px;"></i>
+                    사진</button>
+                <button type="button" class="list-group-item list-group-item-action" ><i class="ms-Icon ms-font-l ms-Icon--People" style="margin-top: 8px;"></i>
+                    공유됨</button>
+                <button type="button" class="list-group-item list-group-item-action" ><i class="ms-Icon ms-font-l ms-Icon--RecycleBin" style="margin-top: 8px;"></i>
+                    휴지통</button>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="left-bottom">1TB(10000GB)의 저장소와 최신 PC 또는 Mac용 Office 앱을 받을 수 있습니다.</div>
+            <div><button style="margin-left: 25px;">프리미엄으로 업그레이드</button></div>
+        </div>
+        <div></div>
+        <div style="margin-left: 10px;">
+            <div id="center-text" >
+                <span class="middle-left">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <i class="ms-Icon ms-font-xl ms-Icon--Add"></i>
+                            새로 만들기
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">폴더</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Word 문서</a></li>
+                        <li><a class="dropdown-item" href="#">Excel 통합 문서</a></li>
+                        <li><a class="dropdown-item" href="#">PowerPoint 프레젠테이션</a></li>
+                        <li><a class="dropdown-item" href="#">OneNote 전자 필기장</a></li>
+                        <li><a class="dropdown-item" href="#">양식 설문 조사</a></li>
+                        <li><a class="dropdown-item" href="#">일반 텍스트 문서</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="ms-Icon ms-font-l ms-Icon--Upload"></i>
+                            업로드
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">파일</a></li>
+                        <li><a class="dropdown-item" href="#">폴더</a></li>
+                        </ul>
+                    </div>
+                </span>
+                <span class="middle-right">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="ms-Icon ms-font-xl ms-Icon--Info"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">모든활동</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="ms-Icon ms-font-l ms-Icon--AlignLeft"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">목록</a></li>
+                            <li><a class="dropdown-item" href="#">간단한 목록</a></li>
+                            <li><a class="dropdown-item" href="#">타일</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="ms-Icon ms-font-l ms-Icon--SortLines"></i>
+                            정렬
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">이름</a></li>
+                            <li><a class="dropdown-item" href="#">수정한 날짜</a></li>
+                            <li><a class="dropdown-item" href="#">파일 크기</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">오름차순</a></li>
+                            <li><a class="dropdown-item" href="#">내림차순</a></li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+                <div id="my-file" >내 파일</div><br><br>
+                <div>
+                    <ul class="list-group list-group-flush" >
+                        <li class="list-group-item" style="margin-left: 3vw; float: left;">
+                            <span><input type="checkbox"></span>
+                            <span class="dropdown">
+                                <button  style="color: black; border: none;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    이름
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">텍스트 오름차순</a></li>
+                                    <li><a class="dropdown-item" href="#">텍스트 내림차순</a></li>
+                                </ul>
+                            </span>
+                            <span class="dropdown">
+                                <button style="color: black;  border: none; margin-left: 40vw;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    수정한 날짜
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">오래된 순</a></li>
+                                    <li><a class="dropdown-item" href="#">최신 순</a></li>
+                                </ul>
+                            </span>
+                            <sapn class="dropdown">
+                                <button style="color: black;   border: none; " class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    크기
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">작은 숫자순</a></li>
+                                    <li><a class="dropdown-item" href="#">큰 숫자순</a></li>
+                                </ul>
+                            
+                            </span>
+                        </li>
+                        <li class="list-group-item" style="margin-left: 3vw;">
+                            <span><input type="checkbox"></span>
+                            <span style=" margin-left: 1vw;">문서 1</span>
+                            <span style=" margin-left: 40vw;">2022년 7월 21일</span>
+                            <span style=" margin-left: 2vw;">30</span>
+                        </li>
+                        <li class="list-group-item" style="margin-left: 3vw;">
+                            <span><input type="checkbox"></span>
+                            <span style=" margin-left: 1vw;">문서 2</span>
+                            <span style=" margin-left: 40vw;">2022년 7월 21일</span>
+                            <span style=" margin-left: 2vw;">30</span>
+                        </li>
+                    </ul>
+                </div><br>
+                <div style="text-align: center;">파일을 업로드하려면 여기로 끌어오세요</div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
