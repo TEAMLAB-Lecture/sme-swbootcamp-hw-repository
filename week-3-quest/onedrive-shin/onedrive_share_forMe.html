@@ -82,13 +82,17 @@
 
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
+                  <div>
+                  <button type="text" style="background-color: white; border:0px solid" onclick="share_forMe_click()"><b>나에게 공유한 항목<b></b></button>
+                  <button type="text" style="background-color: white; border:0px solid" onclick="share_me_click()"><b>내가 공유한 항목<b></b></button>
+                  </div>
                   <!-- <a class="navbar-brand" href="#">Navbar</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button> -->
                   <div class="main_left">
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -126,7 +130,7 @@
                           <li><a class="dropdown-item" href="#">Power Automate</a></li>
                         </ul>
                       </li>
-                    </ul>
+                    </ul> -->
                     <!-- <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Search</button>
@@ -167,6 +171,9 @@
                         <li class="nav-item">
                           <a class="nav-link" href="#">!</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img src="onedrive.img/굴뚝.JPG" height="30px"> </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -174,14 +181,14 @@
               </nav>
               <hr>
               <br>
-                <div><h3>내 파일</h3></div>
+                <div><h3>나에게 공유한 목록</h3></div>
 
                 <div class="d-flex justify-content-between">
                   <nav class="navbar navbar-expand-lg bg-light" >
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <input type="checkbox" class="check">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <div class="name_nav" style="width: 300px; border: 0px;">
+                      <div class="name_nav" style="width: 600px; border: 0px;">
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           이름
@@ -192,46 +199,44 @@
                         </ul>
                       </li>
                       </div>
-                      <div class="day_nav" style="width: 150px;">
+                      <!-- <div class="day_nav" style="width: 150px;">
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          수정된 날짜
+                          삭제된 날짜
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">오래된 순</a></li>
                           <li><a class="dropdown-item" href="#">최신순</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">필터링 기준</a></li>
                         </ul>
                       </li>
-                      </div>
+                      </div> -->
                       <div class="people_nav" style="width: 150px;">
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          수정한 사람
+                          공유한 날짜
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">텍스트 오름차순</a></li>
-                          <li><a class="dropdown-item" href="#">텍스트 내림차순</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">필터링 기준</a></li>
+                          <li><a class="dropdown-item" href="#">오래된 순</a></li>
+                          <li><a class="dropdown-item" href="#">최신순</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="#">공유한 날짜별로 그룹화</a></li>
                         </ul>
                         </li>
                         </div>
                         <div class="file_size" style="width: 150px;">
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            파일 크기
+                            공유한 사람
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">작은 숫자순</a></li>
-                            <li><a class="dropdown-item" href="#">큰 숫자순</a></li>
+                            <li><a class="dropdown-item" href="#">텍스트 오름차순</a></li>
+                            <li><a class="dropdown-item" href="#">텍스트 내림차순</a></li>
                           </ul>
                         </li>
                       </div>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">공유</a>
-                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">원래위치</a>
+                      </li> -->
                     </ul>
                   </div>
                 </nav>
