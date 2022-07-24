@@ -125,3 +125,11 @@ body {
   background-color: rgb(243, 242, 241);
   border: 0px;
 }
+
+.left_hover:hover{
+color: gray;
+}
+
+#a:hover, #b:hover, #c:hover, #d:hover, #e:hover,#f:hover,#g:hover,#h:hover{
+background: gray;
+}
