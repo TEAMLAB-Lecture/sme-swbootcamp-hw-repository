@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>To Do List</title>
+        <link rel="stylesheet" href="ToDoList.css" type="text/css">
+    </head>
+
+<!-- 제목 -->
+    <body class="container">
+        <div class="main_title">To Do List</div>
+
+<!-- 입력창 -->
+        <div id="search">
+            <input type="text" id="input" placeholder=" 할 일을 입력하세요.">
+            <button type="button" id="button" onclick="click_event();">Enter</button>
+        </div>
+
+<!-- to do list -->
+        <div class="todolist">
+            <ul class="list-group" id="list">
+                <li class="list-group-item"></li>
+            </ul>
+        </div> 
+
+        <div class="bottom_button">
+                <button class="select_delete">선택 삭제</button>   
+                <button class="all_reset">전체 해제</button>  
+                <button class="all_select">전체 선택</button>
+        </div>
+
+    <script src="ToDoList.js"></script> <!-- script는 body 안에-->
+    </body>
+</html>

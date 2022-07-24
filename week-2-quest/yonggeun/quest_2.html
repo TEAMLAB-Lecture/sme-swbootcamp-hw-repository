@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="quest_2_style.css">
+  </head>
+  <body class="body">
+    <header>
+      <div class = "header">
+        <h1>To Do List</h1>
+      </div>
+    </header>
+
+    <section>
+
+      <!-- 검색창 -->
+
+        <div class="search_container">
+          <div class="search_items">
+            <input type="text" id="search_box" placeholder="검색어를 입력해주세요">
+          </div>
+          <div class="search_items">
+            <button id="enter_button">Enter</button>
+          </div>
+        </div>
+
+      <!-- 체크리스트 -->
+
+      <div class="checklist">
+        <ul id="list">
+        </ul>
+      </div>
+    </section>
+
+    <!-- 전체선택, 해제창 -->
+    <footer>
+      <div class="footer">
+        <ul class="choice">
+          <li><button type="button" id="select_all" onclick="checkAll()">전체 선택</button></li>
+          <li><button type="button" id="uncheck_all" onclick="uncheckAll()">전체 해제</button></li>
+          <li><button type="button" id="select_delete" onclick="deleteChecked()">선택 삭제</button></li>
+        </ul>
+    </footer>
+
+    <script src="quest_2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  </body>
+</html>

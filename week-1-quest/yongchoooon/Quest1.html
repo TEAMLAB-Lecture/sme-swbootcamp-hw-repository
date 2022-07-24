@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>NAVER</title>
+    <meta charset="UTF-8">
+    <meta name="writer" keywords="yongchoooon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="top_bar">
+        <a href="">
+          <img src="./pics/home_aside.PNG" alt="homeaside" height="30px">
+        </a>
+        <img src="./pics/QR_NPAY_BOX.PNG" alt="QR_NPAY_BOX" height="30px">
+      </div>
+      <!-- 
+        1. 왼쪽 오른쪽 정렬
+        2. 링크
+        3. 오른쪽 QR, NPAY, BOX는 3개 다 따로 해야하는 데 이미지만 가져오다보니 한 번에 캡쳐함 -> 더 좋은 방법 찾기
+      -->
+      <div class="logo">
+        <img src="https://w.namu.la/s/272c638c8e16264bf86d1f7597b2aafc9d4cc251045b0761057f0525eb44662a70117c9e9f92653dee7447094eee067042cfc6450552fb801c96ca6955c70e05a1254b414b15ca157db3552f71c6c667e99c1be5bc3fb81725c2abe1bd8ae4e2" alt="NAVER" width="160px">
+        <!-- 가운데 정렬 display: block; margin: 0 auto:-->
+        <!-- 맨 위 줄이랑 간격 두기-->
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="search_bar">
+        <form action="">
+          <div class="search">
+            <input type="text" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요.">
+          </div>
+          <!-- 
+            input text box 크기, 색, 글 옅게, 모서리 약간 둥글게
+            border랑 padding, input은 모서리 없이
+          -->
+          <div class="mic_cam_loc">
+            <a href="">
+              <img src="./pics/MIC_CAM_LOC.PNG" alt="mic_cam_loc" height="30px">
+            </a>
+            <!-- input 안에 사진 넣기-->
+          </div>
+          <!-- 이것도 3개 사진 다 따로 해야 하는데 한 번에 캡쳐함-->
+        </form>
+        <!-- text 입력하고 enter 하면 어떻게 되는지 -->
+      </div>
+      <div class="shortcuts">
+        <table>
+          <tr>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2021/0512/upload_1620798219733OQxDG.png" alt="news" height="30px">
+                </div>
+                <!-- 그림 백그라운드 회색으로-->
+                <span>뉴스판</span>
+              </div>
+              <!-- 글씨 크기 작게-->
+            </td>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2021/0512/upload_1620798450855mH4jj.png" alt="economics indicator" height="30px">
+                </div>
+                <span>경제지표판</span>
+              </div>
+            </td>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2021/0512/upload_1620798252785Hq1fI.png" alt="entertain" height="30px">
+                </div>
+                <span>연예판</span>
+              </div>
+            </td>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2020/0528/mobile_142227761198.png" alt="membership" height="30px">
+                </div>
+                <span>멤버십</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2020/0319/mobile_19411917574.png" alt="mail" height="30px">
+                </div>
+                <span>메일</span>
+              </div>
+            </td>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2020/0319/mobile_191015178706.png" alt="cafe" height="30px">
+                </div>
+                <span>카페</span>
+              </div>
+            </td>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2020/0319/mobile_181505455420.png" alt="blog" height="30px">
+                </div>
+                <span>블로그</span>
+              </div>
+            </td>
+            <td>
+              <div class="shc_item">
+                <div class="shc_item_icon">
+                  <img src="https://s.pstatic.net/static/www/mobile/edit/2021/0427/upload_1619497854375Q53rw.png" alt="more menu" height="30px">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <!-- 
+          표 크기, 한 칸에 정렬, 간격 맞추기, 맨 마지막 아이콘은 글이 없어서 사진을 위쪽에 정렬하는걸로
+          표 아래에 margin 크게 둬서 아래 div와 거리 두기
+        -->
+      </div>
+      <div class="simple_weather_and_NOW">
+        <div class="simple_weather">
+          <img src="./pics/weather.PNG" alt="moon" height="30px">
+          <div class="temp">
+            <strong>10° 맑음</strong><br>
+          </div>
+          <div class="temp_than_yesterday">
+            어제보다 2° 높아요
+          </div>
+          <!-- 두 문장 크기 다름-->
+        </div>
+        <div class="NOW">
+          <div class="NOW_logo">
+            <img src="https://obj.thewiki.kr/thecloud/temp/eb84a4ec9db4ebb28420eb8298ec9ab020eba19ceab3a02e706e67.png" alt="Naver NOW" height="15px">
+            <div><strong>지금 방송중</strong></div>
+          </div>
+          <div class="NOW_pics">
+            <img src="./pics/NOW_pics.PNG" alt="naver NOW pictures" height="40px">
+          </div>
+        </div>
+        <!-- 로고와 글씨, 그림 양쪽으로 오게 배치-->
+        <!-- 날씨와 NOW 둘 다 양쪽 정렬, box 아래로 margin 둬서 아래 box와 간격, 아래 모든 box에 간격 동일-->
+      </div>
+      <div class="weather">
+        <div class="weather_top_bar">
+          <div class="weather_text">날씨</div>
+          <div class="location">
+            <span class="location_text">서울시 잠실동</span>
+            <img src="./pics/location.PNG" alt="location" height="16px">
+          </div>
+          <div class="folding">
+            <img src="./pics/folding.PNG" alt="folding" height="20px">
+          </div>
+
+        </div>
+        <ul class="detail_weather_list">
+          <li>시간대별 날씨</li>
+          <li>시간대별 미세먼지</li>
+          <li>주간 날씨</li>
+          <li>주간 미세먼지</li>
+        </ul>
+        <!-- 가로정렬, 주간 날씨에만 색, 글자색 바꾸기, 리스트 점 없애기-->
+        <div class="weather_day">
+          <img src="./pics/weather_day.PNG" alt="weather_day" width="380px">
+        </div>
+      </div>
+      <div class="covid">
+        <div class="covid19_info">
+          <img src="./pics/covid19.PNG" alt="covid19" width="20px">
+          <p><b>코로나19</b></p>
+          <!-- p를 inline으로 만들기-->
+          <p>국내외 확진 현황</p>
+        </div>
+        <div class="covid19_factcheck">
+          <img src="./pics/covid_ox.PNG" alt="covid19 OX" width="20px">
+          <p><b>코로나19 팩트체크</b></p>
+          <p>백신 정보 팩트는?</p>
+        </div>
+        <!-- 양쪽 정렬 후 한 박스 내에서도 왼쪽 정렬-->
+      </div>
+      <div class="prvs_government">
+        <table>
+          <td>
+            <img src="./pics/provisional_government.PNG" alt="provisional government" width="25px">
+          </td>
+          <td>
+            <span>제102주년 <b>대한민국 임시정부 수립일</b></span>
+          </td>
+        </table>
+        <!-- table 가운데 정렬 -->
+      </div>
+      <div class="naver_app">
+        <div class="naver_app_pic">
+          <img src="./pics/naver_app_logo.PNG" alt="naver app logo" width="30px">
+        </div>
+        <div class="naver_app_text">
+          <span>앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해 보세요.</span>
+        </div>
+        <div class="use_app">
+          <a href="https://m.naver.com/">
+            <span>앱 사용하기</span>
+          </a>
+          <!-- button처럼 꾸미기, 아랫줄 없애기-->
+        </div>
+      </div>
+      <div class="webtoon">
+        <div class="webtoon_text">
+          <span><b>웹툰</b></span>
+        </div>
+        <div class="opening">
+          <img src="./pics/opening.PNG" alt="opening" width="14px">
+        </div>
+      </div>
+      <div class="popular_pan">
+        <div class="popular_pan_bar">
+          <div class="popular_pan_text">
+            <p><b>인기 주제 판을 확인해 보세요!</b></p>
+            <!-- text-align으로 왼쪽 오른쪽 정렬-->
+          </div>
+          <div class="pan_manage">
+            <p>판관리</p>
+          </div>
+        </div>
+        <table class="pan">
+          <tr>
+            <td class="pan_item">
+              <div class="film_pan">
+                <img src="./pics/film_pan.PNG" alt="film" width="20px">
+                <span>영화판</span>
+              </div>
+              <div class="right_arrow_gray">
+                <img src="./pics/right_arrow_gray.PNG" alt="right_arrow_gray" width="9px">
+              </div>
+            </td>
+            <td class="pan_item">
+              <div class="bbum_pan">
+                <img src="./pics/bbum_pan.PNG" alt="bbum" width="20px">
+                <span>뿜판</span>
+              </div>
+              <div class="right_arrow_gray">
+                <img src="./pics/right_arrow_gray.PNG" alt="right_arrow_gray" width="9px">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="pan_item">
+              <div class="webtoon_pan">
+                <img src="./pics/webtoon_pan.PNG" alt="webtoon" width="20px">
+                <span>웹툰판</span>
+              </div>
+              <div class="right_arrow_gray">
+                <img src="./pics/right_arrow_gray.PNG" alt="right_arrow_gray" width="9px">
+              </div>
+            </td>
+            <td class="pan_item">
+              <div class="economicsM_pan">
+                <img src="./pics/economicsM_pan.PNG" alt="economicsM" width="20px">
+                <span>경제M판</span>
+              </div>
+              <div class="right_arrow_gray">
+                <img src="./pics/right_arrow_gray.PNG" alt="right_arrow_gray" width="9px">
+              </div>
+            </td>
+            <!-- 테이블 데이터 하나마다 배경 그레이로, 데이터간 간격은 테이블의 border로 표현-->
+          </tr>
+        </table>
+      </div>
+      <div class="notice">
+        <p class="notice_text">알립니다</p> <!-- 초록색, 둥근 테두리로 만들기-->
+        <p><b>네이버앱 업데이트 사전 안내</b></p>
+        <div class="right_arrow_white">
+          <a href=""><img src="./pics/right_arrow_white.PNG" alt="right_arrow_white" width="12px"></a>
+          <!-- 링크-->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <a class="footer_link" href="https://nid.naver.com/nidlogin.login">로그인</a>
+        <a class="footer_link" href="https://m.naver.com/services.html">전체서비스</a>
+        <a class="footer_link" href="https://www.naver.com/?mobile">PC버전</a>
+      </div>
+      <div class="footer">
+        <a class="footer_link" href="https://policy.naver.com/policy-mobile/term.html?type=1?type=1">이용약관</a>
+        <a class="footer_link" href="https://policy.naver.com/policy-mobile/privacy.html">개인정보처리방침</a>
+        <a class="footer_link" href="https://m.help.naver.com/support/index.help">고객센터</a>
+      </div>
+      <div class="footer">
+        <a href="https://www.naver.com/"><img src="./pics/graynaver.PNG" alt="naver" width="60px"></a>
+      </div>
+      <!-- TODO: 하단의 여러 가지 링크들은 어떻게 처리하면 좋을까요? -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+        <form id="new-task">
+        <input type="text" id="new-task-input" placeholder="할 일을 적어주세요" >
+            <input
+            type="submit"
+            id="new-task-submit"
+            value="Enter"/>
+    </form>
+    </header>    
+    <main>
+        <section class="task-list">
+            <h2>List</h2>
+            <div id="tasks">
+
+                <div class="task">
+                    <div class="content">
+
+                            <input class="text" >
+                    </div>
+                    <div class="actions">
+                        <button class="edit">수정</button>
+                        <button class="delete">삭제</button>
+                        <input class="checkbox" type="checkbox" >
+
+                    </div>
+                </div>
+
+            </div>
+            <a class="all"> 
+                <button class="btn1" type="button" id="allcheck">전체 선택</button>
+                <button class="btn2" type="button" id="uncheck">전체 해제</button>
+                <button class="btn3" type="button" id="removebtn">선택 삭제</button>
+            </a>
+
+
+
+        </section>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

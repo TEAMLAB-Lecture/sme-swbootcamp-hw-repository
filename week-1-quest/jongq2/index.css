@@ -1,0 +1,170 @@
+body{
+    background-color: #f0f4f8;
+
+}
+*{
+box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+.navbutton{
+    
+    width : 100px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+
+}
+header{
+    text-align: center;
+    
+    width: 500px;
+}
+nav{
+    
+    width: 402px;
+    margin-top: 30px;
+    margin-bottom: 300px;
+    margin-left :50px;
+}
+section{
+    
+    width: 500px;
+}
+footer{
+    width: 212px;
+    border: 1px solid gray;
+    margin-left: 155px;
+}
+#today,#weather,#corona,#government,#appuse,#webtoon,#pan,#appupdate{
+    border: 1px solid white;
+    margin-bottom: 20px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.footerli{
+    float: left;
+    width: 70px;
+    font-size: 10px;
+    
+}
+#search{
+    border: 2px solid rgb(32, 203, 55);
+    text-align: left;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.searchbutton{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 3px;
+}
+#tb{
+    float: left;
+    margin-right: 8px;
+    
+}
+#title{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(32, 203, 55);
+}
+.weatherbutton{
+    
+    width: 150px; height: 30px;
+    margin: 5px;
+    float:left;
+    background-color: #f0f4f8;
+}
+#weekweather{
+    width: 450px;
+    height: 150px;
+    float: left;
+    margin-left: 20px;
+    background-image: url("image/weather.PNG");
+    background-size: auto;
+}
+.covid{
+
+    width: 248px;
+    height: 80px;
+    float: left;
+}
+#covid1{
+    border-right: 1px solid gray;
+}
+.goodpan{
+    width: 240px;
+    height: 50px;
+    margin: 3px;
+    float: left;
+    background-color: #f0f4f8;
+}
+
+#checkin{
+
+    width: 100px;
+    height: 30px;				
+}
+#npay{
+    width: 80px;
+    height: 30px;
+}
+#post{
+    width: 40px;
+    height: 30px;
+
+}
+.qrc{
+float: left;
+margin-right:5px;
+
+}
+.qr{
+
+height: auto;
+overflow: hidden;
+width: 237px;
+margin-left: auto;	
+}
+#goverment p{
+    padding: 20px;
+}
+#appuse p{
+    padding: 20px;
+}
+#webtoon p{
+    margin-left: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+.coronab{
+    font-weight: bold;
+}
+#today p{
+    text-align: left;
+    margin-left: 15px;
+}
+#weather p{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+#pan p{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+
