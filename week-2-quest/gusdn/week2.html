@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <title>To Do List</title>
+      <style>
+        #title{color: rgb(18, 127, 4);}
+        #check{background-color: #ffffff;}
+        body{background-color:#ffffff;} 
+        table{background-color:rgb(18, 127, 4);} 
+        ul{list-style:none;}
+        li{color:rgb(255, 255, 255);font-weight: bold;}
+      </style>
+</head>
+
+<body>
+<center><h1 id="title"><strong><font size="50">TO DO LIST</font></strong></h1></center>
+<center>
+    <div class="input-group mb-3" style="width: 50%;">
+      <input type="text" class="form-control" id="input" placeholder="할 일을 입력하세요!" width="100" size="100" height="300px">
+      <button class="btn btn-outline-secondary" type="button" id="button">Enter</button>
+    </div>
+    <br>
+    <table width="770" height="60">
+    <tr>
+    <td align="left"><input type="checkbox" value="done"></td>
+    <td>
+        <!--모르겠는부분ㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴ-->
+    <ul class="list-group" id="list">
+    <li class="list-group-item"> 3주차는 열심히 하깅 ㅎ
+    <input style="float: right;" type="button" value="수정" id="revise">
+    <input style="float: right;" type="button" value="저장" id="save">
+    </li> </ul>
+    <td></td><td></td></tr>
+    </table>
+
+    <center>
+        <table id="check" width="760" height="60">
+            <tr>
+            <td><div id="아이콘_글" role="select"></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td align="right"><input type="button" value="전체 선택"></td>
+            <td align="right"><input type="button" value="전체 해제"></td>
+            <td align="right"><input type="button" value="전체 삭제"></td>
+            </div>
+            </tr>
+        </table>
+        </center>
+        
+    <script src="./week2.js"></script>
+</table>
+</center>
+  </body>
+</html>

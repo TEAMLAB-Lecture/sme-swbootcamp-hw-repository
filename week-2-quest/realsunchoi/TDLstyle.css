@@ -1,0 +1,91 @@
+body {
+  background: linear-gradient(#fff5f7, #f1cdd4); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 150px;
+  color: #3c3032;
+  ;
+}
+
+.inputbox {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#input {
+  width: 600px;
+  height: 30px;
+  border : 1px solid #514a4b;
+  border-collapse: collapse;
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+}
+
+#enter{
+  width: 65px;
+  height: 34px;
+  border-style: hidden;
+  background-color: white;
+  border : 1px solid #514a4b;
+  border-collapse: collapse;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #f9dee3;
+  outline: none;
+}
+
+.buttons {
+  width: 70px;
+  height: 34px;
+  border-style: hidden;
+  background-color: white;
+  border : 1px solid #514a4b;
+  border-collapse: collapse;
+  border-radius: 5px;
+  background-color: #ecb4be;
+  outline: none;
+}
+
+#buttonbox {
+  text-align: right;
+  width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#mainbox {
+  width: 670px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 5px;
+  border-style: hidden;
+  box-shadow: 0 0 0 0.8px #514a4b;
+}
+
+ul {
+  list-style: none;
+  float: left;
+  padding: 3px;
+}
+
+.listButton {
+  height: 18px;
+  width: 45px;
+  font-size: 10px;
+}

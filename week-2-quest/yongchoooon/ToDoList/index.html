@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>To Do List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <script defer src="./todolist.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="main_title">To Do List</h1>
+    </header>
+    <section>
+      <div class="todo_bar">
+        <input id="todo" class="todo" type="text" placeholder="할 일을 입력하세요." onkeypress="addToDoByEnterKey(event)" >
+        <button id="enterbtn" class="todo_enterbtn" type="button" onclick="addToDo()">Enter</button>
+      </div>
+      <div class="todo_list_box">
+        <ul id="todo_list" class="todo_list">
+          <!-- JS로 checkbox, li, togglebtn 추가 -->
+        </ul>
+      </div>
+      <div class="select_button">
+        <button id="selectall" type="button" onclick="selectAllCheckBox()">전체 선택</button>
+        <button id="deselect" type="button" onclick="deselectAllCheckBox()">선택 해제</button>
+        <button id="remove_selected" type="button" onclick="removeCheckBox()">선택 삭제</button>
+      </div>
+    </section>
+    <footer>
+      <p class="composer">Written by <a href="https://www.github.com/yongchoooon" target="_blank" alt="yongchoooon's github" title="yongchoooon's github">@yongchoooon</a></p>
+    </footer>
+  </body>
+</html>

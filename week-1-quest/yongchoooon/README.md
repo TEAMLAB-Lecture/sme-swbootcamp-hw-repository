@@ -4,9 +4,9 @@
 - Git : [link](https://github.com/TEAMLAB-Lecture/web-development-curriculum/tree/main/Quest00)
 - HTML : [link](https://github.com/TEAMLAB-Lecture/web-development-curriculum/tree/main/Quest01)
 - CSS : [link](https://github.com/TEAMLAB-Lecture/web-development-curriculum/tree/main/Quest02)
-### Quest 1 - HTML
+### Quest 1 - NakedHTML
 - My Assignment : [Quest1.html](./Quest1.html)
-### Quest 2 - CSS
+### Quest 2 - Go!CSS
 - My Assignment
   - [Quest2.html](./Quest2.html)
   - [Quest2.css](./Quest2.css)

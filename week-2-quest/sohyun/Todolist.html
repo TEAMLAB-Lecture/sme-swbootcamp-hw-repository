@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>To do List</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <!-- To do list -->
+            <section>
+                <div class="title"><h1>To do List</h1></div>
+            </section>
+
+        </header>
+
+        <main>
+            <section>
+                <!-- 할일 받는 input -->
+                <div class="input">
+                    <input class="inputbox" type="text" id="myinput" placeholder="할 일을 입력하세요." onchange ='todolist()'/>
+                    <!--id="myinput"인 <input> element 생성/ onkeydown이벤트가 발생하면 printtodo()메소드 출력-->
+                    <button class="mybtn" type="submit">Enter</button>
+                    <!-- enter눌렸을때 event 실행 -->
+                </div>
+            </section>
+
+            <section>
+                <div class="todolist">
+                    <ul id="list">
+
+                    </ul>
+                    <!-- input값 리스트로 변환.js -->
+                </div>
+                <div class="btn">
+                    <span><button type="button" id='allcheck' name="btn" onclick="checkall(this)">전체 선택</button></span>
+                    <span><button type="button" id='allclear' name="btn" onclick="clearall(this)">전체 해제</button></span>
+                    <span><button type="button" id='selectrm' name="btn" onclick="selectdelete(this)">선택 삭제</button></span>
+                </div>
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+</html>

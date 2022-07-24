@@ -1,0 +1,95 @@
+html{
+    background-color: rgb(219, 238, 255);
+}
+.title{
+    font-style: initial;
+    color: #82d5ff;
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.input{
+    text-align: center;
+}
+.inputbox{
+    width: 300px;
+    height: 30px;
+}
+.list{
+    background-color: aliceblue;
+    width: 500px;
+
+}
+li{
+    list-style: none;
+    width: 500px;
+}
+ul{
+    /*margin-left: 30px;
+    margin-right: auto;
+    */text-align: center;
+}
+#elem{
+    margin-left: 130px;
+}
+.mybtn{
+    height: 36px;
+    background-color: #82d5ff;
+    border: #82d5ff;
+    border-radius: 3px;
+    color: white;
+}
+.todolist{
+    background-color: white;
+    width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+.button1{
+    height: 30px;
+    background-color: #82d5ff;
+    border: white;
+    border-radius: 3px;
+    color: white;
+    margin-right: 10px;
+
+}
+.button2{
+    height: 30px;
+    background-color: #82d5ff;
+    border: white;
+    border-radius: 3px;
+    color: white;
+    margin-right: 5px;
+}
+.btn{
+    margin-left: 795px;
+}
+#allcheck{
+    height: 30px;
+    background-color: #82d5ff;
+    border: #82d5ff;
+    border-radius: 3px;
+    color: white;
+}
+#allclear{
+    height: 30px;
+    background-color: #82d5ff;
+    border: #82d5ff;
+    border-radius: 3px;
+    color: white;
+}
+#selectrm{
+    height: 30px;
+    background-color: #82d5ff;
+    border: #82d5ff;
+    border-radius: 3px;
+    color: white;
+}
+.todo{
+    border: none;
+    padding:15px 80px 15px 10px;
+
+}

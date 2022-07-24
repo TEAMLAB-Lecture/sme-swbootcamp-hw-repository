@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(221, 234, 244);
+}
+
+h1{
+font-size: 50px;
+text-align: center;
+}
+
+#text,#list,#selectbutton{
+width: 1000px;
+margin: 0 auto;
+margin-bottom: 20px;
+}
+
+#textarea{
+width:850px ;
+height: 50px;
+font-size: 15px;
+border-color: rgb(197, 197, 197);
+border-radius: 5px;
+}
+
+#addbutton{
+width: 130px;
+height: 55px;
+font-size: 24px;
+color: gray;
+background-color: rgb(239, 250, 248);
+border-radius: 0 5px 5px 0;
+}
+
+#list{
+background-color: rgb(239, 250, 248);
+}
+
+#selectbutton{
+text-align: right;
+}
+
+.controlbutton{
+background-color: rgb(61, 61, 236);
+color: white;
+border: none;
+font-size: 15px;
+padding: 10px;
+border-radius: 5px;
+}
+ul{
+list-style:none;
+}
