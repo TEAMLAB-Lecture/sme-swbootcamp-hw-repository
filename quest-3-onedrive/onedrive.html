@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onedrive.css">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title> Onedrive</title>
+
+</head>
+
+
+<body>
+
+    <header>
+        <span id="headerleft"><button id="hlbutton" class="headergroup"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+            <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+        </svg></button>
+        <p class="headergroup">OneDrive</p></span> 
+        <div id="headertextbox">
+            <input class="headergroup" type="textbox" placeholder="모두 검색">
+        </div>
+        <span id="headerright">
+        <button class="headergroup"><i class="ms-Icon ms-font-l ms-Icon--DiamondSolid" style="line-height: 48px; color: white;"></i></button>
+        <button class="headergroup"><i class="ms-Icon ms-font-l ms-Icon--Settings" style="line-height: 48px; color: white;"></i></button>
+        <button class="headergroup"><i class="ms-Icon ms-font-xxl ms-Icon--StatusCircleQuestionMark" style="line-height: 48px; color: white;"></i></button>
+        <button class="headergroup"><i class="ms-Icon ms-font-l ms-Icon--ProfileSearch" style="line-height: 48px; color: white;"></i></button></span>
+    </header>
+
+    <nav>
+        <div class="list-group">
+            <div><strong>이 종훈</strong></div>
+            <button type="button" class="list-group-item list-group-item-action"><i class="ms-Icon ms-font-l ms-Icon--FolderHorizontal" style="margin-top: 8px;"> </i>내 파일</button>
+            <button type="button" class="list-group-item list-group-item-action"><i class="ms-Icon ms-font-l ms-Icon--Recent" style="margin-top: 8px;"> </i>최근 항목</button>
+            <button type="button" class="list-group-item list-group-item-action"><i class="ms-Icon ms-font-l ms-Icon--Photo2" style="margin-top: 8px;"> </i>사진</button>
+            <button type="button" class="list-group-item list-group-item-action"><i class="ms-Icon ms-font-l ms-Icon--People" style="margin-top: 8px;"></i>공유됨</button>
+            <button type="button" class="list-group-item list-group-item-action"> <i class="ms-Icon ms-font-l ms-Icon--RecycleBin" style="margin-top: 8px;"></i>휴지통</button>
+
+        </div>
+        <div id="navbottom">
+        <p>
+            1TB(10000GB)이 저장소와 최신 PC또는 Mac용 Office 앱을 받을 수 있습니다.
+        </p>
+        <button>프리미엄으로 업그레이드</button>
+    </div>
+    </nav>
+    
+    <div id="subnav">
+        <span id="subnavleft">
+        <div class="dropdown subnavbutton">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ms-Icon ms-font-xl ms-Icon--Add"></i>새로 만들기
+            </button>
+            
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#" onclick="addfile(this)">폴더</a></li>
+                <li><a class="dropdown-item" href="#" onclick="addfile(this)">Word 문서</a></li>
+                <li><a class="dropdown-item" href="#" onclick="addfile(this)">Excel 통합 문서</a></li>
+                <li><a class="dropdown-item" href="#" onclick="addfile(this)">PowerPoint 프레젠테이션</a></li>
+                <li><a class="dropdown-item" href="#" onclick="addfile(this)">양식 설문 조사</a></li>
+                <li><a class="dropdown-item" href="#" onclick="addfile(this)">일반 텍스트 문서</a></li>
+            </ul>
+        </div>
+        <div class="dropdown subnavbutton">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ms-Icon ms-font-l ms-Icon--Upload"></i>업로드
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">파일</a></li>
+                <li><a class="dropdown-item" href="#">폴더</a></li>
+            </ul>
+        </div>
+
+        <button id="deletelist" onclick="remove()"><i class="ms-Icon ms-font-l ms-Icon--Delete"></i>제거</button>
+    </span>
+        <span id="subnavright">
+            <div class="dropdown subnavbutton">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ms-Icon ms-font-xl ms-Icon--Info"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">목록</a></li>
+                    <li><a class="dropdown-item" href="#">간단한 목록</a></li>
+                    <li><a class="dropdown-item" href="#">파일</a></li>
+                </ul>
+            </div>
+        <div class="dropdown subnavbutton">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ms-Icon ms-font-l ms-Icon--AlignLeft"></i></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">목록</a></li>
+                <li><a class="dropdown-item" href="#">간단한 목록</a></li>
+                <li><a class="dropdown-item" href="#">파일</a></li>
+            </ul>
+        </div>
+        <div class="dropdown subnavbutton">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ms-Icon ms-font-l ms-Icon--SortLines"></i>정렬
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">이름</a></li>
+                <li><a class="dropdown-item" href="#">수정한 날짜</a></li>
+                <li><a class="dropdown-item" href="#">파일 크기</a></li>
+            </ul>
+        </div>
+        
+    </span>
+    </div>
+
+    <section>
+        <p>내 파일</p>
+        <ul id="filelistheader" class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="checkname"><input class="allcheck" type="checkbox" onclick="allcheckcontrol(this)">
+                    <span class="dropdown filelistbutton">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            이름
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">텍스트 오름차순</a></li>
+                            <li><a class="dropdown-item" href="#">텍스트 내림차순</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="date">
+                    <div class="dropdown filelistbutton">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            수정한 날짜
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">오래된 순</a></li>
+                            <li><a class="dropdown-item" href="#">최신순</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filsize">
+                    <div class="dropdown filelistbutton">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            크기
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">작은 숫자 순</a></li>
+                            <li><a class="dropdown-item" href="#">큰 숫자 순</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            </ul>
+            <ul id="filelist" class="list-group list-group-flush">
+            <li class="list-group-item hoverlist">
+                <input class="filecheck" type="checkbox">
+                <div class="checkname">PowerPoint 프레젠테이션</div>
+                <div class="date">2022. 7. 18. 오후 1:58:47</div>
+                <div class="filesize">10</div>
+            </li>
+                
+            <li class="list-group-item hoverlist">
+                <input class="filecheck" type="checkbox">
+                <div class="checkname">Word 문서</div>
+                <div class="date">2022. 7. 20. 오전 7:11:36</div>
+                <div class="filesize">30</div>
+            </li>
+            
+            
+        </ul>
+
+    </section>
+<p id="fileupload">파일을 업로드하려면 여기로 끌어오세요.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+        <script src="onedrive.js"></script>
+</body>
+
+
+</html>
