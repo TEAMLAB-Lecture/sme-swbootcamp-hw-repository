@@ -1,0 +1,101 @@
+head, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+} 
+
+.top-bar{
+    background-color:rgb(36, 128, 249);
+    height: 45px;
+}
+
+.top-bar-left {
+    float: left;
+    color: white;
+    margin-left: 20px;
+    /* margin-top: 5px;  */
+    /* <= onedrive가 내려오는 대신 이상한 여백 생김*/ 
+}
+
+.search-input {
+    width: 35%;
+    height: 30px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20%;
+    background-color:gainsboro;
+    border: none;
+}
+
+
+.top-bar-right{
+    float: right;
+    margin-right: 20px;
+}
+
+.top-bar-right-logo{
+    margin-left: 10px;
+}
+
+.left-menu{
+    float: left;
+    width: 200px;
+    height: 93vh;
+    background: gainsboro;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.list-group-item{
+    background-color: gainsboro !important;
+}
+
+.left-bottom{
+    color:gray;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.upgrade{
+    width: 90%;
+}
+
+.main{
+    float: left;
+}
+.main-page{
+    float: left;
+
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.main-header{
+    font-size: 13px;
+    width: 100%;
+}
+
+.main-header-right-info-button{
+    margin-top: 50px;
+}
+
+.main-content-title{
+    margin-top: 40px;
+}
+
+.main-content-bottom{
+    margin-left: 50%;
+}
+
+table{ 
+    font-size: 13px;
+    width: 170%;
+}
