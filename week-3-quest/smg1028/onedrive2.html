@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel='stylesheet' href="style.css">
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+
+        <title>onedrive</title>
+	</head>
+
+	<body>
+		<header>
+            <div style="background-color: rgb(0, 120, 212); width:100vw; height: 48px; display: flex;">
+                <div class="appmanagerbar header-btn" style="padding-top: 15px; height: 48px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                        <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                    </svg>
+                </div>
+                
+                <div class="onedrivehome">
+                        OneDrive
+                </div>
+                
+                <div style="width: 80px; flex-shrink: 0;"></div>
+                
+                <div class="searchbarsection" style="display: flex; justify-content: center; background-color: g;">
+                        <span class="search-img">
+                            <i class="ms-Icon ms-font-l ms-Icon--Search ms-fontColor-themePrimary" id="search-img"></i>
+                        </span>
+                        <form action="https://support.microsoft.com/ko-kr/office/%ED%99%94%EB%A9%B4-%EC%9D%BD%EA%B8%B0-%EA%B8%B0%EB%8A%A5%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%ED%83%90%EC%83%89-%EB%B0%8F-%ED%83%90%EC%83%89-onedrive-3721fa9a-a965-4c0a-93fe-1b4b4123cd2f" method="GET">
+                        <input placeholder="모두 검색" class="searchbar" >
+                        </form>
+                </div>
+
+                <div style="width: 50px; flex-shrink: 0;"></div>
+
+                <div class="righticons">
+                    <div class="righticon header-btn" id="right-0"><i class="ms-Icon ms-font-l ms-Icon--Search" style="line-height: 48px; color: white;"></i></div>
+                    <div class="righticon header-btn" id="right-1"><i class="ms-Icon ms-font-l ms-Icon--DiamondSolid" style="line-height: 48px; color: white;"></i></div>
+                    <div class="righticon header-btn" id="right-2"><i class="ms-Icon ms-font-l ms-Icon--Settings" style="line-height: 48px; color: white;"></i></div>
+                    <div class="righticon header-btn" id="right-3"><i class="ms-Icon ms-font-xxl ms-Icon--StatusCircleQuestionMark" style="line-height: 48px; color: white;"></i></div>
+                    <div class="righticon header-btn" id="right-4"><i class="ms-Icon ms-font-l ms-Icon--ProfileSearch" style="line-height: 48px; color: white;"></i></div>
+            </div>
+		</header>
+
+
+		<div class="main" >
+            <div class="main-detail">
+				<div class="main-left">	
+                    <div style="width: 228px; height: 44px;">
+                        <span style=" line-height: 44px; margin-left: 16px; font-size: 14px; color: rgb(65, 65, 65);">
+                            <b>심 민기</b>
+                        </span>
+                    </div>
+                    <div class="left-menus" id="left-1" style="cursor: pointer;">
+                        <span>
+                            <i class="ms-Icon ms-font-l ms-Icon--FolderHorizontal" style="margin-top: 8px;"></i>
+                        </span>
+                        <span class="left-menu-text">내 파일</span>
+                    </div>
+
+                    <div class="left-menus" id="left-2" style="cursor: pointer;">
+                        <span>
+                            <i class="ms-Icon ms-font-l ms-Icon--Recent" style=" margin-top: 8px;"></i>
+                        </span>
+                        <span class="left-menu-text">최근 항목</span>
+                    </div>
+
+                    <div class="left-menus" id="left-3" style="cursor: pointer;">
+                        <span>
+                            <i class="ms-Icon ms-font-l ms-Icon--Photo2" style="margin-top: 8px;"></i>
+                        </span>
+                        <span class="left-menu-text">사진</span>
+                    </div>
+
+                    <div class="left-menus" id="left-4" style="cursor: pointer;">
+                        <span>
+                            <i class="ms-Icon ms-font-l ms-Icon--People" style="margin-top: 8px;"></i>
+                        </span>
+                        <span class="left-menu-text">공유됨</span>
+                    </div>
+
+                    <div class="left-menus" id="left-5" style="cursor: pointer;">
+                        <span>
+                            <i class="ms-Icon ms-font-l ms-Icon--RecycleBin" style="margin-top: 8px;"></i>
+                        </span>
+                        <span class="left-menu-text">휴지통</span>
+                    </div>
+                    <div class="full-onedrive" >
+                
+                    </div>
+                    <div style="height: 217px; font-size: 12px; margin-top: auto; border-top-color: gainsboro; border-top-style: solid; border-width: 1px;">
+                        <div class="warning">
+                            <span class="material-icons" style="margin-left: 20px;">
+                                warning
+                                </span>
+                            onedrive 가득 참
+                        
+                        </div>
+                        <div style="margin-top: 16px; margin-left: 16px; margin-right: 16px; margin-bottom: 16px; color: rgb(143, 143, 143);">
+                            <button type="button" class="btn btn-primary"
+                            style="margin-left: 30px; margin-top: 30px; --bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        <b>추가 저장소 구입하기</b>
+                    </button>                        
+                                        </div>
+                    </div>
+                </div>
+			</div>
+
+
+
+
+            <div class="main-page">
+                <div class="main-header">
+                    <div class="header-left-buttons" style="flex-shrink: 1;">
+                        <button class="header-button" id="head-btn-1" type="button" title="이 위치에 새 폴더 또는 문서를 만듭니다.">
+                            <button class="btn btn-primary" type="submit" style="height: 40px; width: 150px;">새로 만들기</button>
+                            <span class="header-button-text"></span>
+                            <span class="header-button-text"><i class="ms-Icon ms-font-s ms-Icon--ChevronDownSmall"></i></span>
+                        </button>
+                    
+                        <button class="header-button" id="head-btn-2" type="button" title="컴퓨터에 파일을 이 위치에 업로드합니다.">
+                            <span style="font-size: 25px; color: rgb(55, 135, 255); margin-left: 4px; margin-right: 4px;"><i class="ms-Icon ms-font-l ms-Icon--Upload"></i></span>
+                            <span class="header-button-text">업로드</span>
+                            <span class="header-button-text"><i class="ms-Icon ms-font-s ms-Icon--ChevronDownSmall"></i></span>
+                        </button>
+                    </div>
+                    
+                    <div class="header-right-buttons">
+                        <button class="header-button" type="button" title="정렬">
+                            <span style="font-size: 20px; color: rgb(55, 135, 255); margin-left: 4px; margin-right: 4px;"><i class="ms-Icon ms-font-l ms-Icon--SortLines"></i></span>
+                            <span class="header-button-text">정렬</span>
+                            <span class="header-button-text"><i class="ms-Icon ms-font-s ms-Icon--ChevronDownSmall"></i></span>
+                        </button>
+                        <button class="header-button" type="button" title="보기 옵션 메뉴를 엽니다.">
+                            <span style="font-size: 25px; color: rgb(55, 135, 255); margin-left: 4px; margin-right: 4px; margin-bottom: 5px;">
+                                <i class="ms-Icon ms-font-l ms-Icon--AlignLeft"></i>
+                            </span>
+                            <span class="header-button-text"><i class="ms-Icon ms-font-s ms-Icon--ChevronDownSmall"></i></span>
+                        </button>
+                        <button class="header-button" type="button" title="세부 정보 창 열기">
+                            <span style="font-size: 20px; color: rgb(55, 135, 255); margin-left: 4px; margin-right: 4px;"><i class="ms-Icon ms-font-xl ms-Icon--Info"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="no-space">
+                    <span class="space" style="margin-top: 10px;"> <b>무료 저장 공간을 사용 할 수 없음</b> 
+                        OneDrive에 새 파일을 계속 업로드 할려면 낮은 가격으로 추가 저장소를 확보하세요.
+                        <button type="button" class="btn btn-danger" style=" margin-left: 200px">추가 저장소 구입</button>
+                    </span> 
+                </div>
+                <div class="main-contents-section" style="border-color: wgh">
+                    <div>
+                        <div class="main-contents-header">
+                            내 파일
+                        </div>
+                        <div class="main-important-contents">
+                            <div></div>
+
+<div class="container px-4 py-5" id="hanging-icons" style="border-color: none; background-color: white">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        </div>
+        <div>
+            <a href="#" class="btn btn-primary" style="flex-shrink: 1; width: 10rem; height: 10rem; border-color:white; background-color: white" > 
+                <img src="개인중요보관소.png" >
+                </a>
+        <p class="file-text">개인 중요 보관소</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        </div>
+        <div>
+            <a href="#" class="btn btn-primary" style="flex-shrink: 1; width: 10rem; height: 10rem; border-color:white; background-color: white" > 
+                <img src="파일.png" class="" alt="none">
+
+        </a>
+        <p class="file-text">문서</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        </div>
+        <div>
+            <a href="#" class="btn btn-primary" style="flex-shrink: 1; width: 10rem; height: 10rem; border-color:white; background-color: white" > 
+                <img src="파일.png" class="" alt="none">
+                </a>
+        <p class="file-text">바탕 화면</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        </div>
+        <div>
+            <a href="#" class="btn btn-primary" style="flex-shrink: 1; width: 10rem; height: 10rem; border-color:white; background-color: white" > 
+                <img src="파일.png" class="" alt="none">
+                </a>
+        <p class="file-text">사진</p>
+        </div>
+    </div>
+    </div>
+
+</div>            
+
+
+                        </div>
+
+
+                        
+                        
+                
+                        </div>
+
+                    </div>
+            </div>
+		</div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="practice.js"> </script>
+    </body>
+</html>
