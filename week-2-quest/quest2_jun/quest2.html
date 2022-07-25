@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TO-DO-LIST</title>
+
+        <link rel="stylesheet" href="quest2.css" />
+    </head>
+    <header>
+		<h1 style="text-align: center;">To do list</h1>
+		<form id="value-form">
+			<input 
+				type="text" 
+				id="value-input" 
+				placeholder="할 일을 입력해주세요." />
+			<input 
+				type="submit"
+				id="value-submit" 
+				value="Enter" />
+		</form>
+	</header>
+    <body >
+        
+        <section class="value-list">
+			<div  id="values">
+			</div>
+		</section>
+        <div style="margin-left: 580px;">
+            <div >
+                <button  >전체선택</button>
+                <button  >전체해제</button>
+                <button  >선택삭제</button>
+            </div>
+        </div>
+    </body>
+    <script src="quest2.js"></script>
+</html>
