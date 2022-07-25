@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
+        <link rel="stylesheet" type="text/css" href="onedrive.css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    </head>
+    
+    <body>
+        <nav>
+            <div class="window">
+                <div style="flex: none;">
+                    <button type="button" class="navbar-buttons">
+                        <i class="ms-Icon ms-Icon--WaffleOffice365" aria-hidden="true"></i>
+                    </button>
+                    <span class="navbar-brand">OneDrive</span>
+                </div>
+                <div style="flex: none; width: 50px;"></div>
+                <div style="flex: 1 1 auto; display: flex;">
+                    <form class="input-groups" style="margin: 0 auto;" id="input-groups">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="navbar-input-icon" viewBox="0 0 34 34" width="18" height="18">
+                            <path style="fill:#137AD1;" d="M20.992 0c1.024 0 1.984.128 2.944.384s1.792.64 2.624 1.088S28.096 2.56 28.8 3.2c.64.704 1.216 1.408 1.728 2.24s.832 1.664 1.088 2.624.384 1.92.384 2.944-.128 1.984-.384 2.944-.64 1.792-1.088 2.624-1.088 1.536-1.728 2.176c-.704.64-1.408 1.216-2.24 1.728s-1.664.832-2.624 1.088-1.92.384-2.944.384c-1.28 0-2.56-.192-3.712-.64a10.46 10.46 0 0 1-3.264-1.92L1.728 31.68c-.192.192-.448.32-.704.32s-.512-.128-.704-.32-.32-.384-.32-.704.128-.512.32-.704l12.224-12.288a12.145 12.145 0 0 1-1.92-3.264c-.448-1.216-.64-2.432-.64-3.712 0-1.024.128-1.984.384-2.944s.64-1.792 1.088-2.624 1.024-1.536 1.728-2.24c.704-.64 1.408-1.216 2.24-1.728S17.088.64 18.048.384C19.008.128 19.968 0 20.992 0zm0 19.968c1.216 0 2.432-.256 3.52-.704s2.048-1.088 2.88-1.92 1.472-1.792 1.92-2.88.704-2.24.704-3.52-.256-2.432-.704-3.52-1.088-2.048-1.92-2.88S25.6 3.2 24.512 2.688c-1.088-.448-2.24-.704-3.52-.704s-2.432.256-3.52.704-2.048 1.088-2.88 1.92-1.472 1.792-1.92 2.88-.704 2.24-.704 3.52.256 2.432.704 3.52 1.088 2.048 1.92 2.88 1.792 1.472 2.88 1.92c1.152.448 2.304.64 3.52.64z"></path>
+                        </svg>
+                        <input type="text" class="input-groups-text" placeholder="모두 검색">
+                    </form>
+                </div>
+                <div style="flex: none;">
+                    <button type="button" style="font-size: 15px;" class="navbar-buttons" id="input-groups-hide">
+                        <i class="ms-Icon ms-Icon--Search"></i>
+                    </button>
+                    <button type="button" style="font-size: 15px;" class="navbar-buttons">
+                        <i class="bi bi-gem"></i>
+                    </button>
+                    <button type="button" class="navbar-buttons" id="navbar-buttons-hide">
+                        <i class="ms-Icon ms-Icon--More"></i>
+                    </button>
+                    <button type="button" class="navbar-buttons" id="navbar-buttons">
+                        <i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" style="font-size: 20px;" class="navbar-buttons" id="navbar-buttons">
+                        <i class="bi bi-question-lg"></i>
+                    </button>
+                    <button type="button" style="font-size: 20px;" class="navbar-buttons">
+                        <i class="bi bi-person"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-window">
+            <aside>
+                <div class="aside_container" id = "aside_container">
+                    <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                        <p style="margin: 20px 0 16px 16px; font-size: 14px;">이 채원</p>
+                        <div class="aside-div" style="border-left: solid; border-left-color:#137AD1; border-left-width: medium; margin-left: 5px;">
+                            <i class="ms-Icon ms-Icon--FabricFolder" style="color: #137AD1; padding-left: 10px;" aria-hidden="true"></i><span><b>내 파일</b></span></div>
+                        <div class="aside-div"><i class="ms-Icon ms-Icon--History aside-div-icon" aria-hidden="true"></i><span>최근</span></div>
+                        <div class="aside-div"><i class="ms-Icon ms-Icon--Photo2 aside-div-icon" aria-hidden="true"></i><span>사진</span></div>
+                        <div class="aside-div"><i class="ms-Icon ms-Icon--People aside-div-icon" aria-hidden="true"></i><span>공유됨</span></div>
+                        <div class="aside-div"><i class="ms-Icon ms-Icon--RecycleBin aside-div-icon" aria-hidden="true"></i><span>휴지통</span></div>
+                    </div>
+                    <div style="margin: 0px 12px 0px 12px;">
+                        <p style="font-size: 12px; color: #616161; margin: 0px;">모든 파일 및 사진에 대해 100GB의 스토리지를 받으세요.</p>
+                        <p style="font-size: 12px; color: #137AD1;"><u>저장소 요금제에 대해 자세히 알아보세요.</u></p>
+                        <button type="button" class="dia-button"><i class="bi bi-gem" style="color: #137AD1;"></i>
+                            <span style="color: #137AD1; padding-left: 3px;"><b>저장소 구매</b></span></button>
+                        <!-- <span><hr style="width: 20px;"></span><span><hr style="width: 20px;"></span> -->
+                        <div style="display: flex; justify-content: flex-start; margin-top: 10px;">
+                            <hr style="width: 55%; color:#0078D4; height: 2px; opacity : 2;"><hr style="width: 95%; color:#616161; height: 2px;">
+                        </div>
+                        <p style="font-size: 12px; color: #137AD1; margin-top: -15px; padding-bottom: 10px;"><u>2.19GB/5GB 중 사용</u></p>
+                        <p style="font-size: 12px; color: #137AD1;">OneDrive 앱 다운로드</p>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <div class="main_container" id="main_container">
+                    <div class="main_menu">
+                        <div style="display: flex; align-items: center;">
+                            <button type="button" class="main-menu-button" id="main-menu-button-hide">
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <button type="button" class="main-menu-button" id="main-menu-3buttons-hide">
+                                <i class="ms-Icon ms-Icon--More"></i>
+                            </button>
+                            <button type="button" class="main-menu-button-new" id="add_button"><i class="ms-Icon ms-Icon--CalculatorAddition" style="font-size: 12px; color: white; padding-right: 5px;" aria-hidden="true"></i>
+                                <span style="margin-right: 10px; color: white;">새로 만들기</span><i class="ms-Icon ms-Icon--ChevronDown" style="color: white;" aria-hidden="true"></i>
+                            </button>
+                            
+                            <button type="button" class="main-menu-button dropdown-toggle" id="main-menu-3buttons" data-bs-toggle="dropdown"><i class="ms-Icon ms-Icon--Upload" aria-hidden="true"></i>
+                                <span>업로드</span></i>
+                            </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">파일</a></li>
+                                    <li><a class="dropdown-item" href="#">폴더</a></li>
+                                </ul>
+
+                            <button type="button" class="main-menu-button-delete" id="main-menu-3buttons" onclick="delete_checked()"><i class="ms-Icon ms-Icon--RecycleBin" aria-hidden="true"></i>
+                                <span>삭제</span></button>        
+                        </div>
+                        <div>
+
+                            <button type="button" class="main-menu-button dropdown-toggle" data-bs-toggle="dropdown"><i class="ms-Icon ms-Icon--SortLines" style="padding-right: 5px;" aria-hidden="true"></i>
+                                <span style="margin-right: 10px;">정렬</span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">오름차순</a></li>
+                                    <li><a class="dropdown-item" href="#">내림차순</a></li>
+                                </ul>
+
+                            <button type="button" class="main-menu-button dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-list" style="padding-right: 5px;"></i>
+                            </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">목록</a></li>
+                                    <li><a class="dropdown-item" href="#">간단한 목록</a></li>
+                                    <li><a class="dropdown-item" href="#">타일</a></li>
+                                </ul>
+
+                            <button type="button" class="main-menu-button" style="margin-right: 20px;">
+                                <i class="bi bi-folder2-open" style="padding-right: 5px; margin-right: 5px;"></i><span>정보</span></button>
+                        </div>
+                    </div>
+                    <div class="main_content">
+                        <div style="padding: 36px 32px 20px 0;"><h5>내 파일</h5></div>
+                        <div class="file_container" id="files">
+
+                            <div class="files-div-first">
+                                <div class="file_container-div-no" style="width: 48px;"><input type="checkbox" id = "main_checkbox" onclick="all_check()"></div>
+                                <div  class="file_container-div-no" style="width: 40px;"><i class="ms-Icon ms-Icon--Page" aria-hidden="true"></i></div>
+                                <div class="file_container-div" style="width: 300px;"><span>이름</span>
+                                    <i class="ms-Icon ms-Icon--SortUp" style="font-size: 12px;" aria-hidden="true"></i>
+                                    <i class="ms-Icon ms-Icon--ChevronDown" style="padding-left: 5px;" aria-hidden="true"></i></div>
+                                <div class="file_container-div" style="width: 150px;"><span>수정한 날짜</span>
+                                    <i class="ms-Icon ms-Icon--ChevronDown" style="padding-left: 5px;" aria-hidden="true"></i></div>
+                                <div class="file_container-div" style="width: 150px;"><span>파일 크기</span>
+                                    <i class="ms-Icon ms-Icon--ChevronDown" style="padding-left: 5px;" aria-hidden="true"></i></div>
+                                <div class="file_container-div" style="width: 150px;"><span>공유</span></div>
+                                <div style="width: 170px;"></div>
+                            </div>
+                            <div class="files-div">
+                                <div class="no-words-add" style="width: 48px;"><input type="checkbox" name="checkbox" onclick="ch_bg(this)"></div>
+                                <div class="no-words-add" style="width: 40px;">
+                                    <img style="width: 20px;" src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001//assets/item-types/20/vaultclosed.png"></div>
+                                <div class="file-div-add" style="width: 300px;"><span>개인 중요 보관소</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">2022. 7. 22.</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">1.2GB</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">비공개</span></div>
+                                <div style="width: 170px;"></div>
+                            </div>
+                            <div class="files-div">
+                                <div class="no-words-add" style="width: 48px;"><input type="checkbox" name="checkbox" onclick="ch_bg(this)"></div>
+                                <div class="no-words-add" style="width: 40px;">
+                                    <img style="width: 20px;" src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/20/folder.svg"></div>
+                                <div class="file-div-add" style="width: 300px;"><span>문서</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">2022. 7. 21.</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">486MB</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">비공개</span></div>
+                                <div style="width: 170px;"></div>
+                            </div>
+                            <div class="files-div">
+                                <div class="no-words-add" style="width: 48px;">
+                                    <input type="checkbox" name="checkbox" onclick="ch_bg(this)">
+                                </div>
+                                <div class="no-words-add" style="width: 40px;">
+                                    <img style="width: 20px;" src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/20/folder.svg"></div>
+                                <div class="file-div-add" style="width: 300px;"><span>사진</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">2022. 7. 24.</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">605MB</span></div>
+                                <div class="file-div-add" style="width: 150px;"><span style="font-size: 12px; color: #616161;">비공개</span></div>
+                                <div style="width: 170px;"></div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script defer src="onedrive.js"></script>  
+    </body>
+
+</html>
