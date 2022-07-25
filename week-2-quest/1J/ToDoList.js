@@ -1,7 +1,7 @@
 <!-- 변수설정 -->
 const inputbox = document.getElementById('inputbox');
 const enterbtn = document.getElementById('button-enter');
-const ToDoList = document.getElementById('list');
+const toDoList = document.getElementById('todo-list');
 const checkAll = document.getElementById('check-all');
 const uncheckAll = document.getElementById('uncheck-all');
 const removeCheck = document.getElementById('remove-check');
@@ -31,8 +31,8 @@ function addToDoList() {
 function addToDoListByEnterBtn() {
     const newToDoList = document.createElement('li');
     newToDoList.className = 'd-flex justify-content-between';
-    newToDoList.innerHTML = `<span id="checkboxcontent"><input type="checkbox" name="checkbox"><input type="text" value="${inputbox.value}" readOnly></input></span>`;
-    newToDoList.innerHTML += `<span id="save"><input type="button" name="buttonmodify" value="수정" onclick="readOnlyFalse(this)"><input type="button" name="buttonsave" value="저장" onclick="readOnlyTrue(this)"></span>`;
+    newToDoList.innerHTML = `<span class="checkboxcontent"><input type="checkbox" name="checkbox"><input type="text" value="${inputbox.value}" readOnly></input></span>`;
+    newToDoList.innerHTML += `<span class="savebtn"><input type="button" name="buttonmodify" value="수정" onclick="readOnlyFalse(this)"><input type="button" name="buttonsave" value="저장" onclick="readOnlyTrue(this)"></span>`;
 
     if (window.event.keyCode == 13) {
         if (inputbox.value === '') {
@@ -57,7 +57,6 @@ function allCheck() {
                 checkboxes[i].checked = true;
             }
         }
-        
 }
 
 <!-- 전체해제버튼 작동 함수 -->
@@ -66,7 +65,7 @@ function allUncheck() {
     if(checkboxes.checked == true){
         for(var i=0;i<checkboxes.length; i++){
             checkboxes[i].checked = true;
-        } 
+        }
     }   else {
             for(var i=0;i<checkboxes.length; i++){
                 checkboxes[i].checked = false;
