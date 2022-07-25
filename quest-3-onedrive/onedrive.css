@@ -1,0 +1,210 @@
+*{
+    list-style:none;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+    
+.headergroup{
+float: left;
+}
+
+header{
+    height: 55px;
+    background-color: rgb(0, 120, 212);
+    min-width: 1200px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+header button{
+    height: 55px;
+    width: 55px;
+    background-color: rgb(0, 120, 212);
+
+    border: none;
+}
+header button:hover{
+    background-color: rgb(0, 77, 136);
+
+}
+
+p.headergroup{
+    margin-top: 15px;
+}
+
+header p{
+    color: white;
+    font-size: 17px;
+}
+
+#headertextbox input{
+    background-color: rgb(220, 220, 220);
+    margin-left: 25vw;
+    width: 600px;
+    height: 35px;
+    margin-top: 12px;   
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position-y: center;
+    padding-left: 35px;
+    border: none;
+}
+
+#headerright{
+    float: right;
+
+}
+
+
+
+nav{
+    background-color: rgb(222, 219, 219);
+    height: 100%;
+    width: 12vw;
+    min-width: 115px;
+    float: left;
+    overflow: hidden;
+    margin-right: 45px;
+    position: fixed;
+    z-index: 10;    
+    top: 55px;
+}
+
+.list-group button{
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+.list-group i{
+    margin-right: 10px;
+}
+.list-group div{
+    margin: 5px;
+}
+
+#subnav{
+    /* margin-top: 65px; */
+    margin-left: 16vw;
+    height: 55px;
+    width: 75vw;
+    border-bottom: 1px solid rgb(222, 219, 219);
+    margin-bottom: 30px;
+    min-width: 1200px;
+    position: fixed;
+    top: 55px;
+    z-index: 10;
+    background-color: white;
+}
+
+#subnavright button{
+    float: right;
+}
+
+.subnavbutton button{
+    color : black;
+    background-color: transparent;
+    border: none;
+    height: 55px;
+    font-size: 16px;
+    float: left;
+    border-radius: 0;
+}
+#deletelist{
+    color : black;
+    background-color: transparent;
+    border: none;
+    height: 60px;
+    font-size: 16px;
+    float: left;
+    border-radius: 0;
+}
+.subnavbutton button:hover{
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+#deletelist:hover{
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+
+section{
+    margin-left: 18vw;
+    margin-top: 160px;
+    width: 80vw;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+section p{
+    
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-top: 60px;
+}
+
+#fileupload{
+    text-align: center;
+    font-size: 14px;
+}
+.filelistbutton button{
+    color: black;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 0;
+
+}
+.filelistbutton button:hover{
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+
+#navbottom{
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 12px;
+
+}
+#navbottom p{
+    font-size: 12px;
+}
+
+.filecheck, .allcheck{
+    margin-right: 12px;
+    float: left;
+    margin-top: 15px;
+}
+
+.checkname{
+    font-size: 17px;
+    font-weight: 400;
+    float: left;
+    width: 33vw;
+    min-width: 500px;
+}
+
+.date{
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    width: 18vw;
+    min-width: 200px;
+}
+.filsize{
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+}
+.hoverlist:hover{
+    background-color:rgb(235, 235, 235); 
+}
+#filelist>li{
+    min-width: 1000px;
+}
+
