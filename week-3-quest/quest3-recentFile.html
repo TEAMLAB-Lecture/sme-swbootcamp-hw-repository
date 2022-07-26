@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quest3-myFile.style.css">
+    <script src="https://kit.fontawesome.com/e8c1f2e7e1.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onedrive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>
+            <div class="header">
+                <div class="homeArea">
+                    <span id="appStartManager"><button><i class="fa-solid fa-folder"></i></button></span>
+                    <span id="homeButton"><a
+                            href="file:///C:/Users/jsand/Desktop/Bootcamp/week-3-quest/quest3-myFile.html">OneDrive</a></span>
+                </div>
+                <div class="searchArea">
+                    <form class="searchForm">
+                        <button><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                        <input type="search" id="searchBox" placeholder="모두 검색">
+                        <!-- <button><span><i class="fa-solid fa-xmark"></i></span></button> -->
+                        <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                        <!-- <div>검색어</div> -->
+                    </form>
+                </div>
+                <ul class="fourSettings">
+                    <li><button id="icon1"><i class="fa-solid fa-gem"></i></button></li>
+                    <li><button id="icon2"><i class="fa-solid fa-gear"></i></button></li>
+                    <li><button id="icon3"><i class="fa-solid fa-question"></i></button></li>
+                    <li><button id="icon4"><i class="fa-solid fa-d"></i></button></li>
+                </ul>
+            </div>
+            <button id="ellipsis"><i class="fa-solid fa-ellipsis"></i></button>
+        </header>
+
+        <main>
+            <div class="main">
+                <div class="aside">
+                    <div class="navigation">
+                        <div class="title"><strong>OneDrive</strong></div>
+                        <ul class="navigationContents">
+                            <li><a href="file:///C:/Users/jsand/Desktop/Bootcamp/week-3-quest/quest3-myFile.html"><span
+                                        class="icons"><i class="fa-solid fa-folder"></i></span><span>내 파일</span></a>
+                            </li>
+                            <li><a href="file:///C:/Users/jsand/Desktop/Bootcamp/week-3-quest/quest3-recentFile.html"><span
+                                        class="icons"><i
+                                            class="fa-solid fa-clock-rotate-left"></i></span><span>최근</span></a>
+                            </li>
+                            <li><a href="file:///C:/Users/jsand/Desktop/Bootcamp/week-3-quest/quest3-picture.html"><span
+                                        class="icons"><i class="fa-solid fa-image"></i></span><span>사진</span></a></li>
+                            <li><a href="file:///C:/Users/jsand/Desktop/Bootcamp/week-3-quest/quest3-shared.html"><span
+                                        class="icons"><i class="fa-solid fa-user-group"></i></span><span>공유됨</span></a>
+                            </li>
+                            <li><a href="file:///C:/Users/jsand/Desktop/Bootcamp/week-3-quest/quest3-trash.html"><span
+                                        class="icons"><i class="fa-solid fa-trash-can"></i></span><span>휴지통</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="advertisement">
+                        <div class="storageLink">
+                            <div>
+                                모든 파일 및 사진에 대해 100GB의 스토리지를 받으세요.
+                            </div>
+                            <a href="#">저장소 요금제에 대해 자세히 알아보세요.</a>
+                            <div>
+                                저장소구매
+                            </div>
+                        </div>
+                        <div class="storageCapacity">
+                            <div class="storageBar">---</div>
+                            <a href="#">0바이트5GB 중 사용</a>
+                        </div>
+                        <div class="appDownload">
+                            <a href="#">OneDrive 앱 다운로드</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="dropdowns">
+                        <div class="leftDropdownItems">
+                            <div class="blueDropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="fa-solid fa-plus"></i></span>
+                                    새로 만들기
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" id="folderButton" href="#"><img
+                                                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/folder.svg"
+                                                alt=""><span>폴더</span></a></li>
+                                    <li><a class="dropdown-item" id="wordButton" href="#"><img
+                                                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/docx.svg"
+                                                alt="docx"><span>Word 문서</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" id="excelButton" href="#"><img
+                                                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/xlsx.svg"
+                                                alt="xlsx"><span>Excel 통합 </span>
+                                        </a></li>
+                                    <li><a class="dropdown-item" id="powerPointButton" href="#"><img
+                                                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/pptx.svg"
+                                                alt="pptx"><span>PowerPoint 프레젠테이션</span>
+                                        </a></li>
+                                    <li><a class="dropdown-item" id="noteButton" href="#"><img
+                                                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/onetoc.svg"
+                                                alt="onetoc"><span>OneNote 전자 필기장</span>
+                                        </a></li>
+                                    <li><a class="dropdown-item" id="serveyButton" href="#"><img
+                                                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/form.svg"
+                                                alt=""><span>양식 설문 조사</span>
+                                        </a></li>
+                                    <li><a class="dropdown-item" id="textFileButton" href="#"><img
+                                                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/txt.svg"
+                                                alt="txt"><span>일반 텍스트 문서</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdownTwo">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="fa-solid fa-arrows-up-to-line"></i></span>
+                                    업로드
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">파일</a></li>
+                                    <li><a class="dropdown-item" href="#">폴더</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rightDropdownItems">
+                            <div class="dropdownThree">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="fa-solid fa-arrow-down-wide-short"></i></span>
+                                    정렬
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span>이름</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span>수정한 날짜</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span>파일 크기</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span>오름차순</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span>내림차순</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdownFour">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="fa-solid fa-border-all"></i></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span><i
+                                                    class="fa-solid fa-align-left"></i></span><span>목록</span></a></li>
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span><i
+                                                    class="fa-solid fa-align-left"></i></span><span>간단한 목록</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><input type="checkbox"><span><i
+                                                    class="fa-solid fa-border-all"></i></span><span>타일</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdownFive">
+                                <button type="button" class="btn btn-outline-secondary" id="informationButton"><i
+                                        class="fa-solid fa-square-caret-left"></i><span>정보</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="files">
+                        <div class="filesHeader">
+                            <div class="myFile">
+                                <h2>내 파일</h2>
+                            </div>
+                        </div>
+                        <div class="itemsArea">
+                            <ul class="itemList" id="itemList">
+                                <li id="folderCard">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/folder.svg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">폴더 이름</h5>
+                                            <p class="card-text">2일전</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--invisible-->>
+        <div class="settingContainer" id="settingContainer">
+            <div class="settingHeaderMenu">
+                <h1 id="settingHeader">설정</h1>
+                <div class="settingMainMenu">
+                    <div class="settingMainMenuHeader">
+                        <h2 id="oneDriveSettingHeader">OneDrive 설정</h2>
+                    </div>
+                    <div class="settingMainMenuList">
+                        <ul class="settingMainMenuOptions">
+                            <li>옵션</li>
+                            <li>업그레이드</li>
+                            <li>한국어</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button id="settingContainerCloseButton"><span><i class="fa-solid fa-xmark"></i></span></button>
+        </div>
+
+        <div class="helpContainer" id="helpContainer">
+            <h1 id="helpHeader">도움말</h1>
+            <div></div>
+        </div>
+
+        <div class="informationContainer" id="informationContainer">
+            <div class="informationContainerHeader">
+                <img
+                    src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20211207.001/assets/item-types/16/folder.svg">
+                <span><strong>내 파일</strong></span>
+            </div>
+            <div class="informationContainerMain">
+                <div class="informationContainerMainHeader">
+                    <h2><strong>모든 활동</strong></h2>
+                </div>
+                <div class="informationContainerMainList">
+                    <h3>지난주</h3>
+                    <ul class="informationItemList" id="informationItemList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="quest3-myFile.js"> </script>
+</body>
+
+</html>

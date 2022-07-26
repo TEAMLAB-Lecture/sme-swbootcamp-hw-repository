@@ -1,0 +1,544 @@
+*{
+    font-family: 'Segoe UI',Tahoma,Arial,sans-serif;
+    list-style: none; 
+    /* 목록에 점 없애기 */
+    text-decoration: none;
+    /* 색깔이랑 밑줄 없애기 */
+    border-collapse: collapse;
+    /* 테이블 선 떨어져 있는 것 붙이기 */
+    margin: 0px;
+    padding: 0px;
+    color:#000;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    background-color: #0078D4;
+}
+
+.homeArea > #homeButton {
+    font-size:16px;
+}
+
+.homeArea > #homeButton > a {
+    color:white;
+    text-decoration: none;
+}
+
+.homeArea > span > button{
+    background-color: #0078D4;
+    border: none;
+    cursor: pointer;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
+
+.homeArea > span > button > i {
+    color:white;
+}
+
+.fourSettings{
+    display: flex;
+    margin:0px;
+}
+
+.fourSettings > li {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fourSettings li:hover{
+    background-color: #0c328b;
+}
+
+.searchArea{
+    display: flex;
+    margin: auto;
+}
+
+.searchArea > .searchForm {
+    display: flex;
+    justify-content: flex-start;
+    height: 32px;
+}
+
+.searchArea > .searchForm > button {
+    border: none;
+    width: 44px;
+    background-color: #e1dfdd;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.searchArea > .searchForm > button:hover{
+    background-color: white;
+}
+
+.searchArea> .searchForm > input{
+    width: 442px;
+    margin:auto;
+    height: 32px;
+    background-color: #e1dfdd;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border:none;
+    cursor:auto;
+}
+
+.searchArea form> #searchBox:hover{
+    background-color: white;
+}
+
+.fourSettings > li > button {
+    background-color: #0078D4;
+    cursor: pointer;
+    border: none;
+    width: 48px;
+    height: 48px;
+}
+
+.fourSettings > li > button:hover {
+    background-color: #0c328b;
+}
+
+.fourSettings > li > button > i {
+    color:white;
+}
+
+.main{
+    display: flex;
+    /* background-color: green; */
+}
+
+.aside{
+    /* background-color: blue; */
+    /* flex:1.5; */
+    width: 228px;
+    height: 866px;
+    border-right: solid 1px #e1dfdd;
+}
+
+.section{
+    /* flex:10.5; */
+    width: 100%;
+}
+
+.aside > .navigation {
+    height: 637.23px;
+    /* background-color: aqua; */
+}
+
+.aside > .advertisement {
+    height: 228.77px;
+    /* background-color: bisque; */
+}
+
+.aside > .navigation > .title {
+    height: 56px;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 56px;
+    /* background-color: chocolate; */
+    font-size: 14px;
+}
+
+.aside > .navigation > .navigationContents {
+    padding: 0px;
+    height: 200px;
+    /* background-color: blueviolet; */
+}
+
+.aside > .navigation > .navigationContents > li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.aside > .navigation > .navigationContents > li:hover{
+    background-color: #e1dfdd;
+}
+
+.aside > .navigation > .navigationContents > li > a  {
+    margin-left: 13px;
+    text-decoration: none;
+}
+
+.aside > .navigation > .navigationContents > li > a > span > i {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+} 
+
+.advertisement {
+    font-size: 12px;
+    margin-left: 13px;
+}
+
+.advertisement > .storageLink {
+    height: 113.77px;
+}
+
+.advertisement > .storageCapacity {
+    height: 42px;
+}
+
+.advertisement > .appDownload {
+    height: 53px;
+    line-height: 53px;
+}
+
+.advertisement > .storageLink > a {
+    color:#106EBE;
+}
+
+.advertisement > .storageCapacity > a {
+    color:#106EBE;
+}
+
+.advertisement > .appDownload > a {
+    color:#106EBE;
+}
+
+.dropdowns {
+    height: 60px;
+    border-bottom: solid 1px #e1dfdd;
+    /* background-color: aquamarine; */
+}
+
+.files {
+    height: 806px;
+    /* background-color: bisque; */
+}
+.files > .itemsArea > .itemList > #folderCard > .card > .card-image{
+    text-align: center;
+}
+
+.files > .itemsArea > .itemList > #folderCard > .card > .card-body{
+    text-align: center;
+}
+
+.files > .itemsArea > .itemList > #folderCard >.card {
+    width: 144.33px;
+    height: 135px;
+    align-items: center;
+    border: none;
+}
+
+.files > .itemsArea > .itemList > #folderCard >.card > div >img {
+    width: 72px;
+    height: 52px;
+}
+
+.dropdowns{
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    padding:0px 24px;
+}
+
+.leftDropdownItems{
+    display: flex;
+}
+
+.rightDropdownItems{
+    display: flex;
+}
+
+.blueDropdown > #dropdownMenuButton1{
+    background-color: rgb(0, 120, 212);
+    margin: 0px 8px;
+    font-size: 14px;
+}
+
+.blueDropdown> button > span > i {
+    color: white;
+}
+
+.dropdownTwo > #dropdownMenuButton2{
+    background-color: white;
+    margin:0px 4px;
+    border: none;
+    color:black;
+    font-size: 14px;
+}
+
+.dropdownThree > #dropdownMenuButton3{
+    background-color: white;
+    margin:0px 4px;
+    border: none;
+    color:black;
+    font-size: 14px;
+}
+
+.dropdownFour > #dropdownMenuButton4{
+    background-color: white;
+    margin:0px 4px;
+    border: none;
+    color:black;
+    font-size: 16px;
+}
+
+.dropdown-menu > li > a > span > i {
+    margin-right: 5px;
+}
+
+.dropdown-menu  > li > a {
+    display: flex;
+    font-size: 14px;
+    width: 203.61px;
+    height: 36px;
+    align-items: center;
+}
+
+.dropdown-menu  > li > a > img{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.dropdown-menu > li > a > input {
+    margin-right: 5px;
+}
+
+.dropdownFive > button{
+    border: none;
+}
+
+.dropdownFive > button > i{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.dropdownFive > button > span {
+    font-size: 14px;
+}
+
+
+.filesHeader > .myFile {
+    padding: 36px 32px 20px 32px;
+}
+
+.filesHeader > .myFile > h2 {
+    font-size: 20px;
+}
+
+.settingContainer{
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top:48px;
+    right: 0px;
+    background-color: #ccd3d6;
+    display: none;
+}
+
+.settingHeaderMenu > #settingHeader{
+    font-size: 20px;
+    padding: 20px 0 16px 18px;
+}
+
+.settingHeaderMenu > .settingMainMenu{
+    padding: 0px 19px;
+}
+
+.settingHeaderMenu > .settingMainMenu > .settingMainMenuHeader > #oneDriveSettingHeader{
+    font-size: 16px;
+}
+
+.settingMainMenu > .settingMainMenuList > .settingMainMenuOptions{
+    padding: 0px;
+}
+
+.settingMainMenu > .settingMainMenuList > .settingMainMenuOptions > li{
+    text-align: left;
+    font-size: 14px;
+}
+
+.settingContainer > #settingContainerCloseButton{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    top: 60px;
+    border: none;
+    background-color: transparent;
+}
+
+.helpContainer{
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top:48px;
+    right: 0px;
+    background-color: #ccd3d6;
+    display: none;
+}
+
+.helpContainer > #helpHeader {
+    font-size: 20px;
+    padding: 20px 0 16px 18px;
+}
+
+.informationContainer{
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top:108px;
+    right: 0px;
+    background-color: #f4eeeb;
+    display: none;
+}
+
+.informationContainer > .informationContainerHeader {
+    font-size: 14px;
+    padding: 10px 16px;
+    border-bottom: #e1dfdd 1px solid;
+}
+
+
+.informationContainer > .informationContainerHeader >img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.informationContainer > .informationContainerMain > .informationContainerMainHeader{
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.informationContainer > .informationContainerMain > .informationContainerMainHeader > h2 {
+    font-size: 14px;
+}
+
+.informationContainer > .informationContainerMain > .informationContainerMainList{
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.informationContainer > .informationContainerMain > .informationContainerMainList > h3{
+    font-size: 12px;
+}
+/* fontawesome에서 아이콘 검색 */
+
+*{
+    list-style: none;
+}
+
+nav.navbar.navbar-light.bg-light{
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #0078D4;
+    height: 48px;
+}
+
+.container-fluid > .fourSettings {
+    display: flex;
+}
+
+.container-fluid > .homeArea >span > button {
+    background-color: #0078D4;
+    border: none;
+}
+
+.container-fluid > .homeArea >span > button > i {
+    color:white;
+}
+
+.container-fluid > .homeArea > a {
+    font-size: 16px;
+    color:white;
+}
+
+.d-flex{
+    background-color: #e1dfdd;
+    height: 48px;
+    border-radius: 2px;
+    padding: 0px 4px;
+}
+
+.d-flex > input{
+    border-radius: 0px;
+    background-color: #e1dfdd;
+    border: none;
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.d-flex >button {
+    border-radius: 0px;
+    border: none;
+}
+
+
+.d-flex >button >span> i {
+    color:rgb(0, 99, 174);
+    width: 16px;
+    height: 16px;
+}
+
+.fourSettings > li > button{
+    width: 48px;
+    height: 48px;
+}
+
+#ellipsis{
+    display: none;
+}
+
+/*----------------------- 반응형 웹페이지 -----------------------*/
+
+@media screen and (max-width:1025px) {
+    .aside{
+        display: none;
+    }
+}
+
+@media screen and (max-width:791px) {
+    .fourSettings > li > #icon2, .fourSettings > li > #icon3{
+        display: none;
+    }
+
+    #ellipsis{
+        display: block;
+        position: absolute;
+        right: 48px;
+        width: 48px;
+        height: 48px;
+        top:0px;
+        background-color: #0078D4;
+        border: none;
+    }
+
+    #ellipsis > i {
+        color: white;
+    }
+
+    .fourSettings > li > #icon1{
+        position: absolute;
+        right: 96px;
+    }
+
+    #ellipsis:hover{
+        background-color: #0c328b;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .searchArea{
+        display: none;
+    }
+}
