@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneDrive</title>
+    <script src="onedrive.js"></script>
+    <link rel="stylesheet" href="onedrive.css">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- onedrive img -->
+<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
+
+
+</head>
+<body>
+    <header>
+        <!-- 여기는 고정
+        메뉴, onedrive(클릭시 내 파일로 이동), 검색창, 톱늬바퀴 메뉴, 물음표 도움말, 사람표시 이미지들은 나중에 만들어진거에서 들고와서 붙여넣기  
+        grid를 써서 해봤는데 왼쪽 오른쪽 정렬 하는법 찾아보기-->
+        <!-- <div class="container text-center"> -->
+        <div class="d-flex justify-content-between">
+            <div>
+                    <span class="menu"><input type="image" src="onedrive.img/menu.PNG" id="menu" width="40px" height="40px"> 
+                    <!-- </span>
+                    <span class="logo"> -->
+                        <input type="image" src="onedrive.img/onedrive.word.PNG" id="logo" width="80px" height="40px"> </span>
+                </div>
+                <div>
+                    <i class="ms-Icon ms-font-l ms-Icon--Search" style="line-height: 48px; color: white;"></i><span class="search_bar"><input type="text" id="search_bar" placeholder="검색"> </span>
+                </div>
+                <div>
+                    <span class="wheel">
+                        <input type="image" src="onedrive.img/wheel.PNG" id="wheel" width="40px" height="40px">
+                    <!-- </span>
+                    <span class="question_mark"> -->
+                        <input type="image" src="onedrive.img/question.mark..PNG" id="question_mark" width="40px" height="40px">
+                    <!-- </span> -->
+                    <!-- <span class="human"> -->
+                        <input type="image" src="onedrive.img/human.PNG" id="human" width="40px" height="40px"></span>
+                </div>
+            </div>
+        <!-- </div> -->
+    </header>
+    <section>
+        <nav class="nav_section">
+            <div class="shin" style="width: 100%; border: 0px solid gray;">
+                <div>신준성</div>
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group" >
+                <span  ><button type="button" class="btn btn-light" id="a" onclick="myfile_click()"> <i class="ms-Icon ms-font-l ms-Icon--FolderHorizontal" style="margin-top: 8px;"></i> 내 파일</button></span>
+                <span  ><button type="button" class="btn btn-light" id="b" onclick="recent_click()"> <i class="ms-Icon ms-font-l ms-Icon--Photo2" style="margin-top: 8px;"></i> 최근</button></span>
+                <span><button type="button" class="btn btn-light" id="c" onclick="share_forMe_click()"> <i class="ms-Icon ms-font-l ms-Icon--People" style="margin-top: 8px;"></i> 공유</button></span>
+                <span><button type="button" class="btn btn-light" id="d" onclick="trash_click()"> <i class="ms-Icon ms-font-l ms-Icon--RecycleBin" style="margin-top: 8px;"></i>휴지통</button></span>
+            </div></div>
+            <hr>
+            <div class="middle">
+                <b>빠른 엑세스</b>
+                <p>공유 라이브러리에서 파일을 열면 이 즐겨찾기 목록에 표시됩니다.</p>
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                <span class="more"><button type="button" class="btn btn-light" id="e">더 많은 장소...</button></span>
+                <span class="make_library"><button type="button" class="btn btn-light" id="f">공유라이브러리 생성</button></span>
+            </div></div>
+            
+            <div class="low" >
+            <hr>
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group" style="border: 0px solid gray;">
+                <span class="download"><button type="button" class="btn btn-light" id="g">OneDrive 앱 다운로드</button></span>
+                <span class="back_classic"><button type="button" class="btn btn-light" id="h">클래식 OneDrive로 돌아가기</button></span>
+            </div></div>
+        </nav>
+        <main>
+            <!-- 왼쪽 메뉴 클릭시 해당되는 모양으로 동적으로 이동되게 만들어 놓음
+            main만 다른 html파일을 여러개 만들어 놓아야 함
+            왼쪽에 클릭하면 해당되는 html파일로 이동되게 함
+            -->
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="main_left">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        새로 만들기
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">폴더</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Word 문서</a></li>
+                        <li><a class="dropdown-item" href="#">Excel 통합 문서</a></li>
+                        <li><a class="dropdown-item" href="#">PowerPoint 프레젠테이션</a></li>
+                        <li><a class="dropdown-item" href="#">OneNote 전자 필기장</a></li>
+                        <li><a class="dropdown-item" href="#">Excel용 Forms</a></li>
+                        <li><a class="dropdown-item" href="#">Visio 드로잉</a></li>
+                        <li><a class="dropdown-item" href="#">링크</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        업로드
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">파일</a></li>
+                        <li><a class="dropdown-item" href="#">폴더</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">동기화</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        자동화
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Power Automate</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+
+                </div>
+            </div>
+
+                <div class="main_right">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        정렬
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">형식</a></li>
+                        <li><a class="dropdown-item" href="#">이름</a></li>
+                        <li><a class="dropdown-item" href="#">수정된 날짜</a></li>
+                        <li><a class="dropdown-item" href="#">수정한 사람</a></li>
+                        <li><a class="dropdown-item" href="#">파일크기</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">오름차순</a></li>
+                        <li><a class="dropdown-item" href="#">내림차순</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        현재 목록 상태
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">목록</a></li>
+                        <li><a class="dropdown-item" href="#">간단한 목록</a></li>
+                        <li><a class="dropdown-item" href="#">타일</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">!</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+                </div>
+            </nav>
+            <hr>
+            <br>
+            <div><h3>최근</h3></div>
+            <div class="recent">
+                <input type="checkbox" class="check">
+            </div>
+
+            
+<hr>
+            
+    </main>
+    <!-- <aside>
+
+    </aside> -->
+</section>
+    <!-- <footer>
+
+    </footer> -->
+
+
+</body>
+</html>
