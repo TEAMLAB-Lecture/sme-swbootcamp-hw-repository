@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>To do list</title>
+    <link rel="stylesheet" href="./Todolist_CSS.css">
+  </head>
+
+  <body>
+    <h1>To Do List</h1>
+    <section>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="inputbox" onkeydown="addToDoListByEnterBtn()" placeholder="할 일을 입력하세요"  >
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" >Enter</button>
+      </div>
+
+      <div class="todolist">
+        <ul id="list">
+          <!--JS로 리스트 추가-->
+        </ul>
+        <a class="d-md-flex justify-content-md-end"> 
+          <button class="btn btn-primary btn-sm me-md-2" type="button" id="allcheck">전체 선택</button>
+          <button class="btn btn-primary btn-sm me-md-2" type="button" id="uncheck">전체 해제</button>
+          <button class="btn btn-primary btn-sm" type="button" id="removebtn">선택 삭제</button>
+        </a>
+      </div>
+    <section>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./TDL_JS.js"></script>
+  </body>
+</html>

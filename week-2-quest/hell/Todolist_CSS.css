@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(236, 247, 252);
+}
+h1 {
+text-align: center;
+margin-top: 5ch;
+font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+div.todolist{
+  background-color: rgb(246, 254, 255);
+}
+section{
+  padding-top: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+a  {
+  background-color: rgb(236, 247, 252);
+  float:right;
+}
+a button.btn {
+  margin-top: 1ch;
+  margin-bottom: 1ch;
+  margin-right: 1ch;
+}
+ul{
+  padding-left: 0.5ch;
+}
+li{
+  list-style:none;
+  padding-top: 1.5ch;
+  padding-bottom: 1.5ch;
+  }
+label {
+  padding-left: 1.5ch;
+}
+span input[type='text'] {
+  background-color: rgb(246, 254, 255);
+  margin-left: 2ch;
+  border:none;
+}
+span input[type='button'] {
+  margin-left: 1ch;
+  margin-right: 1ch;
+}
